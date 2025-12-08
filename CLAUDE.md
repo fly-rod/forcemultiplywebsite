@@ -1,268 +1,202 @@
-CLAUDE.md
+# Force Multiply Consulting - Website Build Guide
 
-Force Multiply — Brand, Voice, System Architecture & Development Instructions
+## Company Overview
 
-Purpose of This File
-This file defines the Force Multiply brand, the voice and tone, the design palette and rules, the mission, the audience, and the full development stack for the Force Multiply website. Claude should treat this file as the single source of truth for all code, design, UX, and content decisions.
+Force Multiply Consulting (FMC) is a hybrid consulting and investment firm that helps organizations innovate through business and technology consulting services centered on AI adoption and modern cloud technologies. What makes Force Multiply different is its dual focus: delivering high-impact consulting for enterprise clients while also acquiring and operating small businesses—creating ownership opportunities for consultants who want to build long-term wealth.
 
-Brand Overview
+### Mission Statement
 
-Force Multiply is a boutique technology and AI consulting firm that helps organizations get more from the systems and teams they already have. We improve architecture, AI and automation, data flows, Salesforce usage, governance, and delivery velocity. We multiply existing force rather than rebuild everything from scratch.
+In this AI revolution and highly competitive landscape, Force Multiply helps organizations innovate and succeed through business and technical consulting services centered on the adoption of artificial intelligence and modern cloud technologies. At the same time, we invest in our employees by enabling pathways to business acquisition and ownership—giving consultants the opportunity to build long-term wealth, support and operate portfolio companies with the use of AI, and grow as leaders.
 
-Mission
+### The Flywheel Model
 
-To give teams clarity, velocity, and confidence using architecture, AI, and clean execution. We fix system bottlenecks, implement automation, clean architectures, unlock Salesforce and Data Cloud value, and help teams ship faster with better governance.
+Force Multiply operates on a flywheel effect:
+- Consulting revenue funds small-business acquisitions
+- Small-business cash flow stabilizes long-term economics
+- Employees build equity and career paths beyond hourly billing
+- Clients gain access to a consulting team who operate real businesses, not just advise on them
 
-Target Audience
+---
 
-CIO, CTO, COO
-Heads of RevOps and Sales Ops
-Innovation leaders
-PE-backed mid-market companies
-Organizations with complex systems and slow delivery cycles
+## Brand Identity
 
-Brand Palette
+### Brand Personality
+Clean, confident, and fast—but still approachable. Professional without being corporate, strategic without being stuffy. The kind of brand that shows up prepared, gets to the point, and delivers. No jargon-heavy decks or overengineered frameworks—just people who know the platforms inside and out and help clients get more from what they've already invested in.
 
-Primary Colors:
-Deep Navy: #062e5a
-Blue-Gray: #1d3557
+### Logo
+The Force Multiply logo features a unique icon that combines the letters F and M into a single Braille-inspired dot pattern (4 dots). It's distinctive without being gimmicky.
 
-Supporting / Neutrals:
-Soft Sand: #e8e1d9
-Warm Gray: #d7d3cc
-Crisp White: #ffffff
+**Logo versions available:**
+- Full color (blue dots on white/light backgrounds)
+- White version (for dark backgrounds)
+- SVG and PNG formats
 
-Optional Accent:
-Muted Sand Gold: #d2b48c
+### Color Palette
 
-Brand Voice & Tone
+| Color | Hex | CSS Variable | Use |
+|-------|-----|--------------|-----|
+| Deep Blue | `#1e3a8a` | `--color-primary` | Primary brand color, headers, logo dots |
+| Bright Blue | `#3b82f6` | `--color-accent` | Accents, highlights, buttons/CTAs |
+| Slate Dark | `#1e293b` | `--color-text` | Body text, main content |
+| Slate Gray | `#64748b` | `--color-text-secondary` | Subheadings, secondary text |
+| White | `#ffffff` | `--color-bg` | Primary backgrounds |
+| Light Gray | `#f1f5f9` | `--color-bg-alt` | Alternate/section backgrounds |
 
-Voice pillars: clean, confident, fast, approachable, strategic, practical.
+### Typography
+- **Primary Font:** Arial (Helvetica fallback)
+- **Headings:** Arial Bold (700)
+- **Body:** Arial Regular (400)
+- **Subtle text:** Arial Light (300)
 
-Writing rules:
-	•	Keep sentences short and direct.
-	•	Avoid hype and jargon.
-	•	Avoid corporate fluff or buzzwords.
-	•	Maintain a warm, authoritative tone.
-	•	Respect the reader’s time.
-	•	Explain complex concepts in simple language.
+Keep typography clean and readable. Nothing fussy.
 
-What not to do:
-Avoid vague promises, jargon-heavy language, robotic AI hype terms, and long-winded corporate phrasing.
+---
 
-Good example:
-“We help you get more from the systems you already have. Faster workflows, cleaner architecture, better outcomes.”
+## Services
 
-Bad example:
-“We deliver scalable digital transformation across synergistic enterprise ecosystems.”
+### Enterprise Consulting Services
 
-Design & Aesthetic System
+**Cloud & Platform Implementation**
+- Salesforce implementation, optimization, and assessment
+- Azure cloud services and architecture
+- AWS implementation and migration
+- Google Cloud Platform solutions
 
-Core aesthetic: clean blur depth, natural textures like wood and plants, neutral color surfaces, minimal grids, clean cards, whitespace-heavy layouts, warm modern workplace photography.
+**AI Strategy & Implementation**
+- Applied AI implementations
+- AI adoption strategy
+- Practical AI solutions that deliver real business value
 
-Avoid loud colors, neon gradients, AI-brain imagery, heavy shadows, and cluttered or noisy layouts.
+**Technical Advisory**
+- Architecture reviews and optimization
+- Technical project and program management
+- Business systems analysis and operations design
+- Governance and team alignment
 
-Typography
+### Target Industries
+- Financial Services
+- Wealth Management
+- Investment Banking & Private Equity
+- Payments & Banking
+- Healthcare
+- State & Local Government
 
-Headings: Inter, Söhne, Helvetica Now
-Body: Inter, IBM Plex Sans
+### Small Business Acquisitions & Venture Operations
 
-Principles: strong hierarchy, clean spacing, modern geometry, minimal ornamentation.
+Force Multiply identifies, acquires, and operates small businesses through:
+- Targeting service-based businesses generating $500K–$5M revenue
+- Acquiring majority stake positions
+- Improving operations through technology, CRM, automation, and AI
+- Assigning portfolio operators (FMC employees who gain equity)
+- Growing businesses into stable cash-producing assets
 
-Primary CTAs
+**Target acquisition sectors:**
+- Home services (HVAC, plumbing, flooring, etc.)
+- B2B services
+- Local/regional services with outdated operations
 
-Talk to Us
-Start an Assessment
-Let’s Build Something Better
-See How Much Faster You Could Move
+---
 
-Avoid pushy, salesy language.
+## Leadership
 
-Design Tokens (CSS Variables)
+### Ward Wood – Founder & CEO
+Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Ward ties together the consulting and small-business sides of the company, ensuring they support one another as Force Multiply grows.
 
+---
+
+## Key Differentiators & Messaging
+
+### Value Proposition
+Force Multiply is fundamentally different from traditional consulting firms because:
+1. **Practitioners, not just advisors** – The team operates real businesses, not just advises on them
+2. **Ownership pathways** – Consultants can build wealth through equity in portfolio companies
+3. **Hands-on delivery** – High-impact, practical solutions rather than theoretical frameworks
+4. **Trusted partners** – Building long-term relationships, not just selling hours
+
+### Key Messages
+
+**For Enterprise Clients:**
+- "We help you get more out of your technology investment"
+- "Tiger team approach to unlocking value from your existing platforms"
+- "Hands-on partners who deliver, not just advise"
+
+**For Potential Team Members:**
+- "Build wealth through ownership, not just billable hours"
+- "Consultant-to-Owner career path"
+- "Be part of a team that operates what we advise"
+
+**For Acquisition Targets:**
+- "Modernize operations through technology and AI"
+- "Stable transition with operational expertise"
+- "Access to enterprise-grade tools and practices"
+
+---
+
+## Website Structure Recommendations
+
+### Primary Pages
+1. **Home** – Hero with value prop, services overview, credibility signals
+2. **Services** – Consulting services detail (Salesforce, Cloud, AI)
+3. **About** – Mission, leadership team, the Force Multiply model
+4. **Ventures** – Small business acquisition and portfolio approach
+5. **Careers** – The Consultant-to-Owner path, open positions
+6. **Contact** – Get in touch form
+
+### Tone Guidelines
+- Lead with confidence, not arrogance
+- Be direct and clear—no jargon
+- Show expertise through specificity, not buzzwords
+- Warm and approachable, but professional
+- Action-oriented language
+
+### Content Principles
+- Short, punchy headlines
+- Substance over flash
+- Real outcomes, not vague promises
+- Let the work speak for itself
+
+---
+
+## Technical Notes for Developers
+
+### CSS Variables Setup
+```css
 :root {
-–fm-navy: #062e5a;
-–fm-blue-gray: #1d3557;
-–fm-sand: #e8e1d9;
-–fm-warm-gray: #d7d3cc;
-–fm-white: #ffffff;
-–fm-muted-gold: #d2b48c;
+  --color-primary: #1e3a8a;
+  --color-accent: #3b82f6;
+  --color-text: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f1f5f9;
+  
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 }
+```
 
-Development Architecture
+### Responsive Considerations
+- Mobile-first approach
+- Clean, fast-loading pages
+- Minimal animations—nothing distracting
+- Accessible contrast ratios (the blue palette supports this)
 
-The Force Multiply website uses a modern, minimal, fast stack based on Next.js 14 with Markdown content.
+### Imagery Direction
+- Professional but not stiff
+- Avoid generic stock photos of people shaking hands
+- Technology imagery should feel modern, not cliché
+- Consider abstract representations of the "multiply" concept
 
-Core Stack
-Framework: Next.js 14
-	•	App Router
-	•	Server Components
-	•	Server-Side Rendering (SSR)
-	•	Static Site Generation (SSG)
-	•	API Routes
+---
 
-Language: TypeScript
-	•	Strict typing
-	•	Interfaces for data structures
+## Legal Entity
 
-Styling: CSS Modules
-	•	Component-scoped styles
-	•	Uses the CSS variables included above
-	•	Responsive design patterns
+**Legal Name:** ForceX Consulting LLC  
+**DBA:** Force Multiply Consulting
 
-Content: Markdown (.md files)
-	•	Blog stored as markdown
-	•	YAML frontmatter parsed by gray-matter
-	•	Rendered via next-mdx-remote
+---
 
-Runtime: Node.js 18.17+
+## Contact
 
-Dependencies
-
-Blog and content:
-gray-matter
-reading-time
-next-mdx-remote
-
-General:
-react
-react-dom
-next
-typescript
-
-Deployment
-
-Hosting: Vercel
-Zero-config deployment
-Automatic previews for every branch
-Fast global CDN
-Serverless functions
-Edge runtime optional
-
-Architecture benefits:
-Fast
-SEO optimized
-Scalable
-Secure
-Cost-effective
-Git-based workflow
-No database required
-File-based content system
-
-Project Structure
-
-Claude should follow this structure:
-
-/
-app/
-layout.tsx
-page.tsx
-blog/
-page.tsx
-[slug]/page.tsx
-api/
-webhook/route.ts
-
-components/
-ui/
-layout/
-shared/
-
-styles/
-globals.css
-variables.css
-
-content/
-blog/
-*.md
-
-lib/
-mdx.ts
-content.ts
-utils.ts
-
-public/
-assets/
-
-package.json
-
-Coding Standards
-
-Use TypeScript everywhere.
-Default to Server Components.
-Use CSS Modules with responsive breakpoints.
-Pull content from markdown files.
-Use clean file-based routing.
-Produce semantic and accessible JSX.
-
-Example CSS Module pattern:
-
-.container {
-padding: 2rem;
-color: var(–fm-navy);
-}
-
-@media (max-width: 768px) {
-.container {
-padding: 1rem;
-}
-}
-
-Required Website Pages
-
-Homepage
-	•	Hero (one-sentence value)
-	•	Sub-hero
-	•	Three or four value props
-	•	Problem list
-	•	CTA buttons
-
-Services Page
-Sections:
-	1.	Salesforce Modernization
-	2.	AI and Automation
-	3.	Data Cloud and Integrations
-	4.	Governance and DevOps
-	5.	Fractional Engineering Leadership
-
-Each section should include:
-	•	Description
-	•	Why it matters
-	•	The Force Multiply approach
-	•	Deliverables
-
-How We Work Page
-	•	Assess, Align, Architect, Activate
-	•	Interview-first approach
-	•	Repeatable patterns
-	•	Weekly engagement commitment levels
-
-About Page
-	•	Ward Wood background
-	•	Brand philosophy
-	•	Values
-
-Contact Page
-	•	Simple form or CTA
-	•	Optional scheduling embed
-
-Rules for Claude When Generating Code
-
-Use this tech stack.
-Follow the project structure.
-Use the brand voice for placeholder text.
-Use the color palette and CSS variables.
-Ensure code is readable and maintainable.
-Prefer server components unless interactivity is needed.
-
-Rules for Claude When Writing Copy
-
-Use the Force Multiply voice.
-Keep sentences short and direct.
-Emphasize clarity and velocity.
-Avoid corporate jargon.
-Stay aligned to the mission: multiply the existing force.
-
-Final Directive
-
-Claude must use this document as the operating system for all code, components, templates, content, design decisions, refactoring, architecture guidance, and UX patterns for the Force Multiply website.
+*[Add contact details as needed for the website]*
