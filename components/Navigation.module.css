@@ -21,11 +21,21 @@
   font-weight: 600;
   color: var(--primary);
   letter-spacing: -0.02em;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
 }
 
 .logo:hover {
   color: var(--accent);
+  opacity: 0.85;
+}
+
+.logoImage {
+  height: auto;
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navLinks {
