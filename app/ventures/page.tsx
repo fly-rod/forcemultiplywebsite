@@ -4,161 +4,157 @@ import styles from './page.module.css';
 export default function Ventures() {
   return (
     <div className={styles.venturesPage}>
+      {/* Hero */}
       <section className={styles.header}>
         <div className="container">
-          <h1>Small Business Ventures</h1>
-          <p className={styles.subtitle}>
-            Force Multiply acquires, modernizes, and operates service-based businesses—creating ownership opportunities for our team while building a portfolio of stable, cash-producing assets.
-          </p>
+          <div className={styles.headerContent}>
+            <div className={styles.tag}>Portfolio Strategy</div>
+            <h1>Building wealth through ownership</h1>
+            <p className={styles.subtitle}>
+              We acquire and modernize service businesses. Our team operates them. Everyone builds equity.
+            </p>
+          </div>
         </div>
       </section>
 
+      {/* Model */}
       <section className={styles.model}>
         <div className="container">
-          <h2>Our Acquisition Model</h2>
+          <div className={styles.sectionHeader}>
+            <h2>Acquisition model</h2>
+            <p>Majority stakes in established service businesses</p>
+          </div>
           <div className={styles.modelGrid}>
             <div className={styles.modelCard}>
-              <h3>Target Businesses</h3>
-              <p>
-                We acquire service-based businesses generating <strong>$500K–$5M</strong> in annual revenue. Focus on home services (HVAC, plumbing, flooring), B2B services, and local/regional businesses with outdated operations.
-              </p>
+              <div className={styles.cardIcon}>🎯</div>
+              <h3>Target Profile</h3>
+              <p className={styles.cardLead}>$500K–$5M revenue</p>
+              <ul className={styles.features}>
+                <li>Service-based businesses</li>
+                <li>Established customer base</li>
+                <li>Outdated operations</li>
+              </ul>
             </div>
             <div className={styles.modelCard}>
-              <h3>Majority Stake</h3>
-              <p>
-                We acquire majority ownership positions, ensuring control and alignment with our long-term vision for operational improvement and growth.
-              </p>
+              <div className={styles.cardIcon}>🔧</div>
+              <h3>Modernize</h3>
+              <p className={styles.cardLead}>Technology + Process</p>
+              <ul className={styles.features}>
+                <li>CRM & automation</li>
+                <li>AI implementation</li>
+                <li>Systems & workflows</li>
+              </ul>
             </div>
             <div className={styles.modelCard}>
-              <h3>Operational Improvement</h3>
-              <p>
-                Apply enterprise technology to small business operations. CRM systems, automation, AI tools, and modern business processes.
-              </p>
-            </div>
-            <div className={styles.modelCard}>
-              <h3>Portfolio Operators</h3>
-              <p>
-                Assign Force Multiply team members as operators who gain equity in portfolio companies—building wealth through ownership.
-              </p>
+              <div className={styles.cardIcon}>📈</div>
+              <h3>Operate & Grow</h3>
+              <p className={styles.cardLead}>Team members as owners</p>
+              <ul className={styles.features}>
+                <li>Equity for operators</li>
+                <li>Margin improvement</li>
+                <li>Stable cash flow</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Value Creation */}
       <section className={styles.value}>
         <div className="container">
-          <h2>Value Creation Strategy</h2>
-          <p className={styles.valueIntro}>
-            We modernize operations and unlock value through technology, systems, and process improvement.
-          </p>
+          <div className={styles.sectionHeader}>
+            <h2>How we create value</h2>
+          </div>
           <div className={styles.valueGrid}>
             <div className={styles.valueCard}>
               <div className={styles.valueNumber}>01</div>
-              <h3>Technology Modernization</h3>
-              <p>
-                Implement CRM systems (Salesforce), accounting automation, scheduling software, and digital customer engagement tools. Bring enterprise-grade systems to small business operations.
-              </p>
+              <h3>Technology</h3>
+              <p>CRM, automation, digital tools. Enterprise systems for small business.</p>
             </div>
             <div className={styles.valueCard}>
               <div className={styles.valueNumber}>02</div>
               <h3>AI & Automation</h3>
-              <p>
-                Apply AI to customer service, scheduling optimization, pricing, and operations. Automate repetitive tasks and improve efficiency across the business.
-              </p>
+              <p>Optimize scheduling, pricing, customer service. Free up human capacity.</p>
             </div>
             <div className={styles.valueCard}>
               <div className={styles.valueNumber}>03</div>
-              <h3>Process & Operations</h3>
-              <p>
-                Document and optimize core processes. Build scalable systems that reduce owner dependency and enable growth beyond current capacity.
-              </p>
+              <h3>Process</h3>
+              <p>Document, optimize, scale. Reduce owner dependency.</p>
             </div>
             <div className={styles.valueCard}>
               <div className={styles.valueNumber}>04</div>
-              <h3>Financial Performance</h3>
-              <p>
-                Improve margins through better pricing, operational efficiency, and cost management. Turn businesses into stable, cash-producing assets.
-              </p>
+              <h3>Performance</h3>
+              <p>Better pricing, efficiency, margins. Cash-producing assets.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Target Sectors */}
       <section className={styles.sectors}>
         <div className="container">
-          <h2>Target Sectors</h2>
+          <div className={styles.sectionHeader}>
+            <h2>Target sectors</h2>
+          </div>
           <div className={styles.sectorsGrid}>
             <div className={styles.sectorCard}>
+              <span className={styles.sectorIcon}>🏠</span>
               <h3>Home Services</h3>
-              <ul>
-                <li>HVAC installation and repair</li>
-                <li>Plumbing services</li>
-                <li>Flooring and remodeling</li>
-                <li>Electrical services</li>
-                <li>Landscaping and maintenance</li>
-              </ul>
+              <p>HVAC, plumbing, flooring, electrical, landscaping</p>
             </div>
             <div className={styles.sectorCard}>
+              <span className={styles.sectorIcon}>🏢</span>
               <h3>B2B Services</h3>
-              <ul>
-                <li>Professional services firms</li>
-                <li>Facility management</li>
-                <li>Commercial cleaning</li>
-                <li>Business consulting</li>
-                <li>Specialized services</li>
-              </ul>
+              <p>Professional services, facility management, commercial</p>
             </div>
             <div className={styles.sectorCard}>
+              <span className={styles.sectorIcon}>📍</span>
               <h3>Local & Regional</h3>
-              <ul>
-                <li>Service businesses with established customer base</li>
-                <li>Owner-operator businesses ready for transition</li>
-                <li>Companies with growth potential</li>
-                <li>Businesses with outdated systems</li>
-              </ul>
+              <p>Established businesses ready for transition</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* For Owners */}
       <section className={styles.forOwners}>
         <div className="container">
-          <h2>For Business Owners</h2>
-          <p className={styles.forOwnersIntro}>
-            Considering a transition? We offer a stable exit strategy with operational expertise to ensure your business continues to thrive.
-          </p>
-          <div className={styles.forOwnersGrid}>
-            <div className={styles.forOwnersCard}>
-              <h3>Stable Transition</h3>
-              <p>
-                We provide fair valuations and smooth transitions. Work with operators who understand service businesses and respect what you've built.
-              </p>
+          <div className={styles.sectionHeader}>
+            <h2>For business owners</h2>
+            <p>Considering an exit? We provide stability and operational support.</p>
+          </div>
+          <div className={styles.ownersGrid}>
+            <div className={styles.ownerCard}>
+              <div className={styles.stepNumber}>01</div>
+              <h3>Fair Valuation</h3>
+              <p>Smooth transition with operators who respect what you built.</p>
             </div>
-            <div className={styles.forOwnersCard}>
-              <h3>Operational Support</h3>
-              <p>
-                Access to enterprise technology, systems, and processes. We bring resources and expertise to help your business grow.
-              </p>
+            <div className={styles.ownerCard}>
+              <div className={styles.stepNumber}>02</div>
+              <h3>Technology & Support</h3>
+              <p>Enterprise resources to help your business grow.</p>
             </div>
-            <div className={styles.forOwnersCard}>
+            <div className={styles.ownerCard}>
+              <div className={styles.stepNumber}>03</div>
               <h3>Legacy Protection</h3>
-              <p>
-                We preserve what works and improve what doesn't. Your team, customers, and reputation remain intact through the transition.
-              </p>
+              <p>Team, customers, and reputation remain intact.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className={styles.cta}>
         <div className="container">
-          <h2>Interested in discussing an acquisition?</h2>
-          <p>
-            Whether you're a business owner considering an exit or know of a business that might be a good fit, let's talk.
-          </p>
-          <Link href="/contact" className={styles.ctaButton}>
-            Get in Touch
-          </Link>
+          <div className={styles.ctaContent}>
+            <h2>Let's talk</h2>
+            <p>
+              Business owner considering an exit? Know a good fit? Get in touch.
+            </p>
+            <Link href="/contact" className={styles.ctaButton}>
+              Contact Us
+            </Link>
+          </div>
         </div>
       </section>
     </div>

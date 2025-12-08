@@ -2,241 +2,358 @@
   min-height: calc(100vh - 80px);
 }
 
+/* Header Section */
 .header {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 5rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
 }
 
 .header h1 {
-  margin-bottom: 1rem;
   font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 1.3rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
 }
 
-.servicesSection {
-  padding: 5rem 0;
-  background: var(--bg-warm);
+/* Main Services */
+.mainServices {
+  padding: 7rem 0;
+  background: var(--color-bg);
 }
 
-.serviceBlock {
-  background: var(--bg-white);
-  border-radius: 12px;
-  padding: 3rem;
-  margin-bottom: 3rem;
-  box-shadow: var(--shadow-sm);
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bigCard {
+  background: var(--color-bg-alt);
+  padding: 3.5rem;
+  border-radius: 16px;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.serviceBlock:hover {
-  box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+.bigCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-.serviceHeader {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--bg-warm);
+.bigCard:hover::before {
+  transform: scaleX(1);
 }
 
-.serviceHeader h2 {
-  color: var(--text-primary);
+.bigCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(30, 58, 138, 0.12);
+  border-color: var(--color-accent);
+}
+
+.cardIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.bigCard h2 {
+  font-size: 1.75rem;
+  color: var(--color-text);
   margin-bottom: 1rem;
-  font-size: 2rem;
 }
 
-.serviceDescription {
-  color: var(--text-secondary);
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin: 0;
+.cardLead {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-medium);
 }
 
-.serviceDetails {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-}
-
-.detailColumn h4 {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-}
-
-.detailColumn p {
-  color: var(--text-primary);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.deliverables {
-  background: var(--bg-warm);
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 3px solid var(--accent);
-}
-
-.deliverables h4 {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.deliverables ul {
+.features {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
-.deliverables li {
-  color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  padding-left: 1.5rem;
+.features li {
+  color: var(--color-text-secondary);
+  padding: 0.65rem 0;
+  padding-left: 1.75rem;
   position: relative;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
-.deliverables li::before {
-  content: "→";
+.features li::before {
+  content: '→';
   position: absolute;
   left: 0;
-  color: var(--accent);
-  font-weight: 600;
+  color: var(--color-accent);
+  font-weight: bold;
 }
 
-.engagement {
-  padding: 5rem 0;
-  background: var(--bg-white);
+/* Industries Section */
+.industries {
+  padding: 7rem 0;
+  background: var(--color-bg-alt);
+}
+
+.sectionHeader {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
-.engagement h2 {
-  margin-bottom: 1.5rem;
+.sectionHeader h2 {
+  font-size: 2.75rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
 }
 
-.engagementIntro {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  color: var(--text-secondary);
+.sectionHeader p {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.engagementOptions {
+.industryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.option {
-  background: var(--bg-warm);
-  padding: 2rem 1.5rem;
-  border-radius: 8px;
-  border: 2px solid var(--border);
+.indCard {
+  background: var(--color-bg);
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
   transition: all 0.3s ease;
-}
-
-.option:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.option h3 {
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-  font-size: 1.5rem;
-}
-
-.option p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.cta {
-  padding: 5rem 0;
-  background: var(--primary);
-  color: white;
   text-align: center;
 }
 
-.cta h2 {
-  color: white;
+.indCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
+}
+
+.indIcon {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: block;
+}
+
+.indCard h3 {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Approach Section */
+.approach {
+  padding: 7rem 0;
+  background: var(--color-bg);
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.approachCard {
+  position: relative;
+  padding: 2.5rem;
+  background: var(--color-bg-alt);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.approachCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
+}
+
+.stepNumber {
+  position: absolute;
+  top: -1rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-bg);
+  line-height: 1;
+}
+
+.approachCard h3 {
+  font-size: 1.4rem;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.approachCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Section */
+.cta {
+  padding: 8rem 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
 .cta p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.7;
   margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .ctaButton {
-  background: var(--accent);
-  color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.2s ease;
+  background: white;
+  color: var(--color-primary);
+  padding: 1.25rem 3rem;
+  border-radius: 8px;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
   display: inline-block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .ctaButton:hover {
-  background: var(--accent-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .header {
-    padding: 3rem 0 2.5rem;
+    padding: 4rem 0 3rem;
   }
 
   .header h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
-  .servicesSection,
-  .engagement,
+  .mainServices,
+  .industries,
+  .approach {
+    padding: 4rem 0;
+  }
+
+  .serviceCards,
+  .industryGrid,
+  .approachGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .sectionHeader p {
+    font-size: 1.05rem;
+  }
+
   .cta {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 
-  .serviceBlock {
-    padding: 2rem 1.5rem;
-  }
-
-  .serviceDetails {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .engagementOptions {
-    grid-template-columns: 1fr;
+  .cta h2 {
+    font-size: 2.25rem;
   }
 }

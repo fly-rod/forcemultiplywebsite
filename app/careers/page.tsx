@@ -4,99 +4,99 @@ import styles from './page.module.css';
 export default function Careers() {
   return (
     <div className={styles.careersPage}>
+      {/* Hero */}
       <section className={styles.header}>
         <div className="container">
-          <h1>Build Wealth Through Ownership</h1>
-          <p className={styles.subtitle}>
-            Force Multiply offers a unique career path: Consultant-to-Owner. Build your wealth through equity in portfolio businesses, not just billable hours.
-          </p>
+          <div className={styles.headerContent}>
+            <div className={styles.tag}>Careers</div>
+            <h1>From consultant to owner</h1>
+            <p className={styles.subtitle}>
+              Build wealth through equity, not just billable hours.
+            </p>
+          </div>
         </div>
       </section>
 
+      {/* Career Path */}
       <section className={styles.path}>
         <div className="container">
-          <h2>The Consultant-to-Owner Path</h2>
-          <p className={styles.pathIntro}>
-            Traditional consulting stops at billable hours. At Force Multiply, your career can lead to business ownership and long-term wealth creation.
-          </p>
+          <div className={styles.sectionHeader}>
+            <h2>Your path</h2>
+            <p>Four stages from consultant to business owner</p>
+          </div>
           <div className={styles.pathGrid}>
             <div className={styles.pathCard}>
+              <div className={styles.pathIcon}>💼</div>
               <div className={styles.pathNumber}>01</div>
-              <h3>Start as a Consultant</h3>
-              <p>
-                Join Force Multiply as a consultant delivering enterprise projects. Work with high-value clients in AI, Salesforce, and cloud platforms.
-              </p>
+              <h3>Consultant</h3>
+              <p>Enterprise projects. AI, Salesforce, cloud platforms.</p>
             </div>
             <div className={styles.pathCard}>
+              <div className={styles.pathIcon}>🎓</div>
               <div className={styles.pathNumber}>02</div>
-              <h3>Develop Business Operations Skills</h3>
-              <p>
-                Learn how we acquire and operate small businesses. Understand the systems, processes, and technology that drive operational improvement.
-              </p>
+              <h3>Learn Operations</h3>
+              <p>How we acquire and operate small businesses.</p>
             </div>
             <div className={styles.pathCard}>
+              <div className={styles.pathIcon}>⚡</div>
               <div className={styles.pathNumber}>03</div>
-              <h3>Become a Portfolio Operator</h3>
-              <p>
-                Take ownership of a portfolio company. Manage operations, drive growth, and build equity as you improve and scale the business.
-              </p>
+              <h3>Operate</h3>
+              <p>Run a portfolio company. Drive growth. Build equity.</p>
             </div>
             <div className={styles.pathCard}>
+              <div className={styles.pathIcon}>📈</div>
               <div className={styles.pathNumber}>04</div>
-              <h3>Build Long-Term Wealth</h3>
-              <p>
-                Gain equity ownership in the businesses you operate. Create wealth beyond consulting income through business appreciation and cash flow.
-              </p>
+              <h3>Build Wealth</h3>
+              <p>Equity ownership. Business appreciation. Cash flow.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Why Different */}
       <section className={styles.why}>
         <div className="container">
-          <h2>Why Force Multiply is different</h2>
+          <div className={styles.sectionHeader}>
+            <h2>Why we're different</h2>
+          </div>
           <div className={styles.whyGrid}>
             <div className={styles.whyCard}>
-              <h3>Ownership, not just income</h3>
-              <p>
-                Build wealth through equity in portfolio companies. Traditional consulting maxes out at hourly rates. We offer a path to business ownership.
-              </p>
+              <div className={styles.cardNumber}>01</div>
+              <h3>Ownership</h3>
+              <p>Equity in portfolio companies, not just salary.</p>
             </div>
             <div className={styles.whyCard}>
-              <h3>Operators, not just advisors</h3>
-              <p>
-                Learn to operate real businesses, not just advise on them. Develop skills in P&L management, operations, and business leadership.
-              </p>
+              <div className={styles.cardNumber}>02</div>
+              <h3>Operators</h3>
+              <p>Run real businesses, not just advise on them.</p>
             </div>
             <div className={styles.whyCard}>
-              <h3>Diverse experience</h3>
-              <p>
-                Work on enterprise consulting projects and small business operations. Build expertise across technology, strategy, and business management.
-              </p>
+              <div className={styles.cardNumber}>03</div>
+              <h3>Diverse</h3>
+              <p>Enterprise consulting + small business operations.</p>
             </div>
             <div className={styles.whyCard}>
-              <h3>Supported growth</h3>
-              <p>
-                Access to capital, expertise, and resources. You're not buying a business alone—you're backed by the Force Multiply team and infrastructure.
-              </p>
+              <div className={styles.cardNumber}>04</div>
+              <h3>Supported</h3>
+              <p>Backed by team, capital, and infrastructure.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Roles */}
       <section className={styles.roles}>
         <div className="container">
-          <h2>Current Opportunities</h2>
-          <p className={styles.rolesIntro}>
-            We're building our team. Opportunities exist across consulting and venture operations.
-          </p>
+          <div className={styles.sectionHeader}>
+            <h2>Current opportunities</h2>
+          </div>
           <div className={styles.rolesGrid}>
             <div className={styles.roleCard}>
-              <h3>Salesforce Consultant</h3>
-              <p className={styles.roleType}>Consulting Track</p>
-              <p>
-                Work with enterprise clients to optimize Salesforce implementations. 3-5 years experience required. Remote or hybrid.
-              </p>
+              <div className={styles.roleHeader}>
+                <h3>Salesforce Consultant</h3>
+                <span className={styles.roleTrack}>Consulting</span>
+              </div>
+              <p>Optimize Salesforce for enterprise clients. 3-5 years experience.</p>
               <div className={styles.roleSkills}>
                 <span>Salesforce</span>
                 <span>Integration</span>
@@ -104,11 +104,11 @@ export default function Careers() {
               </div>
             </div>
             <div className={styles.roleCard}>
-              <h3>AI Solutions Architect</h3>
-              <p className={styles.roleType}>Consulting Track</p>
-              <p>
-                Design and implement AI solutions for enterprise clients. 5+ years in software architecture, AI/ML experience preferred.
-              </p>
+              <div className={styles.roleHeader}>
+                <h3>AI Solutions Architect</h3>
+                <span className={styles.roleTrack}>Consulting</span>
+              </div>
+              <p>Design and implement AI for enterprises. 5+ years experience.</p>
               <div className={styles.roleSkills}>
                 <span>AI/ML</span>
                 <span>Cloud</span>
@@ -116,11 +116,11 @@ export default function Careers() {
               </div>
             </div>
             <div className={styles.roleCard}>
-              <h3>Cloud Platform Engineer</h3>
-              <p className={styles.roleType}>Consulting Track</p>
-              <p>
-                Build and optimize cloud infrastructure on Azure, AWS, or GCP. 3+ years cloud platform experience.
-              </p>
+              <div className={styles.roleHeader}>
+                <h3>Cloud Platform Engineer</h3>
+                <span className={styles.roleTrack}>Consulting</span>
+              </div>
+              <p>Build and optimize cloud infrastructure. 3+ years experience.</p>
               <div className={styles.roleSkills}>
                 <span>Azure/AWS/GCP</span>
                 <span>IaC</span>
@@ -128,11 +128,11 @@ export default function Careers() {
               </div>
             </div>
             <div className={styles.roleCard}>
-              <h3>Portfolio Operations Manager</h3>
-              <p className={styles.roleType}>Ventures Track</p>
-              <p>
-                Manage operations for portfolio companies. Technology background preferred. Path to equity ownership.
-              </p>
+              <div className={styles.roleHeader}>
+                <h3>Portfolio Operations</h3>
+                <span className={styles.roleTrack}>Ventures</span>
+              </div>
+              <p>Manage portfolio companies. Path to equity ownership.</p>
               <div className={styles.roleSkills}>
                 <span>Operations</span>
                 <span>P&L</span>
@@ -143,41 +143,44 @@ export default function Careers() {
         </div>
       </section>
 
+      {/* What We Look For */}
       <section className={styles.team}>
         <div className="container">
-          <h2>What we look for</h2>
+          <div className={styles.sectionHeader}>
+            <h2>What we look for</h2>
+          </div>
           <div className={styles.teamGrid}>
             <div className={styles.teamCard}>
-              <h3>Hands-on practitioners</h3>
-              <p>
-                You've built things, not just advised on them. You understand the gap between theory and implementation.
-              </p>
+              <span className={styles.teamIcon}>🛠️</span>
+              <h3>Practitioners</h3>
+              <p>You build things, not just advise.</p>
             </div>
             <div className={styles.teamCard}>
-              <h3>Business-minded technologists</h3>
-              <p>
-                You connect technology to business outcomes. You understand why decisions matter, not just how to implement them.
-              </p>
+              <span className={styles.teamIcon}>💡</span>
+              <h3>Business-minded</h3>
+              <p>You connect tech to outcomes.</p>
             </div>
             <div className={styles.teamCard}>
-              <h3>Ownership mentality</h3>
-              <p>
-                You want to build something, not just bill hours. You're interested in the long game and building wealth over time.
-              </p>
+              <span className={styles.teamIcon}>🎯</span>
+              <h3>Ownership mindset</h3>
+              <p>You want to build, not just bill.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className={styles.cta}>
         <div className="container">
-          <h2>Interested in joining Force Multiply?</h2>
-          <p>
-            Send your resume and a note about what interests you. Let's talk about how you can build a career—and wealth—with Force Multiply.
-          </p>
-          <Link href="/contact" className={styles.ctaButton}>
-            Get in Touch
-          </Link>
+          <div className={styles.ctaContent}>
+            <h2>Join us</h2>
+            <p>
+              Send your resume and tell us what interests you.
+            </p>
+            <Link href="/contact" className={styles.ctaButton}>
+              Get in Touch
+            </Link>
+          </div>
         </div>
       </section>
     </div>

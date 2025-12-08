@@ -4,200 +4,134 @@ import styles from './page.module.css';
 export default function Services() {
   return (
     <div className={styles.servicesPage}>
+      {/* Hero */}
       <section className={styles.header}>
         <div className="container">
-          <h1>Enterprise Consulting Services</h1>
-          <p className={styles.subtitle}>
-            We help enterprise clients unlock value from their technology investments through AI adoption, cloud platforms, and strategic technical advisory.
-          </p>
+          <div className={styles.headerContent}>
+            <div className={styles.tag}>Enterprise Services</div>
+            <h1>Technology that moves as fast as you do</h1>
+            <p className={styles.subtitle}>
+              AI implementations, cloud platforms, and technical leadership for financial services firms.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className={styles.servicesSection}>
+      {/* Main Services */}
+      <section className={styles.mainServices}>
         <div className="container">
-          {/* Cloud & Platform Implementation */}
-          <div className={styles.serviceBlock}>
-            <div className={styles.serviceHeader}>
-              <h2>Cloud & Platform Implementation</h2>
-              <p className={styles.serviceDescription}>
-                Tiger team approach to implementing and optimizing enterprise platforms. We help you get more out of your technology investment.
-              </p>
-            </div>
-            <div className={styles.serviceDetails}>
-              <div className={styles.detailColumn}>
-                <h4>Salesforce</h4>
-                <ul>
-                  <li>Implementation and optimization</li>
-                  <li>Technical assessment and architecture review</li>
-                  <li>Custom development and integration</li>
-                  <li>Platform modernization</li>
-                </ul>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>Azure Cloud Services</h4>
-                <ul>
-                  <li>Cloud architecture and migration</li>
-                  <li>Azure infrastructure setup</li>
-                  <li>Security and compliance</li>
-                  <li>Cost optimization</li>
-                </ul>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>AWS & Google Cloud</h4>
-                <ul>
-                  <li>Multi-cloud strategy</li>
-                  <li>Migration and implementation</li>
-                  <li>Infrastructure as code</li>
-                  <li>Platform engineering</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* AI Strategy & Implementation */}
-          <div className={styles.serviceBlock}>
-            <div className={styles.serviceHeader}>
+          <div className={styles.serviceCards}>
+            <div className={styles.bigCard}>
+              <div className={styles.cardIcon}>🤖</div>
               <h2>AI Strategy & Implementation</h2>
-              <p className={styles.serviceDescription}>
-                Applied AI implementations that deliver real business value. We move beyond proof-of-concept to production-grade solutions.
-              </p>
+              <p className={styles.cardLead}>Production-ready AI that delivers value</p>
+              <ul className={styles.features}>
+                <li>AI adoption strategy & roadmap</li>
+                <li>Applied AI solutions</li>
+                <li>Process automation</li>
+                <li>Integration & monitoring</li>
+              </ul>
             </div>
-            <div className={styles.serviceDetails}>
-              <div className={styles.detailColumn}>
-                <h4>AI Adoption Strategy</h4>
-                <p>
-                  Develop practical AI strategies aligned to business outcomes. Identify high-impact use cases and create roadmaps for implementation.
-                </p>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>Applied AI Solutions</h4>
-                <p>
-                  Build production-grade AI applications. Process automation, intelligent workflows, and AI-powered decision support systems.
-                </p>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>Integration & Operations</h4>
-                <p>
-                  Connect AI systems to existing platforms. Ensure reliability, monitoring, and continuous improvement of AI implementations.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          {/* Technical Advisory */}
-          <div className={styles.serviceBlock}>
-            <div className={styles.serviceHeader}>
-              <h2>Technical Advisory</h2>
-              <p className={styles.serviceDescription}>
-                Strategic technical guidance for complex initiatives. Architecture, project leadership, and operational excellence.
-              </p>
+            <div className={styles.bigCard}>
+              <div className={styles.cardIcon}>☁️</div>
+              <h2>Cloud & Platform</h2>
+              <p className={styles.cardLead}>Salesforce, Azure, AWS, GCP</p>
+              <ul className={styles.features}>
+                <li>Salesforce optimization & architecture</li>
+                <li>Cloud migration & setup</li>
+                <li>Multi-cloud strategy</li>
+                <li>Platform engineering</li>
+              </ul>
             </div>
-            <div className={styles.serviceDetails}>
-              <div className={styles.detailColumn}>
-                <h4>Architecture & Design</h4>
-                <ul>
-                  <li>Architecture reviews and optimization</li>
-                  <li>Technical strategy and roadmaps</li>
-                  <li>System integration design</li>
-                  <li>Scalability and performance</li>
-                </ul>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>Program Management</h4>
-                <ul>
-                  <li>Technical project management</li>
-                  <li>Multi-workstream coordination</li>
-                  <li>Risk management and mitigation</li>
-                  <li>Delivery excellence</li>
-                </ul>
-              </div>
-              <div className={styles.detailColumn}>
-                <h4>Operations & Governance</h4>
-                <ul>
-                  <li>Business systems analysis</li>
-                  <li>Process design and optimization</li>
-                  <li>Governance frameworks</li>
-                  <li>Team alignment and enablement</li>
-                </ul>
-              </div>
+
+            <div className={styles.bigCard}>
+              <div className={styles.cardIcon}>⚡</div>
+              <h2>Technical Advisory</h2>
+              <p className={styles.cardLead}>Strategic guidance for complex initiatives</p>
+              <ul className={styles.features}>
+                <li>Architecture & design</li>
+                <li>Technical program management</li>
+                <li>Process optimization</li>
+                <li>Governance frameworks</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Financial Services Focus */}
       <section className={styles.industries}>
         <div className="container">
-          <h2>Target Industries</h2>
-          <p className={styles.industriesIntro}>
-            We specialize in serving clients in complex, regulated industries where technology and compliance intersect.
-          </p>
-          <div className={styles.industriesGrid}>
-            <div className={styles.industryCard}>
-              <h3>Financial Services</h3>
-              <p>Banks, credit unions, and financial institutions</p>
+          <div className={styles.sectionHeader}>
+            <h2>Financial services specialists</h2>
+            <p>Deep expertise in complex, regulated environments</p>
+          </div>
+          <div className={styles.industryGrid}>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>🏦</span>
+              <h3>Banking</h3>
             </div>
-            <div className={styles.industryCard}>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>💰</span>
               <h3>Wealth Management</h3>
-              <p>RIAs, wealth advisors, and asset management firms</p>
             </div>
-            <div className={styles.industryCard}>
-              <h3>Investment Banking & PE</h3>
-              <p>Investment banks, private equity, and VC firms</p>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>📊</span>
+              <h3>Investment Banking</h3>
             </div>
-            <div className={styles.industryCard}>
-              <h3>Payments & Banking</h3>
-              <p>Payment processors, fintechs, and digital banking</p>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>💳</span>
+              <h3>Payments & Fintech</h3>
             </div>
-            <div className={styles.industryCard}>
-              <h3>Healthcare</h3>
-              <p>Healthcare systems, providers, and health tech</p>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>📈</span>
+              <h3>Capital Markets</h3>
             </div>
-            <div className={styles.industryCard}>
-              <h3>Government</h3>
-              <p>State and local government agencies</p>
+            <div className={styles.indCard}>
+              <span className={styles.indIcon}>🔐</span>
+              <h3>RegTech</h3>
             </div>
           </div>
         </div>
       </section>
 
+      {/* How We Work */}
       <section className={styles.approach}>
         <div className="container">
-          <h2>How we work</h2>
-          <p className={styles.approachIntro}>
-            Hands-on partners who deliver, not just advise. We work with your team to implement solutions and transfer knowledge.
-          </p>
+          <div className={styles.sectionHeader}>
+            <h2>Our approach</h2>
+          </div>
           <div className={styles.approachGrid}>
             <div className={styles.approachCard}>
-              <h3>Practitioners, not theorists</h3>
-              <p>
-                We operate real businesses. Our consultants understand what it takes to implement and maintain systems in production.
-              </p>
+              <div className={styles.stepNumber}>01</div>
+              <h3>Practitioners</h3>
+              <p>We operate real businesses. We know what works.</p>
             </div>
             <div className={styles.approachCard}>
-              <h3>Tiger team delivery</h3>
-              <p>
-                Focused, high-impact engagements. We assess quickly, design pragmatically, and deliver value fast.
-              </p>
+              <div className={styles.stepNumber}>02</div>
+              <h3>Tiger Teams</h3>
+              <p>Focused engagements. Fast delivery. Real value.</p>
             </div>
             <div className={styles.approachCard}>
-              <h3>Knowledge transfer</h3>
-              <p>
-                Every engagement builds your team's capability. We work alongside you to ensure lasting impact.
-              </p>
+              <div className={styles.stepNumber}>03</div>
+              <h3>Knowledge Transfer</h3>
+              <p>Your team gets stronger. Lasting impact.</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className={styles.cta}>
         <div className="container">
-          <h2>Let's talk about your project</h2>
-          <p>
-            Ready to unlock value from your technology investments? Get in touch to discuss how we can help.
-          </p>
-          <Link href="/contact" className={styles.ctaButton}>
-            Get in Touch
-          </Link>
+          <div className={styles.ctaContent}>
+            <h2>Let's work together</h2>
+            <p>Ready to unlock value from your technology investments?</p>
+            <Link href="/contact" className={styles.ctaButton}>
+              Get in Touch
+            </Link>
+          </div>
         </div>
       </section>
     </div>
