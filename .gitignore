@@ -31,3 +31,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# wordpress (optional - uncomment if you want to track docker-compose.yml)
+# docker-compose.yml

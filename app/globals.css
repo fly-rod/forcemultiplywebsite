@@ -23,6 +23,11 @@
   --blur-sm: blur(8px);
   --blur-md: blur(16px);
   --blur-lg: blur(24px);
+
+  /* Blog-specific aliases */
+  --primary-color: var(--accent);
+  --secondary-color: var(--accent-dark);
+  --background-alt: var(--bg-light);
 }
 
 body {
