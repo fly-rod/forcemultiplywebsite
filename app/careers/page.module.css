@@ -1,0 +1,303 @@
+.careersPage {
+  min-height: calc(100vh - 80px);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: white;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.path {
+  padding: 6rem 0;
+  background: var(--color-bg-alt);
+}
+
+.path h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.pathIntro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.pathGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pathCard {
+  background: var(--color-bg);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.pathNumber {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.pathCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.pathCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.why {
+  padding: 6rem 0;
+  background: var(--color-bg);
+}
+
+.why h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whyCard {
+  background: var(--color-bg-alt);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.whyCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.whyCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.roles {
+  padding: 6rem 0;
+  background: var(--color-bg-alt);
+}
+
+.roles h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.rolesIntro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.roleCard {
+  background: var(--color-bg);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.roleCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+.roleCard h3 {
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.roleType {
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.roleCard > p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.roleSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.roleSkills span {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  border-radius: 20px;
+  font-weight: var(--font-weight-bold);
+  border: 1px solid var(--border);
+}
+
+.team {
+  padding: 6rem 0;
+  background: var(--color-bg);
+}
+
+.team h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  background: var(--color-bg-alt);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.teamCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.teamCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.cta {
+  padding: 6rem 0;
+  background: var(--color-primary);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+}
+
+.ctaButton {
+  background: white;
+  color: var(--color-primary);
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 4rem 0 3rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .path,
+  .why,
+  .roles,
+  .team,
+  .cta {
+    padding: 4rem 0;
+  }
+
+  .pathGrid,
+  .whyGrid,
+  .rolesGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
