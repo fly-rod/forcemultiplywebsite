@@ -9,9 +9,9 @@ export default function Ventures() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>Portfolio Strategy</div>
-            <h1>Building wealth through ownership</h1>
+            <h1>Acquiring and modernizing service businesses</h1>
             <p className={styles.subtitle}>
-              We acquire and modernize service businesses. Our team operates them. Everyone builds equity.
+              We acquire established businesses and transform operations with modern technology and AI.
             </p>
           </div>
         </div>
@@ -26,7 +26,6 @@ export default function Ventures() {
           </div>
           <div className={styles.modelGrid}>
             <div className={styles.modelCard}>
-              <div className={styles.cardIcon}>🎯</div>
               <h3>Target Profile</h3>
               <p className={styles.cardLead}>$500K–$5M revenue</p>
               <ul className={styles.features}>
@@ -36,7 +35,6 @@ export default function Ventures() {
               </ul>
             </div>
             <div className={styles.modelCard}>
-              <div className={styles.cardIcon}>🔧</div>
               <h3>Modernize</h3>
               <p className={styles.cardLead}>Technology + Process</p>
               <ul className={styles.features}>
@@ -46,11 +44,10 @@ export default function Ventures() {
               </ul>
             </div>
             <div className={styles.modelCard}>
-              <div className={styles.cardIcon}>📈</div>
               <h3>Operate & Grow</h3>
-              <p className={styles.cardLead}>Team members as owners</p>
+              <p className={styles.cardLead}>Operational excellence</p>
               <ul className={styles.features}>
-                <li>Equity for operators</li>
+                <li>Process optimization</li>
                 <li>Margin improvement</li>
                 <li>Stable cash flow</li>
               </ul>
@@ -98,17 +95,14 @@ export default function Ventures() {
           </div>
           <div className={styles.sectorsGrid}>
             <div className={styles.sectorCard}>
-              <span className={styles.sectorIcon}>🏠</span>
               <h3>Home Services</h3>
               <p>HVAC, plumbing, flooring, electrical, landscaping</p>
             </div>
             <div className={styles.sectorCard}>
-              <span className={styles.sectorIcon}>🏢</span>
               <h3>B2B Services</h3>
               <p>Professional services, facility management, commercial</p>
             </div>
             <div className={styles.sectorCard}>
-              <span className={styles.sectorIcon}>📍</span>
               <h3>Local & Regional</h3>
               <p>Established businesses ready for transition</p>
             </div>

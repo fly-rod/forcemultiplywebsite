@@ -122,12 +122,6 @@
   border-color: var(--color-accent);
 }
 
-.cardIcon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
 .modelCard h3 {
   font-size: 1.5rem;
   color: var(--color-text);
@@ -244,12 +238,6 @@
   transform: translateY(-4px);
   border-color: var(--color-accent);
   box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
-}
-
-.sectorIcon {
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
-  display: block;
 }
 
 .sectorCard h3 {

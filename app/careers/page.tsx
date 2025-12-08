@@ -9,9 +9,9 @@ export default function Careers() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>Careers</div>
-            <h1>From consultant to owner</h1>
+            <h1>Join Force Multiply</h1>
             <p className={styles.subtitle}>
-              Build wealth through equity, not just billable hours.
+              Work on enterprise technology projects and portfolio business operations.
             </p>
           </div>
         </div>
@@ -21,33 +21,29 @@ export default function Careers() {
       <section className={styles.path}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2>Your path</h2>
-            <p>Four stages from consultant to business owner</p>
+            <h2>Career paths</h2>
+            <p>Opportunities across enterprise services and portfolio operations</p>
           </div>
           <div className={styles.pathGrid}>
             <div className={styles.pathCard}>
-              <div className={styles.pathIcon}>💼</div>
               <div className={styles.pathNumber}>01</div>
-              <h3>Consultant</h3>
-              <p>Enterprise projects. AI, Salesforce, cloud platforms.</p>
+              <h3>Enterprise Services</h3>
+              <p>AI, Salesforce, and cloud platform projects for financial services clients.</p>
             </div>
             <div className={styles.pathCard}>
-              <div className={styles.pathIcon}>🎓</div>
               <div className={styles.pathNumber}>02</div>
-              <h3>Learn Operations</h3>
-              <p>How we acquire and operate small businesses.</p>
+              <h3>Technical Leadership</h3>
+              <p>Architecture, strategy, and technical program management.</p>
             </div>
             <div className={styles.pathCard}>
-              <div className={styles.pathIcon}>⚡</div>
               <div className={styles.pathNumber}>03</div>
-              <h3>Operate</h3>
-              <p>Run a portfolio company. Drive growth. Build equity.</p>
+              <h3>Portfolio Operations</h3>
+              <p>Manage and improve acquired service businesses.</p>
             </div>
             <div className={styles.pathCard}>
-              <div className={styles.pathIcon}>📈</div>
               <div className={styles.pathNumber}>04</div>
-              <h3>Build Wealth</h3>
-              <p>Equity ownership. Business appreciation. Cash flow.</p>
+              <h3>Growth & Development</h3>
+              <p>Opportunities to grow with the business and take on leadership roles.</p>
             </div>
           </div>
         </div>
@@ -62,23 +58,23 @@ export default function Careers() {
           <div className={styles.whyGrid}>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>01</div>
-              <h3>Ownership</h3>
-              <p>Equity in portfolio companies, not just salary.</p>
+              <h3>Real Impact</h3>
+              <p>Work on projects that move the needle for clients.</p>
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>02</div>
-              <h3>Operators</h3>
-              <p>Run real businesses, not just advise on them.</p>
+              <h3>Hands-on Work</h3>
+              <p>Build and operate, not just advise.</p>
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>03</div>
-              <h3>Diverse</h3>
-              <p>Enterprise consulting + small business operations.</p>
+              <h3>Diverse Experience</h3>
+              <p>Enterprise technology and business operations.</p>
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>04</div>
-              <h3>Supported</h3>
-              <p>Backed by team, capital, and infrastructure.</p>
+              <h3>Growth Opportunities</h3>
+              <p>Learn, lead, and advance your career.</p>
             </div>
           </div>
         </div>
@@ -151,19 +147,16 @@ export default function Careers() {
           </div>
           <div className={styles.teamGrid}>
             <div className={styles.teamCard}>
-              <span className={styles.teamIcon}>🛠️</span>
               <h3>Practitioners</h3>
               <p>You build things, not just advise.</p>
             </div>
             <div className={styles.teamCard}>
-              <span className={styles.teamIcon}>💡</span>
               <h3>Business-minded</h3>
-              <p>You connect tech to outcomes.</p>
+              <p>You connect tech to business outcomes.</p>
             </div>
             <div className={styles.teamCard}>
-              <span className={styles.teamIcon}>🎯</span>
-              <h3>Ownership mindset</h3>
-              <p>You want to build, not just bill.</p>
+              <h3>Driven</h3>
+              <p>You want to make an impact and grow.</p>
             </div>
           </div>
         </div>

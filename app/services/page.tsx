@@ -22,7 +22,6 @@ export default function Services() {
         <div className="container">
           <div className={styles.serviceCards}>
             <div className={styles.bigCard}>
-              <div className={styles.cardIcon}>🤖</div>
               <h2>AI Strategy & Implementation</h2>
               <p className={styles.cardLead}>Production-ready AI that delivers value</p>
               <ul className={styles.features}>
@@ -34,7 +33,6 @@ export default function Services() {
             </div>
 
             <div className={styles.bigCard}>
-              <div className={styles.cardIcon}>☁️</div>
               <h2>Cloud & Platform</h2>
               <p className={styles.cardLead}>Salesforce, Azure, AWS, GCP</p>
               <ul className={styles.features}>
@@ -46,7 +44,6 @@ export default function Services() {
             </div>
 
             <div className={styles.bigCard}>
-              <div className={styles.cardIcon}>⚡</div>
               <h2>Technical Advisory</h2>
               <p className={styles.cardLead}>Strategic guidance for complex initiatives</p>
               <ul className={styles.features}>
@@ -69,27 +66,21 @@ export default function Services() {
           </div>
           <div className={styles.industryGrid}>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>🏦</span>
               <h3>Banking</h3>
             </div>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>💰</span>
               <h3>Wealth Management</h3>
             </div>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>📊</span>
               <h3>Investment Banking</h3>
             </div>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>💳</span>
               <h3>Payments & Fintech</h3>
             </div>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>📈</span>
               <h3>Capital Markets</h3>
             </div>
             <div className={styles.indCard}>
-              <span className={styles.indIcon}>🔐</span>
               <h3>RegTech</h3>
             </div>
           </div>

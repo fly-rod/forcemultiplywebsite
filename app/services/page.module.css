@@ -103,12 +103,6 @@
   border-color: var(--color-accent);
 }
 
-.cardIcon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
 .bigCard h2 {
   font-size: 1.75rem;
   color: var(--color-text);
@@ -189,12 +183,6 @@
   transform: translateY(-4px);
   border-color: var(--color-accent);
   box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
-}
-
-.indIcon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
 }
 
 .indCard h3 {

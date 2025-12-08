@@ -77,8 +77,8 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>&copy; {currentYear} Force Multiply Consulting. All rights reserved.</p>
-          <p className={styles.legal}>ForceX Consulting LLC DBA Force Multiply Consulting</p>
+          <p>&copy; {currentYear} Force Multiply. All rights reserved.</p>
+          <p className={styles.legal}>ForceX Consulting LLC DBA Force Multiply</p>
         </div>
       </div>
     </footer>

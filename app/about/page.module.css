@@ -155,12 +155,6 @@
   text-align: center;
 }
 
-.leaderIcon {
-  font-size: 5rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
 .leaderInfo h2 {
   font-size: 2rem;
   color: var(--color-text);
@@ -210,12 +204,6 @@
   box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
 }
 
-.valueIcon {
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
-  display: block;
-}
-
 .valueCard h3 {
   color: var(--color-text);
   margin-bottom: 0.75rem;
@@ -255,12 +243,6 @@
   transform: translateY(-4px);
   border-color: var(--color-accent);
   box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
-}
-
-.approachIcon {
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
-  display: block;
 }
 
 .approachCard h3 {

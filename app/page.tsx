@@ -54,8 +54,7 @@ export default function Home() {
           </div>
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>💼</div>
-              <h3>Enterprise Consulting</h3>
+              <h3>Enterprise Services</h3>
               <p>
                 AI strategy, Salesforce optimization, and cloud architecture. We unlock value from your technology investments.
               </p>
@@ -64,10 +63,9 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>🚀</div>
-              <h3>Small Business Ventures</h3>
+              <h3>Venture Portfolio</h3>
               <p>
-                Acquire and modernize service businesses using CRM, AI, and automation. Create ownership opportunities.
+                We acquire and modernize service businesses using CRM, AI, and automation.
               </p>
               <Link href="/ventures" className={styles.serviceLink}>
                 Learn More →
@@ -86,32 +84,26 @@ export default function Home() {
           </div>
           <div className={styles.industriesGrid}>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>🏦</div>
               <h3>Banking & Financial Institutions</h3>
               <p>Commercial banks, credit unions, regional banks</p>
             </div>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>💰</div>
               <h3>Wealth & Asset Management</h3>
               <p>RIAs, family offices, asset managers, wealth advisors</p>
             </div>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>📊</div>
               <h3>Investment Banking & PE</h3>
               <p>Investment banks, private equity firms, venture capital</p>
             </div>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>💳</div>
               <h3>Payments & Fintech</h3>
               <p>Payment processors, digital banking, financial technology</p>
             </div>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>📈</div>
               <h3>Trading & Capital Markets</h3>
               <p>Broker-dealers, trading firms, market makers</p>
             </div>
             <div className={styles.industryCard}>
-              <div className={styles.industryIcon}>🔐</div>
               <h3>Compliance & RegTech</h3>
               <p>Regulatory technology, compliance platforms, risk management</p>
             </div>
