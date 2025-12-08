@@ -7,81 +7,70 @@ export default function About() {
         <div className="container">
           <h1>About Force Multiply</h1>
           <p className={styles.subtitle}>
-            We multiply the impact of the teams you already have.
+            A hybrid consulting and investment firm built on a unique flywheel: enterprise consulting funds small business acquisitions, creating ownership pathways for our team.
           </p>
         </div>
       </section>
 
-      <section className={styles.story}>
+      <section className={styles.mission}>
         <div className="container">
-          <div className={styles.storyContent}>
-            <h2>The story</h2>
+          <h2>Our Mission</h2>
+          <div className={styles.missionContent}>
             <p>
-              Force Multiply started from a simple observation: most enterprises don't need another
-              consulting firm that rebuilds everything from scratch. They need partners who can make
-              their existing teams exponentially more effective.
+              In this AI revolution and highly competitive landscape, Force Multiply helps organizations innovate and succeed through business and technical consulting services centered on the adoption of artificial intelligence and modern cloud technologies.
             </p>
             <p>
-              Too many organizations are drowning in technical debt, stuck in pilot purgatory with
-              AI initiatives, or bottlenecked by governance that prevents instead of enables. The
-              answer isn't to hire an army of junior consultants. It's to bring senior technical
-              leadership that works with your team, not above them.
-            </p>
-            <p>
-              We built Force Multiply to be the firm we wished existed: fast, pragmatic, hands-on,
-              and focused on making your team better, not dependent on us.
+              At the same time, we invest in our employees by enabling pathways to business acquisition and ownership—giving consultants the opportunity to build long-term wealth, support and operate portfolio companies with the use of AI, and grow as leaders.
             </p>
           </div>
         </div>
       </section>
 
-      <section className={styles.founder}>
+      <section className={styles.model}>
         <div className="container">
-          <div className={styles.founderContent}>
-            <div className={styles.founderText}>
-              <h2>Meet Ward</h2>
+          <h2>The Flywheel Model</h2>
+          <p className={styles.modelIntro}>
+            Force Multiply operates differently. We've built a business model where each part strengthens the others.
+          </p>
+          <div className={styles.modelGrid}>
+            <div className={styles.modelCard}>
+              <h3>Consulting Revenue</h3>
               <p>
-                Ward Wood is the founder of Force Multiply. Former Director of Innovation & Technology
-                with 10+ years in Salesforce, data architecture, and enterprise modernization.
+                High-impact enterprise consulting generates revenue that funds strategic small business acquisitions.
               </p>
+            </div>
+            <div className={styles.modelCard}>
+              <h3>Business Acquisitions</h3>
               <p>
-                He's led technical teams, designed AI strategies, architected data platforms, and
-                shipped production systems for PE-backed companies and enterprise clients. He's been
-                the person in the room who knows how to untangle the mess and get teams moving again.
+                We acquire and operate service businesses generating $500K–$5M in revenue, modernizing operations through technology.
               </p>
+            </div>
+            <div className={styles.modelCard}>
+              <h3>Cash Flow Stability</h3>
               <p>
-                Ward builds Force Multiply on a philosophy of multiplication, not replacement. Your
-                team knows your business. We bring architecture, AI strategy, governance frameworks,
-                and modern delivery practices that make them unstoppable.
+                Portfolio companies provide stable cash flow, reducing dependency on consulting cycles and creating long-term value.
+              </p>
+            </div>
+            <div className={styles.modelCard}>
+              <h3>Ownership Opportunities</h3>
+              <p>
+                Team members gain equity in portfolio companies, building wealth beyond hourly billing and traditional consulting careers.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.philosophy}>
+      <section className={styles.leader}>
         <div className="container">
-          <h2>Our philosophy</h2>
-          <div className={styles.philosophyGrid}>
-            <div className={styles.philosophyCard}>
-              <h3>Multiply the force you have</h3>
+          <div className={styles.leaderContent}>
+            <div className={styles.leaderText}>
+              <h2>Ward Wood – Founder & CEO</h2>
               <p>
-                We don't rebuild your team. We amplify them. Better patterns, clearer architecture,
-                stronger capabilities. You're more effective with us, and stronger when we leave.
+                Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them.
               </p>
-            </div>
-            <div className={styles.philosophyCard}>
-              <h3>Interview first, recommend second</h3>
               <p>
-                We talk to the people doing the work before making recommendations. No drive-by
-                assessments. No stakeholder theater. We find the real problems.
-              </p>
-            </div>
-            <div className={styles.philosophyCard}>
-              <h3>Ship, don't deck</h3>
-              <p>
-                We build things. Production-grade automation. Real architecture changes. Shipped
-                features. Not endless slides and proof-of-concepts that never launch.
+                Ward ties together the consulting and small-business sides of the company, ensuring they support one another as Force Multiply grows. His approach combines deep technical expertise with business operations experience—building systems that work in the real world, not just in theory.
               </p>
             </div>
           </div>
@@ -90,36 +79,69 @@ export default function About() {
 
       <section className={styles.values}>
         <div className="container">
-          <h2>Our values</h2>
+          <h2>What sets us apart</h2>
           <div className={styles.valuesGrid}>
             <div className={styles.valueCard}>
-              <h3>Clarity</h3>
+              <h3>Practitioners, not just advisors</h3>
               <p>
-                No jargon. No buzzwords. Clear language, honest assessments, transparent communication.
-                You always know where you stand and what we're doing.
+                The team operates real businesses, not just advises on them. We understand what it takes to run operations because we do it every day.
               </p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Velocity</h3>
+              <h3>Ownership pathways</h3>
               <p>
-                Speed matters. Fast onboarding. Quick wins. Iterative delivery. We move fast and we
-                help you move faster.
+                Consultants can build wealth through equity in portfolio companies—creating career paths beyond traditional consulting.
               </p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Integrity</h3>
+              <h3>Hands-on delivery</h3>
               <p>
-                We tell you what you need to hear, not what you want to hear. If we're not the right
-                fit, we'll tell you. If something won't work, we'll say so.
+                High-impact, practical solutions rather than theoretical frameworks. We deliver results, not just recommendations.
               </p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Craftsmanship</h3>
+              <h3>Trusted partners</h3>
               <p>
-                We care about quality. Clean architecture. Maintainable code. Documentation that
-                actually helps. We build things the right way.
+                Building long-term relationships with clients and team members. We're invested in outcomes, not just hours billed.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.approach}>
+        <div className="container">
+          <h2>How we work</h2>
+          <div className={styles.approachContent}>
+            <div className={styles.approachCard}>
+              <h3>For Enterprise Clients</h3>
+              <p>
+                We help you get more out of your technology investment. Tiger team approach to unlocking value from your existing platforms. Hands-on partners who deliver, not just advise.
+              </p>
+            </div>
+            <div className={styles.approachCard}>
+              <h3>For Potential Team Members</h3>
+              <p>
+                Build wealth through ownership, not just billable hours. Consultant-to-Owner career path. Be part of a team that operates what we advise.
+              </p>
+            </div>
+            <div className={styles.approachCard}>
+              <h3>For Acquisition Targets</h3>
+              <p>
+                Modernize operations through technology and AI. Stable transition with operational expertise. Access to enterprise-grade tools and practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.legal}>
+        <div className="container">
+          <div className={styles.legalContent}>
+            <p>
+              <strong>Legal Entity:</strong> ForceX Consulting LLC<br/>
+              <strong>DBA:</strong> Force Multiply Consulting
+            </p>
           </div>
         </div>
       </section>
@@ -128,8 +150,7 @@ export default function About() {
         <div className="container">
           <h2>Work with us</h2>
           <p>
-            If you need strategic Salesforce architecture, AI automation, or technical leadership
-            that multiplies your team's impact, let's talk.
+            Whether you're an enterprise client, a potential team member, or a business owner, let's talk about how Force Multiply can help.
           </p>
           <a href="/contact" className={styles.ctaButton}>
             Get in Touch
