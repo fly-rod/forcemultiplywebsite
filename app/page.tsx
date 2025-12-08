@@ -7,109 +7,141 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <div className={styles.tagline}>Clean. Confident. Fast.</div>
-            <h1>Multiply the force you already have.</h1>
+            <h1>Innovate through AI and technology. Build wealth through ownership.</h1>
             <p className={styles.heroSubtitle}>
-              We don't rebuild your team. We amplify it. Strategic Salesforce architecture,
-              AI automation, and governance that gets your enterprise moving faster.
+              Force Multiply is a hybrid consulting and investment firm helping organizations succeed through AI adoption and modern cloud technologies—while creating ownership pathways for our team.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
-                Talk to Us
+                Get in Touch
               </Link>
-              <Link href="/how-we-work" className={styles.buttonSecondary}>
-                Start an Assessment
+              <Link href="/services" className={styles.buttonSecondary}>
+                Our Services
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.subHero}>
+      <section className={styles.flywheel}>
         <div className="container">
-          <div className={styles.subHeroContent}>
-            <h2>What we do</h2>
-            <p>
-              Force Multiply partners with enterprise leaders to modernize Salesforce
-              architecture, implement agentic AI, and unlock velocity through better
-              governance and delivery practices. Not another consulting deck. Real improvements. Fast.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.valueProps}>
-        <div className="container">
-          <div className={styles.propsGrid}>
-            <div className={styles.propCard}>
-              <h3>We multiply impact</h3>
+          <h2>The Force Multiply Flywheel</h2>
+          <p className={styles.flywheelIntro}>
+            We operate differently. Our consulting work funds small business acquisitions. Those businesses create stability and ownership opportunities for our team. Our consultants become operators—building wealth beyond billable hours.
+          </p>
+          <div className={styles.flywheelGrid}>
+            <div className={styles.flywheelCard}>
+              <div className={styles.cardNumber}>01</div>
+              <h3>Consulting Revenue</h3>
               <p>
-                Your team knows your business. We bring architecture, AI strategy,
-                and modern delivery practices that make them exponentially more effective.
+                High-impact enterprise consulting in AI, Salesforce, and cloud platforms funds strategic acquisitions
               </p>
             </div>
-            <div className={styles.propCard}>
-              <h3>We move fast</h3>
+            <div className={styles.flywheelCard}>
+              <div className={styles.cardNumber}>02</div>
+              <h3>Small Business Acquisitions</h3>
               <p>
-                Interviews, not workshops. Playbooks, not decks. Clear recommendations
-                in weeks, not months. We get stuff done.
+                We acquire and operate service businesses generating $500K–$5M in revenue
               </p>
             </div>
-            <div className={styles.propCard}>
-              <h3>We embed, not lecture</h3>
+            <div className={styles.flywheelCard}>
+              <div className={styles.cardNumber}>03</div>
+              <h3>Portfolio Operations</h3>
               <p>
-                Fractional engineering leadership. Hands-on pairing. Architecture reviews.
-                We work with your team, not above them.
+                Portfolio companies provide cash flow stability and equity opportunities for our team
               </p>
             </div>
-            <div className={styles.propCard}>
-              <h3>We leave you stronger</h3>
+            <div className={styles.flywheelCard}>
+              <div className={styles.cardNumber}>04</div>
+              <h3>Consultant-to-Owner Path</h3>
               <p>
-                Every engagement builds capability. Better patterns, clearer governance,
-                repeatable processes your team can own.
+                Team members build long-term wealth through ownership, not just hourly billing
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.problems}>
+      <section className={styles.services}>
         <div className="container">
-          <h2>Problems we solve</h2>
-          <div className={styles.problemsList}>
-            <div className={styles.problemItem}>
-              <span className={styles.problemIcon}>→</span>
-              <p>Your Salesforce org is a mess of technical debt and nobody knows how to fix it</p>
+          <h2>What we do</h2>
+          <div className={styles.servicesGrid}>
+            <div className={styles.serviceCard}>
+              <h3>Enterprise Consulting</h3>
+              <p>
+                AI strategy and implementation, Salesforce optimization, cloud architecture across Azure, AWS, and GCP. We help enterprise clients unlock value from their technology investments.
+              </p>
+              <Link href="/services" className={styles.serviceLink}>
+                View Services →
+              </Link>
             </div>
-            <div className={styles.problemItem}>
-              <span className={styles.problemIcon}>→</span>
-              <p>AI pilots are stuck in proof-of-concept and you need production-grade automation</p>
+            <div className={styles.serviceCard}>
+              <h3>Small Business Ventures</h3>
+              <p>
+                We acquire, modernize, and operate service-based businesses—improving operations through CRM, automation, and AI while creating ownership opportunities for our team.
+              </p>
+              <Link href="/ventures" className={styles.serviceLink}>
+                Learn More →
+              </Link>
             </div>
-            <div className={styles.problemItem}>
-              <span className={styles.problemIcon}>→</span>
-              <p>Data sits in silos and you need unified architecture across Salesforce, cloud, and legacy systems</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.differentiators}>
+        <div className="container">
+          <h2>Why Force Multiply is different</h2>
+          <div className={styles.diffGrid}>
+            <div className={styles.diffCard}>
+              <h3>Practitioners, not just advisors</h3>
+              <p>
+                We operate real businesses, not just advise on them. Our team understands what it takes to run operations because we do it every day.
+              </p>
             </div>
-            <div className={styles.problemItem}>
-              <span className={styles.problemIcon}>→</span>
-              <p>Releases are slow, brittle, and your DevOps maturity is years behind</p>
+            <div className={styles.diffCard}>
+              <h3>Ownership pathways</h3>
+              <p>
+                Consultants can build wealth through equity in portfolio companies—creating career paths beyond traditional consulting.
+              </p>
             </div>
-            <div className={styles.problemItem}>
-              <span className={styles.problemIcon}>→</span>
-              <p>Your team is underwater and you need senior technical leadership, not another junior consultant</p>
+            <div className={styles.diffCard}>
+              <h3>Hands-on delivery</h3>
+              <p>
+                High-impact, practical solutions rather than theoretical frameworks. We deliver results, not just recommendations.
+              </p>
             </div>
+            <div className={styles.diffCard}>
+              <h3>Trusted partners</h3>
+              <p>
+                Building long-term relationships with clients and team members. We're here for the long haul.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.industries}>
+        <div className="container">
+          <h2>Industries we serve</h2>
+          <div className={styles.industriesList}>
+            <div className={styles.industry}>Financial Services</div>
+            <div className={styles.industry}>Wealth Management</div>
+            <div className={styles.industry}>Investment Banking & Private Equity</div>
+            <div className={styles.industry}>Payments & Banking</div>
+            <div className={styles.industry}>Healthcare</div>
+            <div className={styles.industry}>State & Local Government</div>
           </div>
         </div>
       </section>
 
       <section className={styles.cta}>
         <div className="container">
-          <h2>Let's talk</h2>
+          <h2>Ready to work together?</h2>
           <p>
-            Book a 30-minute intro call. We'll listen, ask good questions,
-            and tell you honestly if we can help.
+            Whether you're an enterprise client looking for strategic technology consulting or a business owner considering a transition, let's talk.
           </p>
           <Link href="/contact" className={styles.buttonPrimary}>
-            Schedule a Call
+            Get in Touch
           </Link>
         </div>
       </section>

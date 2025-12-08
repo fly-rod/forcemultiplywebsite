@@ -3,7 +3,7 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
   padding: 8rem 0 6rem;
   text-align: center;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(212, 165, 116, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -27,29 +27,21 @@
   z-index: 1;
 }
 
-.tagline {
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.5rem;
-}
-
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 .heroSubtitle {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   max-width: 750px;
   margin: 0 auto 3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
+  font-weight: var(--font-weight-regular);
 }
 
 .heroButtons {
@@ -60,20 +52,19 @@
 }
 
 .buttonPrimary {
-  background: var(--accent);
-  color: white;
+  background: white;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: 1rem;
   transition: all 0.2s ease;
   display: inline-block;
 }
 
 .buttonPrimary:hover {
-  background: var(--accent-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 .buttonSecondary {
@@ -81,127 +72,224 @@
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   transition: all 0.2s ease;
   display: inline-block;
 }
 
 .buttonSecondary:hover {
-  border-color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.subHero {
-  padding: 5rem 0;
-  background: var(--bg-white);
-  border-bottom: 1px solid var(--border);
+/* Flywheel Section */
+.flywheel {
+  padding: 6rem 0;
+  background: var(--color-bg-alt);
 }
 
-.subHeroContent {
-  max-width: 800px;
-  margin: 0 auto;
+.flywheel h2 {
   text-align: center;
-}
-
-.subHeroContent h2 {
-  color: var(--text-primary);
+  color: var(--color-text);
   margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
-.subHeroContent p {
+.flywheelIntro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
   font-size: 1.2rem;
-  line-height: 1.8;
-  color: var(--text-secondary);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
 }
 
-.valueProps {
-  padding: 5rem 0;
-  background: var(--bg-warm);
-}
-
-.propsGrid {
+.flywheelGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.propCard {
-  background: var(--bg-white);
+.flywheelCard {
+  background: var(--color-bg);
   padding: 2.5rem;
   border-radius: 8px;
   box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
   border: 1px solid var(--border);
+  transition: all 0.3s ease;
 }
 
-.propCard:hover {
+.flywheelCard:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  border-color: var(--color-accent);
 }
 
-.propCard h3 {
-  color: var(--text-primary);
+.cardNumber {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  letter-spacing: 0.05em;
 }
 
-.propCard p {
-  color: var(--text-secondary);
-  line-height: 1.7;
+.flywheelCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.flywheelCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
   font-size: 1rem;
 }
 
-.problems {
-  padding: 5rem 0;
-  background: var(--bg-white);
+/* Services Section */
+.services {
+  padding: 6rem 0;
+  background: var(--color-bg);
 }
 
-.problems h2 {
+.services h2 {
   text-align: center;
+  color: var(--color-text);
   margin-bottom: 3rem;
-  color: var(--text-primary);
+  font-size: 2.5rem;
 }
 
-.problemsList {
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  background: var(--color-bg-alt);
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+.serviceCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.serviceCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.serviceLink {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.serviceLink:hover {
+  color: var(--color-primary);
+}
+
+/* Differentiators Section */
+.differentiators {
+  padding: 6rem 0;
+  background: var(--color-bg-alt);
+}
+
+.differentiators h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.diffGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.diffCard {
+  background: var(--color-bg);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+.diffCard h3 {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.diffCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Industries Section */
+.industries {
+  padding: 6rem 0;
+  background: var(--color-bg);
+}
+
+.industries h2 {
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.industriesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
-.problemItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: var(--bg-warm);
-  border-radius: 8px;
-  border-left: 3px solid var(--accent);
+.industry {
+  background: var(--color-bg-alt);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
 }
 
-.problemIcon {
-  color: var(--accent);
-  font-size: 1.5rem;
-  font-weight: 600;
-  flex-shrink: 0;
+.industry:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: white;
 }
 
-.problemItem p {
-  margin: 0;
-  color: var(--text-primary);
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
+/* CTA Section */
 .cta {
-  padding: 5rem 0;
-  background: var(--primary);
+  padding: 6rem 0;
+  background: var(--color-primary);
   color: white;
   text-align: center;
 }
@@ -209,44 +297,53 @@
 .cta h2 {
   color: white;
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 .cta p {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 2.5rem;
   color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 0 3rem;
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .heroSubtitle {
     font-size: 1.1rem;
   }
 
-  .subHero,
-  .valueProps,
-  .problems,
+  .flywheel,
+  .services,
+  .differentiators,
+  .industries,
   .cta {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
 
-  .propsGrid {
+  .flywheel h2,
+  .services h2,
+  .differentiators h2,
+  .industries h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .flywheelGrid,
+  .diffGrid {
     grid-template-columns: 1fr;
   }
 
-  .problemItem {
-    padding: 1.25rem;
-  }
-
-  .problemItem p {
-    font-size: 1rem;
+  .servicesGrid {
+    grid-template-columns: 1fr;
   }
 }
