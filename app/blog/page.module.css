@@ -101,10 +101,11 @@
 .tag {
   font-size: 0.75rem;
   padding: 0.25rem 0.75rem;
-  background: var(--primary-light);
-  color: var(--primary-color);
+  background: var(--bg-warm);
+  color: var(--primary);
   border-radius: 20px;
   font-weight: 500;
+  border: 1px solid var(--border);
 }
 
 @media (max-width: 768px) {
