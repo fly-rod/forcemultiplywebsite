@@ -1,0 +1,205 @@
+'use client';
+
+import { useState, FormEvent } from 'react';
+import styles from './page.module.css';
+
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    service: '',
+    message: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate form submission (in production, connect to your API)
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        service: '',
+        message: '',
+      });
+    }, 1000);
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  return (
+    <div className={styles.contactPage}>
+      <section className={styles.header}>
+        <div className="container">
+          <h1>Let's Talk</h1>
+          <p className={styles.subtitle}>
+            Book a 30-minute intro call. No sales pitch. Just honest conversation about your challenges.
+          </p>
+        </div>
+      </section>
+
+      <section className={styles.contactSection}>
+        <div className="container">
+          <div className={styles.contactContent}>
+            <div className={styles.contactInfo}>
+              <h2>What happens next</h2>
+              <p>
+                Fill out the form or email directly at{' '}
+                <a href="mailto:ward@forcemultiply.com" className={styles.emailLink}>
+                  ward@forcemultiply.com
+                </a>
+              </p>
+
+              <div className={styles.infoItems}>
+                <div className={styles.infoItem}>
+                  <h3>1. We'll respond fast</h3>
+                  <p>
+                    Usually within 24 hours. We'll set up a 30-minute intro call at a time that works for you.
+                  </p>
+                </div>
+
+                <div className={styles.infoItem}>
+                  <h3>2. We'll listen first</h3>
+                  <p>
+                    No canned pitch. We ask questions, understand your situation, and figure out if we can actually help.
+                  </p>
+                </div>
+
+                <div className={styles.infoItem}>
+                  <h3>3. We'll be honest</h3>
+                  <p>
+                    If we're not the right fit, we'll tell you. If we can help, we'll explain exactly how and what it looks like.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.formContainer}>
+              {submitted ? (
+                <div className={styles.successMessage}>
+                  <h3>Message received</h3>
+                  <p>
+                    We'll review your info and reach out within 24 hours to schedule a call.
+                  </p>
+                  <p>
+                    Talk soon.
+                  </p>
+                  <button
+                    onClick={() => setSubmitted(false)}
+                    className={styles.resetButton}
+                  >
+                    Send Another Message
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className={styles.form}>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="name">Full Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="email">Email Address *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="company">Company</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="service">What are you interested in?</label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select an option</option>
+                      <option value="salesforce">Salesforce Modernization & Architecture</option>
+                      <option value="ai">AI / Automation (Agentic & Workflow)</option>
+                      <option value="data">Data Cloud & Integration Strategy</option>
+                      <option value="devops">Governance, DevOps, & Team Enablement</option>
+                      <option value="leadership">Fractional Engineering Leadership</option>
+                      <option value="assessment">Start with an Assessment</option>
+                      <option value="other">Not sure / Other</option>
+                    </select>
+                  </div>
+
+                  <div className={styles.formGroup}>
+                    <label htmlFor="message">Message *</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={6}
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className={styles.submitButton}
+                    disabled={loading}
+                  >
+                    {loading ? 'Sending...' : 'Send Message'}
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

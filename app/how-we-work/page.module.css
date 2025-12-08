@@ -1,0 +1,258 @@
+.howWeWorkPage {
+  min-height: calc(100vh - 80px);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.method {
+  padding: 5rem 0;
+  background: var(--bg-warm);
+}
+
+.methodIntro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.methodIntro h2 {
+  margin-bottom: 1.5rem;
+}
+
+.methodIntro p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.phases {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.phase {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  background: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.phase:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.phaseNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.3;
+  line-height: 1;
+  padding-top: 0.25rem;
+}
+
+.phaseContent h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.phaseContent p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.phaseDetails {
+  background: var(--bg-warm);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.phaseDetails strong {
+  color: var(--text-primary);
+}
+
+.approach {
+  padding: 5rem 0;
+  background: var(--bg-white);
+}
+
+.approach h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.differentiators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.differentiator {
+  padding: 2.5rem;
+  background: var(--bg-warm);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.differentiator:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.differentiator h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.differentiator p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.expectations {
+  padding: 5rem 0;
+  background: var(--bg-warm);
+}
+
+.expectations h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.expectationsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.expectationItem {
+  background: var(--bg-white);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.expectationItem h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.expectationItem p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cta {
+  padding: 5rem 0;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButton {
+  background: var(--accent);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .method,
+  .approach,
+  .expectations,
+  .cta {
+    padding: 3rem 0;
+  }
+
+  .phase {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .phaseNumber {
+    font-size: 2rem;
+  }
+
+  .differentiators,
+  .expectationsList {
+    grid-template-columns: 1fr;
+  }
+}

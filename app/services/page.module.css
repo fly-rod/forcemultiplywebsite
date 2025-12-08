@@ -1,0 +1,242 @@
+.servicesPage {
+  min-height: calc(100vh - 80px);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.servicesSection {
+  padding: 5rem 0;
+  background: var(--bg-warm);
+}
+
+.serviceBlock {
+  background: var(--bg-white);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.serviceBlock:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.serviceHeader {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--bg-warm);
+}
+
+.serviceHeader h2 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.serviceDescription {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.serviceDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.detailColumn h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.detailColumn p {
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.deliverables {
+  background: var(--bg-warm);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+.deliverables h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.deliverables ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.deliverables li {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.deliverables li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.engagement {
+  padding: 5rem 0;
+  background: var(--bg-white);
+  text-align: center;
+}
+
+.engagement h2 {
+  margin-bottom: 1.5rem;
+}
+
+.engagementIntro {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: var(--text-secondary);
+}
+
+.engagementOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.option {
+  background: var(--bg-warm);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.option h3 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.option p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cta {
+  padding: 5rem 0;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ctaButton {
+  background: var(--accent);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .servicesSection,
+  .engagement,
+  .cta {
+    padding: 3rem 0;
+  }
+
+  .serviceBlock {
+    padding: 2rem 1.5rem;
+  }
+
+  .serviceDetails {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .engagementOptions {
+    grid-template-columns: 1fr;
+  }
+}
