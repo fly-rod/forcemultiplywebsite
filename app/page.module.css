@@ -394,46 +394,81 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 0 2rem;
+    padding: 2.5rem 0 2rem;
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .heroSubtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .stats {
+    padding: 2rem 0;
+  }
+
+  .statsGrid {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .statNumber {
+    font-size: 2.5rem;
   }
 
   .sectionHeader h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .sectionHeader p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .servicesGrid,
   .industriesGrid,
   .diffGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceCard,
+  .industryCard,
+  .diffCard {
+    padding: 2rem 1.5rem;
   }
 
   .services,
   .industries,
   .differentiators {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .cta {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .cta h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
-  .statNumber {
-    font-size: 2.5rem;
+  .ctaButton {
+    width: 100%;
+    padding: 1rem 2rem;
   }
 }

@@ -381,30 +381,31 @@
 /* Responsive */
 @media (max-width: 768px) {
   .header {
-    padding: 4rem 0 3rem;
+    padding: 3rem 0 2rem;
   }
 
   .header h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .subtitle {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .path,
   .why,
   .roles,
   .team {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .sectionHeader h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .sectionHeader p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .pathGrid,
@@ -412,18 +413,32 @@
   .rolesGrid,
   .teamGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .pathCard,
+  .whyCard,
+  .roleCard,
+  .teamCard {
+    padding: 2rem 1.5rem;
   }
 
   .roleHeader {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
   }
 
   .cta {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .cta h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 1rem 2rem;
   }
 }

@@ -308,42 +308,50 @@
 /* Responsive */
 @media (max-width: 768px) {
   .header {
-    padding: 4rem 0 3rem;
+    padding: 3rem 0 2rem;
   }
 
   .header h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .subtitle {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .mainServices,
   .industries,
   .approach {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .serviceCards,
   .industryGrid,
   .approachGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .bigCard,
+  .indCard,
+  .approachCard {
+    padding: 2rem 1.5rem;
   }
 
   .sectionHeader h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .sectionHeader p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .cta {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .cta h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
