@@ -3,41 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
   const pathname = usePathname();
-  const [logoSrc, setLogoSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    // Check for logo files in order of preference
-    const checkLogo = async (path: string) => {
-      try {
-        const response = await fetch(path, { method: 'HEAD' });
-        return response.ok;
-      } catch {
-        return false;
-      }
-    };
-
-    const findLogo = async () => {
-      const logoOptions = [
-        '/resources/logos/logo.svg',
-        '/resources/logos/logo.png',
-      ];
-
-      for (const logo of logoOptions) {
-        const exists = await checkLogo(logo);
-        if (exists) {
-          setLogoSrc(logo);
-          return;
-        }
-      }
-    };
-
-    findLogo();
-  }, []);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -48,24 +19,26 @@ export default function Navigation() {
     { href: '/contact', label: 'Contact' },
   ];
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className={styles.nav}>
       <div className="container">
         <div className={styles.navContent}>
-          <Link href="/" className={styles.logo}>
-            {logoSrc ? (
-              <Image
-                src={logoSrc}
-                alt="Force Multiply"
-                width={180}
-                height={40}
-                className={styles.logoImage}
-                priority
-              />
-            ) : (
-              'Force Multiply'
-            )}
+          <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
+            <Image
+              src="/resources/assets/fm_logo_force_multiply_4.png"
+              alt="Force Multiply"
+              width={180}
+              height={40}
+              className={styles.logoImage}
+              priority
+            />
           </Link>
+
+          {/* Desktop Navigation */}
           <ul className={styles.navLinks}>
             {navItems.map((item) => (
               <li key={item.href}>
@@ -78,8 +51,45 @@ export default function Navigation() {
               </li>
             ))}
           </ul>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            className={`${styles.hamburger} ${mobileMenuOpen ? styles.hamburgerOpen : ''}`}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {/* Mobile Menu */}
+          <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+            <ul className={styles.mobileNavLinks}>
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={pathname === item.href ? styles.active : ''}
+                    onClick={closeMobileMenu}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div
+          className={styles.mobileOverlay}
+          onClick={closeMobileMenu}
+        />
+      )}
     </nav>
   );
 }

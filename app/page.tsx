@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -54,6 +55,9 @@ export default function Home() {
           </div>
           <div className={styles.servicesGrid}>
             <div className={`${styles.serviceCard} scroll-animate hover-lift`}>
+              <div className={styles.serviceIcon}>
+                <Icon name="ai-brain" size={48} />
+              </div>
               <h3>AI Strategy & Implementation</h3>
               <p>
                 Production-ready AI solutions that deliver real business value. Strategy, implementation, and integration.
@@ -63,6 +67,9 @@ export default function Home() {
               </Link>
             </div>
             <div className={`${styles.serviceCard} scroll-animate hover-lift animate-delay-2`}>
+              <div className={styles.serviceIcon}>
+                <Icon name="cloud" size={48} />
+              </div>
               <h3>Cloud & Platform</h3>
               <p>
                 Salesforce optimization, Azure, AWS, and GCP. We help you get more from your existing investments.
@@ -72,6 +79,9 @@ export default function Home() {
               </Link>
             </div>
             <div className={`${styles.serviceCard} scroll-animate hover-lift animate-delay-3`}>
+              <div className={styles.serviceIcon}>
+                <Icon name="briefcase" size={48} />
+              </div>
               <h3>Technical Advisory</h3>
               <p>
                 Architecture, program management, and strategic guidance for complex technology initiatives.
@@ -128,21 +138,33 @@ export default function Home() {
           </div>
           <div className={styles.diffGrid}>
             <div className={`${styles.diffCard} scroll-animate-scale`}>
+              <div className={styles.diffIcon}>
+                <Icon name="code" size={32} />
+              </div>
               <div className={styles.diffNumber}>01</div>
               <h3>Practitioners, not theorists</h3>
               <p>We operate real businesses. We know what works in production.</p>
             </div>
             <div className={`${styles.diffCard} scroll-animate-scale animate-delay-1`}>
+              <div className={styles.diffIcon}>
+                <Icon name="lightning" size={32} />
+              </div>
               <div className={styles.diffNumber}>02</div>
               <h3>Speed matters</h3>
               <p>Fast onboarding. Quick wins. Iterative delivery.</p>
             </div>
             <div className={`${styles.diffCard} scroll-animate-scale animate-delay-2`}>
+              <div className={styles.diffIcon}>
+                <Icon name="target" size={32} />
+              </div>
               <div className={styles.diffNumber}>03</div>
               <h3>Ownership mindset</h3>
               <p>We're invested in outcomes, not just hours billed.</p>
             </div>
             <div className={`${styles.diffCard} scroll-animate-scale animate-delay-3`}>
+              <div className={styles.diffIcon}>
+                <Icon name="message" size={32} />
+              </div>
               <div className={styles.diffNumber}>04</div>
               <h3>No jargon</h3>
               <p>Clear communication. Honest assessments. Real results.</p>

@@ -182,6 +182,24 @@
   overflow: hidden;
 }
 
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover .serviceIcon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+
 .serviceCard::before {
   content: '';
   position: absolute;
@@ -292,6 +310,25 @@
   border-radius: 12px;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+}
+
+.diffIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.diffCard:hover .diffIcon {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: white;
+  transform: scale(1.1);
 }
 
 .diffCard:hover {

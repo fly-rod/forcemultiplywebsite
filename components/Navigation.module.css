@@ -59,9 +59,143 @@
   border-bottom-color: var(--accent);
 }
 
-@media (max-width: 768px) {
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110;
+  transition: all 0.3s ease;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform-origin: center;
+}
+
+.hamburger:hover span {
+  background: var(--accent);
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 280px;
+  height: calc(100vh - 80px);
+  background: var(--bg-white);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 105;
+  overflow-y: auto;
+}
+
+.mobileMenuOpen {
+  transform: translateX(0);
+}
+
+.mobileNavLinks {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.mobileNavLinks li {
+  border-bottom: 1px solid var(--border);
+}
+
+.mobileNavLinks a {
+  display: block;
+  padding: 1.25rem 2rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.mobileNavLinks a:hover,
+.mobileNavLinks a.active {
+  color: var(--primary);
+  background: var(--bg-warm);
+  padding-left: 2.5rem;
+}
+
+.mobileNavLinks a.active {
+  border-left: 4px solid var(--accent);
+}
+
+/* Mobile Overlay */
+.mobileOverlay {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 968px) {
   .navLinks {
-    gap: 1rem;
-    font-size: 0.9rem;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .mobileOverlay {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    max-height: 32px;
+  }
+
+  .navContent {
+    padding: 1rem 0;
   }
 }

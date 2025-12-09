@@ -8,6 +8,10 @@ import './animations.css';
 export const metadata: Metadata = {
   title: 'Force Multiply',
   description: 'Enterprise technology consulting for financial services. AI, Cloud, and Salesforce solutions that deliver value.',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/resources/assets/fm_icon_1.png',
+  },
 };
 
 export default function RootLayout({

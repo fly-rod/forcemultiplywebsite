@@ -44,6 +44,85 @@ The Force Multiply logo features a unique icon that combines the letters F and M
 
 Keep typography clean and readable. Nothing fussy.
 
+### Iconography System
+
+Force Multiply uses a custom, consistent icon system throughout the site. Icons are implemented via the `<Icon />` component and use inline SVG for performance and customization.
+
+**Icon Design Principles:**
+- **Simple & Clean:** Line-based icons with 2px stroke weight
+- **Consistent Size:** Icons come in standard sizes: 24px (default), 32px, 48px
+- **Color Flexible:** Icons inherit color from their context or can be customized
+- **Meaningful:** Each icon directly represents its associated concept
+
+**Available Icons & Usage:**
+
+| Icon Name | Use Case | Where Used |
+|-----------|----------|------------|
+| `ai-brain` | AI & Machine Learning services | Services section, AI strategy |
+| `cloud` | Cloud platforms & infrastructure | Services section, cloud offerings |
+| `rocket` | Speed, launch, acceleration | Speed/velocity messaging |
+| `code` | Development, practitioners | Differentiators, technical work |
+| `database` | Data management, integration | Data services |
+| `lightning` | Speed, fast delivery | Differentiators - Speed matters |
+| `target` | Goals, outcomes, precision | Differentiators - Ownership |
+| `shield` | Security, compliance, trust | Financial services, RegTech |
+| `handshake` | Partnership, collaboration | Client relationships |
+| `check-circle` | Validation, success, quality | Completed items, benefits |
+| `users` | Team, people, collaboration | About, team sections |
+| `briefcase` | Business, consulting, advisory | Advisory services |
+| `message` | Communication, clarity | Differentiators - No jargon |
+| `star` | Premium, excellence | Testimonials, highlights |
+| `chart` | Analytics, growth, metrics | Data & reporting |
+| `arrow-right` | Navigation, next step | Links, CTAs |
+
+**Implementation:**
+
+```tsx
+import Icon from '@/components/Icon';
+
+// Basic usage
+<Icon name="ai-brain" size={48} />
+
+// With custom className
+<Icon name="cloud" size={32} className="custom-class" />
+
+// Default size is 24px
+<Icon name="lightning" />
+```
+
+**Icon Container Styling:**
+
+Icons are typically displayed in colored containers:
+
+```css
+.iconContainer {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* On hover */
+.iconContainer:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+```
+
+**Adding New Icons:**
+
+To add new icons to the system:
+1. Open `/components/Icon.tsx`
+2. Add new SVG to the `icons` object
+3. Use 24x24 viewBox with 2px stroke
+4. Follow line-based design style
+5. Document in this guide
+
 ---
 
 ## Services
