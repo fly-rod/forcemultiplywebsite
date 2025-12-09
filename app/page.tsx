@@ -30,16 +30,16 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.statsGrid} stagger-children`}>
             <div className={`${styles.statCard} scroll-animate-scale`}>
-              <div className={styles.statNumber}>$5M+</div>
-              <div className={styles.statLabel}>Portfolio Revenue</div>
-            </div>
-            <div className={`${styles.statCard} scroll-animate-scale`}>
               <div className={styles.statNumber}>10+</div>
               <div className={styles.statLabel}>Years Experience</div>
             </div>
             <div className={`${styles.statCard} scroll-animate-scale`}>
+              <div className={styles.statNumber}>3</div>
+              <div className={styles.statLabel}>Core Platforms</div>
+            </div>
+            <div className={`${styles.statCard} scroll-animate-scale`}>
               <div className={styles.statNumber}>100%</div>
-              <div className={styles.statLabel}>Client Focused</div>
+              <div className={styles.statLabel}>Financial Services</div>
             </div>
           </div>
         </div>
