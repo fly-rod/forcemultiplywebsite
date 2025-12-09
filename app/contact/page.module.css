@@ -134,7 +134,8 @@
 }
 
 .submitButton {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  background-size: 200% 200%;
   color: white;
   padding: 1rem 2rem;
   border-radius: 6px;
@@ -142,10 +143,10 @@
   font-size: 1rem;
   transition: all 0.2s ease;
   margin-top: 0.5rem;
+  animation: gradientShift 6s ease infinite;
 }
 
 .submitButton:hover:not(:disabled) {
-  background: var(--accent-dark);
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
 }

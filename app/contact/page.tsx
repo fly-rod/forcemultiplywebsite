@@ -58,7 +58,7 @@ export default function Contact() {
       <section className={styles.contactSection}>
         <div className="container">
           <div className={styles.contactContent}>
-            <div className={styles.contactInfo}>
+            <div className={`${styles.contactInfo} scroll-animate-left`}>
               <h2>What happens next</h2>
               <p>
                 Fill out the form or email directly at{' '}
@@ -68,21 +68,21 @@ export default function Contact() {
               </p>
 
               <div className={styles.infoItems}>
-                <div className={styles.infoItem}>
+                <div className={`${styles.infoItem} scroll-animate`}>
                   <h3>1. We'll respond fast</h3>
                   <p>
                     Usually within 24 hours. We'll set up a 30-minute intro call at a time that works for you.
                   </p>
                 </div>
 
-                <div className={styles.infoItem}>
+                <div className={`${styles.infoItem} scroll-animate animate-delay-1`}>
                   <h3>2. We'll listen first</h3>
                   <p>
                     No canned pitch. We ask questions, understand your situation, and figure out if we can actually help.
                   </p>
                 </div>
 
-                <div className={styles.infoItem}>
+                <div className={`${styles.infoItem} scroll-animate animate-delay-2`}>
                   <h3>3. We'll be honest</h3>
                   <p>
                     If we're not the right fit, we'll tell you. If we can help, we'll explain exactly how and what it looks like.
@@ -91,7 +91,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className={styles.formContainer}>
+            <div className={`${styles.formContainer} scroll-animate-right`}>
               {submitted ? (
                 <div className={styles.successMessage}>
                   <h3>Message received</h3>
@@ -189,7 +189,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className={styles.submitButton}
+                    className={`${styles.submitButton} hover-lift btn-press`}
                     disabled={loading}
                   >
                     {loading ? 'Sending...' : 'Send Message'}

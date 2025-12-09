@@ -42,7 +42,6 @@ export default function Navigation() {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
-    { href: '/ventures', label: 'Ventures' },
     { href: '/careers', label: 'Careers' },
     { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blog' },

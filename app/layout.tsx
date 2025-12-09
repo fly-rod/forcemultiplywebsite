@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import ScrollAnimations from '@/components/ScrollAnimations';
 import './globals.css';
+import './animations.css';
 
 export const metadata: Metadata = {
-  title: 'Force Multiply Consulting',
-  description: 'Amplifying your business potential through expert consulting services',
+  title: 'Force Multiply',
+  description: 'Enterprise technology consulting for financial services. AI, Cloud, and Salesforce solutions that deliver value.',
 };
 
 export default function RootLayout({
@@ -16,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ScrollAnimations />
         <Navigation />
         <main>{children}</main>
         <Footer />

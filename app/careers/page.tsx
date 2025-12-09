@@ -11,7 +11,7 @@ export default function Careers() {
             <div className={styles.tag}>Careers</div>
             <h1>Join Force Multiply</h1>
             <p className={styles.subtitle}>
-              Work on enterprise technology projects and portfolio business operations.
+              Work on high-impact technology projects for financial services firms.
             </p>
           </div>
         </div>
@@ -20,30 +20,30 @@ export default function Careers() {
       {/* Career Path */}
       <section className={styles.path}>
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Career paths</h2>
-            <p>Opportunities across enterprise services and portfolio operations</p>
+            <p>Opportunities across technical consulting and leadership</p>
           </div>
           <div className={styles.pathGrid}>
-            <div className={styles.pathCard}>
+            <div className={`${styles.pathCard} scroll-animate-scale`}>
               <div className={styles.pathNumber}>01</div>
-              <h3>Enterprise Services</h3>
+              <h3>Consulting</h3>
               <p>AI, Salesforce, and cloud platform projects for financial services clients.</p>
             </div>
-            <div className={styles.pathCard}>
+            <div className={`${styles.pathCard} scroll-animate-scale animate-delay-1`}>
               <div className={styles.pathNumber}>02</div>
               <h3>Technical Leadership</h3>
               <p>Architecture, strategy, and technical program management.</p>
             </div>
-            <div className={styles.pathCard}>
+            <div className={`${styles.pathCard} scroll-animate-scale animate-delay-2`}>
               <div className={styles.pathNumber}>03</div>
-              <h3>Portfolio Operations</h3>
-              <p>Manage and improve acquired service businesses.</p>
+              <h3>Client Engagement</h3>
+              <p>Lead client relationships and drive business development.</p>
             </div>
-            <div className={styles.pathCard}>
+            <div className={`${styles.pathCard} scroll-animate-scale animate-delay-3`}>
               <div className={styles.pathNumber}>04</div>
               <h3>Growth & Development</h3>
-              <p>Opportunities to grow with the business and take on leadership roles.</p>
+              <p>Leadership opportunities as the firm grows.</p>
             </div>
           </div>
         </div>
@@ -52,10 +52,10 @@ export default function Careers() {
       {/* Why Different */}
       <section className={styles.why}>
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Why we're different</h2>
           </div>
-          <div className={styles.whyGrid}>
+          <div className={`${styles.whyGrid} stagger-children`}>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>01</div>
               <h3>Real Impact</h3>
@@ -68,8 +68,8 @@ export default function Careers() {
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>03</div>
-              <h3>Diverse Experience</h3>
-              <p>Enterprise technology and business operations.</p>
+              <h3>Diverse Projects</h3>
+              <p>Work across AI, cloud, and platform technologies.</p>
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>04</div>
@@ -83,11 +83,11 @@ export default function Careers() {
       {/* Roles */}
       <section className={styles.roles}>
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Current opportunities</h2>
           </div>
           <div className={styles.rolesGrid}>
-            <div className={styles.roleCard}>
+            <div className={`${styles.roleCard} scroll-animate hover-lift`}>
               <div className={styles.roleHeader}>
                 <h3>Salesforce Consultant</h3>
                 <span className={styles.roleTrack}>Consulting</span>
@@ -99,7 +99,7 @@ export default function Careers() {
                 <span>Architecture</span>
               </div>
             </div>
-            <div className={styles.roleCard}>
+            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-1`}>
               <div className={styles.roleHeader}>
                 <h3>AI Solutions Architect</h3>
                 <span className={styles.roleTrack}>Consulting</span>
@@ -111,7 +111,7 @@ export default function Careers() {
                 <span>Architecture</span>
               </div>
             </div>
-            <div className={styles.roleCard}>
+            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-2`}>
               <div className={styles.roleHeader}>
                 <h3>Cloud Platform Engineer</h3>
                 <span className={styles.roleTrack}>Consulting</span>
@@ -123,16 +123,16 @@ export default function Careers() {
                 <span>DevOps</span>
               </div>
             </div>
-            <div className={styles.roleCard}>
+            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-3`}>
               <div className={styles.roleHeader}>
-                <h3>Portfolio Operations</h3>
-                <span className={styles.roleTrack}>Ventures</span>
+                <h3>Business Analyst</h3>
+                <span className={styles.roleTrack}>Consulting</span>
               </div>
-              <p>Manage portfolio companies. Path to equity ownership.</p>
+              <p>Analyze business processes and design solutions. 2-4 years experience.</p>
               <div className={styles.roleSkills}>
-                <span>Operations</span>
-                <span>P&L</span>
-                <span>Technology</span>
+                <span>Requirements</span>
+                <span>Process Design</span>
+                <span>Documentation</span>
               </div>
             </div>
           </div>
@@ -142,19 +142,19 @@ export default function Careers() {
       {/* What We Look For */}
       <section className={styles.team}>
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>What we look for</h2>
           </div>
-          <div className={styles.teamGrid}>
-            <div className={styles.teamCard}>
+          <div className={`${styles.teamGrid} stagger-children`}>
+            <div className={`${styles.teamCard} hover-lift`}>
               <h3>Practitioners</h3>
               <p>You build things, not just advise.</p>
             </div>
-            <div className={styles.teamCard}>
+            <div className={`${styles.teamCard} hover-lift`}>
               <h3>Business-minded</h3>
               <p>You connect tech to business outcomes.</p>
             </div>
-            <div className={styles.teamCard}>
+            <div className={`${styles.teamCard} hover-lift`}>
               <h3>Driven</h3>
               <p>You want to make an impact and grow.</p>
             </div>
@@ -165,12 +165,12 @@ export default function Careers() {
       {/* CTA */}
       <section className={styles.cta}>
         <div className="container">
-          <div className={styles.ctaContent}>
+          <div className={`${styles.ctaContent} scroll-animate-scale`}>
             <h2>Join us</h2>
             <p>
               Send your resume and tell us what interests you.
             </p>
-            <Link href="/contact" className={styles.ctaButton}>
+            <Link href="/contact" className={`${styles.ctaButton} hover-lift btn-press`}>
               Get in Touch
             </Link>
           </div>

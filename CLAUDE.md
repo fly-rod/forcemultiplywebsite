@@ -1,20 +1,12 @@
-# Force Multiply Consulting - Website Build Guide
+# Force Multiply - Website Build Guide
 
 ## Company Overview
 
-Force Multiply Consulting (FMC) is a hybrid consulting and investment firm that helps organizations innovate through business and technology consulting services centered on AI adoption and modern cloud technologies. What makes Force Multiply different is its dual focus: delivering high-impact consulting for enterprise clients while also acquiring and operating small businesses—creating ownership opportunities for consultants who want to build long-term wealth.
+Force Multiply is an enterprise technology consulting firm specializing in AI adoption, cloud platforms, and Salesforce optimization for financial services organizations. We deliver high-impact, hands-on solutions that unlock value from existing technology investments.
 
 ### Mission Statement
 
-In this AI revolution and highly competitive landscape, Force Multiply helps organizations innovate and succeed through business and technical consulting services centered on the adoption of artificial intelligence and modern cloud technologies. At the same time, we invest in our employees by enabling pathways to business acquisition and ownership—giving consultants the opportunity to build long-term wealth, support and operate portfolio companies with the use of AI, and grow as leaders.
-
-### The Flywheel Model
-
-Force Multiply operates on a flywheel effect:
-- Consulting revenue funds small-business acquisitions
-- Small-business cash flow stabilizes long-term economics
-- Employees build equity and career paths beyond hourly billing
-- Clients gain access to a consulting team who operate real businesses, not just advise on them
+In this AI revolution and highly competitive landscape, Force Multiply helps organizations innovate and succeed through business and technical consulting services centered on the adoption of artificial intelligence and modern cloud technologies. We're practitioners who deliver results, not theorists who write reports.
 
 ---
 
@@ -22,6 +14,8 @@ Force Multiply operates on a flywheel effect:
 
 ### Brand Personality
 Clean, confident, and fast—but still approachable. Professional without being corporate, strategic without being stuffy. The kind of brand that shows up prepared, gets to the point, and delivers. No jargon-heavy decks or overengineered frameworks—just people who know the platforms inside and out and help clients get more from what they've already invested in.
+
+Groundbreaking visual experience with modern animations, smooth interactions, and a polished, premium feel. Think Apple-level attention to detail with subtle motion that enhances rather than distracts.
 
 ### Logo
 The Force Multiply logo features a unique icon that combines the letters F and M into a single Braille-inspired dot pattern (4 dots). It's distinctive without being gimmicky.
@@ -56,51 +50,45 @@ Keep typography clean and readable. Nothing fussy.
 
 ### Enterprise Consulting Services
 
-**Cloud & Platform Implementation**
-- Salesforce implementation, optimization, and assessment
-- Azure cloud services and architecture
-- AWS implementation and migration
-- Google Cloud Platform solutions
-
 **AI Strategy & Implementation**
-- Applied AI implementations
-- AI adoption strategy
-- Practical AI solutions that deliver real business value
+- AI adoption strategy & roadmap
+- Applied AI solutions
+- Process automation
+- Integration & monitoring
+- Production-ready implementations that deliver value
+
+**Cloud & Platform**
+- Salesforce optimization & architecture
+- Azure, AWS, and GCP implementation
+- Cloud migration & setup
+- Multi-cloud strategy
+- Platform engineering
 
 **Technical Advisory**
-- Architecture reviews and optimization
-- Technical project and program management
-- Business systems analysis and operations design
-- Governance and team alignment
+- Architecture & design
+- Technical program management
+- Process optimization
+- Governance frameworks
+- Strategic guidance for complex initiatives
 
 ### Target Industries
-- Financial Services
-- Wealth Management
+
+**Financial Services Focus:**
+- Banking & Financial Institutions
+- Wealth & Asset Management
 - Investment Banking & Private Equity
-- Payments & Banking
-- Healthcare
-- State & Local Government
+- Payments & Fintech
+- Trading & Capital Markets
+- Compliance & RegTech
 
-### Small Business Acquisitions & Venture Operations
-
-Force Multiply identifies, acquires, and operates small businesses through:
-- Targeting service-based businesses generating $500K–$5M revenue
-- Acquiring majority stake positions
-- Improving operations through technology, CRM, automation, and AI
-- Assigning portfolio operators (FMC employees who gain equity)
-- Growing businesses into stable cash-producing assets
-
-**Target acquisition sectors:**
-- Home services (HVAC, plumbing, flooring, etc.)
-- B2B services
-- Local/regional services with outdated operations
+Deep domain knowledge where technology and compliance intersect. We understand the complexity of regulated environments.
 
 ---
 
 ## Leadership
 
 ### Ward Wood – Founder & CEO
-Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Ward ties together the consulting and small-business sides of the company, ensuring they support one another as Force Multiply grows.
+Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Deep technical expertise meets business operations—building systems that work in the real world.
 
 ---
 
@@ -108,39 +96,43 @@ Ward leads Force Multiply's vision and works directly with clients to shape stra
 
 ### Value Proposition
 Force Multiply is fundamentally different from traditional consulting firms because:
-1. **Practitioners, not just advisors** – The team operates real businesses, not just advises on them
-2. **Ownership pathways** – Consultants can build wealth through equity in portfolio companies
-3. **Hands-on delivery** – High-impact, practical solutions rather than theoretical frameworks
-4. **Trusted partners** – Building long-term relationships, not just selling hours
+1. **Practitioners** – We build and operate, not just advise
+2. **Fast delivery** – Tiger teams that move quickly and deliver results
+3. **Real impact** – Practical solutions that unlock value from existing investments
+4. **Long-term partners** – Building relationships, invested in outcomes
 
 ### Key Messages
 
 **For Enterprise Clients:**
+- "Move fast. Unlock value from AI and technology."
+- "Technology that moves as fast as you do"
 - "We help you get more out of your technology investment"
-- "Tiger team approach to unlocking value from your existing platforms"
-- "Hands-on partners who deliver, not just advise"
+- "Hands-on delivery, not endless decks"
 
 **For Potential Team Members:**
-- "Build wealth through ownership, not just billable hours"
-- "Consultant-to-Owner career path"
-- "Be part of a team that operates what we advise"
-
-**For Acquisition Targets:**
-- "Modernize operations through technology and AI"
-- "Stable transition with operational expertise"
-- "Access to enterprise-grade tools and practices"
+- "Work on projects that move the needle for clients"
+- "Build and operate, not just advise"
+- "Real impact and career growth"
+- "Learn, lead, and advance"
 
 ---
 
-## Website Structure Recommendations
+## Website Structure
 
 ### Primary Pages
 1. **Home** – Hero with value prop, services overview, credibility signals
-2. **Services** – Consulting services detail (Salesforce, Cloud, AI)
-3. **About** – Mission, leadership team, the Force Multiply model
-4. **Ventures** – Small business acquisition and portfolio approach
-5. **Careers** – The Consultant-to-Owner path, open positions
-6. **Contact** – Get in touch form
+2. **Services** – Detailed consulting services (AI, Cloud, Salesforce, Advisory)
+3. **About** – Mission, leadership, what sets us apart
+4. **Careers** – Career paths, open positions, what we look for
+5. **Contact** – Get in touch form
+6. **Blog** – Thought leadership and insights
+
+### Design Principles
+- **Motion matters** – Smooth scroll animations, fade-ins, parallax effects
+- **Premium feel** – Polished interactions, subtle micro-animations
+- **Fast & responsive** – Optimized performance, mobile-first
+- **Modern aesthetics** – Clean layouts, generous whitespace, sophisticated typography
+- **Groundbreaking UX** – Apple-level attention to detail, delightful interactions
 
 ### Tone Guidelines
 - Lead with confidence, not arrogance
@@ -154,6 +146,30 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 - Substance over flash
 - Real outcomes, not vague promises
 - Let the work speak for itself
+- Visual storytelling over text walls
+
+---
+
+## Animation & Interaction Guidelines
+
+### Scroll Animations
+- Fade in elements as they enter viewport
+- Slide up content with stagger delays
+- Parallax backgrounds for depth
+- Progress indicators for long pages
+
+### Micro-interactions
+- Smooth hover states with scale/transform
+- Button press feedback
+- Gradient animation on CTAs
+- Loading states and transitions
+- Card lift effects on hover
+
+### Performance
+- Use CSS transforms for 60fps animations
+- Intersection Observer for scroll triggers
+- Prefer opacity and transform over other properties
+- Reduce motion for accessibility preferences
 
 ---
 
@@ -168,35 +184,48 @@ Force Multiply is fundamentally different from traditional consulting firms beca
   --color-text-secondary: #64748b;
   --color-bg: #ffffff;
   --color-bg-alt: #f1f5f9;
-  
+  --border: #e2e8f0;
+
   --font-family: Arial, Helvetica, sans-serif;
   --font-weight-light: 300;
   --font-weight-regular: 400;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
 }
 ```
 
 ### Responsive Considerations
 - Mobile-first approach
-- Clean, fast-loading pages
-- Minimal animations—nothing distracting
-- Accessible contrast ratios (the blue palette supports this)
+- Fast-loading, optimized assets
+- Smooth 60fps animations
+- Accessible contrast ratios
+- Touch-friendly interactions
 
-### Imagery Direction
-- Professional but not stiff
-- Avoid generic stock photos of people shaking hands
-- Technology imagery should feel modern, not cliché
-- Consider abstract representations of the "multiply" concept
+### Animation Libraries (Optional)
+- GSAP for complex sequences
+- Framer Motion for React animations
+- CSS-only where possible for performance
 
 ---
 
 ## Legal Entity
 
-**Legal Name:** ForceX Consulting LLC  
-**DBA:** Force Multiply Consulting
+**Legal Name:** ForceX Consulting LLC
+**DBA:** Force Multiply
 
 ---
 
 ## Contact
 
-*[Add contact details as needed for the website]*
+Email: ward@forcemultiply.com
+
+---
+
+## Recent Updates
+
+**December 2025:**
+- Shifted focus to consulting-only model
+- Removed venture/acquisition messaging
+- Enhanced visual design with modern animations
+- Improved user experience with scroll effects and micro-interactions
+- Streamlined brand identity around enterprise consulting services
