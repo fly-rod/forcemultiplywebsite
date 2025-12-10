@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function ScrollAnimations() {
+  const pathname = usePathname();
+
   useEffect(() => {
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -64,7 +67,7 @@ export default function ScrollAnimations() {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pathname]); // Re-run when pathname changes
 
   return null;
 }
