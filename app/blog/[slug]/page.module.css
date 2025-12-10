@@ -1,5 +1,5 @@
 .article {
-  background: white;
+  background: var(--color-bg);
   min-height: calc(100vh - 200px);
 }
 
@@ -19,7 +19,7 @@
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--text-primary);
+  color: var(--color-text);
 }
 
 .meta {
@@ -27,7 +27,7 @@
   align-items: center;
   gap: 1rem;
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   margin-bottom: 1rem;
 }
 
@@ -50,8 +50,8 @@
 .tag {
   font-size: 0.875rem;
   padding: 0.375rem 1rem;
-  background: var(--bg-warm);
-  color: var(--primary);
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
   border-radius: 20px;
   font-weight: 500;
   border: 1px solid var(--border);
@@ -73,7 +73,7 @@
 .content {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: var(--text-primary);
+  color: var(--color-text);
 }
 
 .content h1,
@@ -82,7 +82,7 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   line-height: 1.3;
-  color: var(--text-primary);
+  color: var(--color-text);
 }
 
 .content h1 {
@@ -102,17 +102,17 @@
 }
 
 .content a {
-  color: var(--primary-color);
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
 .content a:hover {
-  color: var(--secondary-color);
+  color: var(--color-primary);
 }
 
 .content strong {
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--color-text);
 }
 
 .content em {
@@ -137,11 +137,11 @@
 }
 
 .content blockquote {
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--color-accent);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .content code {
@@ -174,7 +174,7 @@
 }
 
 .backLink {
-  color: var(--primary-color);
+  color: var(--color-accent);
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
@@ -183,7 +183,17 @@
 }
 
 .backLink:hover {
-  color: var(--secondary-color);
+  color: var(--color-primary);
+}
+
+@media (max-width: 968px) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.25rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -209,5 +219,38 @@
 
   .content h3 {
     font-size: 1.25rem;
+  }
+
+  .meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .author {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
   }
 }

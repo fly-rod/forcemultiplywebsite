@@ -3,15 +3,33 @@
 }
 
 .header {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
   padding: 5rem 0 4rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .header h1 {
   margin-bottom: 1rem;
   font-size: 3.5rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle {
@@ -20,11 +38,13 @@
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 .method {
   padding: 5rem 0;
-  background: var(--bg-warm);
+  background: var(--color-bg-alt);
 }
 
 .methodIntro {
@@ -40,7 +60,7 @@
 .methodIntro p {
   font-size: 1.2rem;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .phases {
@@ -55,56 +75,56 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 2rem;
-  background: var(--bg-white);
+  background: var(--color-bg);
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
 .phase:hover {
-  box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
+  border-color: var(--color-accent);
 }
 
 .phaseNumber {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--color-accent);
   opacity: 0.3;
   line-height: 1;
   padding-top: 0.25rem;
 }
 
 .phaseContent h3 {
-  color: var(--text-primary);
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-size: 1.75rem;
 }
 
 .phaseContent p {
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
 
 .phaseDetails {
-  background: var(--bg-warm);
+  background: var(--color-bg-alt);
   padding: 1rem 1.5rem;
   border-radius: 6px;
   font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .phaseDetails strong {
-  color: var(--text-primary);
+  color: var(--color-text);
 }
 
 .approach {
   padding: 5rem 0;
-  background: var(--bg-white);
+  background: var(--color-bg);
 }
 
 .approach h2 {
@@ -122,7 +142,7 @@
 
 .differentiator {
   padding: 2.5rem;
-  background: var(--bg-warm);
+  background: var(--color-bg-alt);
   border-radius: 8px;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
@@ -130,18 +150,18 @@
 
 .differentiator:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
+  border-color: var(--color-accent);
 }
 
 .differentiator h3 {
-  color: var(--text-primary);
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
 
 .differentiator p {
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   line-height: 1.7;
   font-size: 1rem;
   margin: 0;
@@ -149,7 +169,7 @@
 
 .expectations {
   padding: 5rem 0;
-  background: var(--bg-warm);
+  background: var(--color-bg-alt);
 }
 
 .expectations h2 {
@@ -166,21 +186,21 @@
 }
 
 .expectationItem {
-  background: var(--bg-white);
+  background: var(--color-bg);
   padding: 2rem;
   border-radius: 8px;
-  border-left: 3px solid var(--accent);
-  box-shadow: var(--shadow-sm);
+  border-left: 3px solid var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .expectationItem h4 {
-  color: var(--text-primary);
+  color: var(--color-text);
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
 }
 
 .expectationItem p {
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   line-height: 1.6;
   font-size: 1rem;
   margin: 0;
@@ -188,14 +208,29 @@
 
 .cta {
   padding: 5rem 0;
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .cta h2 {
   color: white;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .cta p {
@@ -203,36 +238,62 @@
   max-width: 600px;
   margin: 0 auto 2.5rem;
   color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 1;
 }
 
 .ctaButton {
-  background: var(--accent);
-  color: white;
+  background: white;
+  color: var(--color-primary);
   padding: 1rem 2.5rem;
   border-radius: 6px;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.2s ease;
   display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 .ctaButton:hover {
-  background: var(--accent-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .header {
-    padding: 3rem 0 2.5rem;
+    padding: 3rem 1rem 2rem;
   }
 
   .header h1 {
     font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .subtitle {
     font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .method,
+  .approach,
+  .expectations,
+  .cta {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .method,
@@ -254,5 +315,24 @@
   .differentiators,
   .expectationsList {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .phase {
+    padding: 1.5rem 1rem;
+  }
+
+  .differentiator,
+  .expectationItem {
+    padding: 1.5rem;
   }
 }

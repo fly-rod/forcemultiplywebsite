@@ -429,6 +429,34 @@
   }
 }
 
+@media (max-width: 968px) {
+  .hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+    padding: 0 1rem;
+  }
+
+  .sectionHeader {
+    padding: 0 1rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .sectionHeader p {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 2.5rem 0 2rem;
@@ -507,5 +535,37 @@
   .ctaButton {
     width: 100%;
     padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .sectionHeader p {
+    font-size: 0.95rem;
+  }
+
+  .serviceCard,
+  .industryCard,
+  .diffCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1.05rem;
   }
 }

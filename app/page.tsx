@@ -9,7 +9,6 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <div className={styles.heroTag}>AI • Cloud • Technology</div>
             <h1>Move fast. Unlock value from AI and technology.</h1>
             <p className={styles.heroSubtitle}>
               Practical AI implementations, cloud platform optimization, and technical leadership. No jargon. No endless decks. Just results.

@@ -6,7 +6,7 @@
 .header {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
-  padding: 6rem 0 5rem;
+  padding: 4rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -44,17 +44,19 @@
 }
 
 .header h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.03em;
   line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Main Services */
@@ -306,13 +308,41 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .header {
-    padding: 3rem 0 2rem;
+    padding: 3rem 1rem 2rem;
   }
 
   .header h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    padding: 0 1rem;
+  }
+
+  .sectionHeader {
+    padding: 0 1rem;
+  }
+
+  .sectionHeader h2 {
     font-size: 2rem;
+  }
+
+  .sectionHeader p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
     line-height: 1.2;
   }
 
@@ -352,6 +382,35 @@
   }
 
   .cta h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .bigCard,
+  .indCard,
+  .approachCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
   }
 }

@@ -365,24 +365,23 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .header {
-    padding: 4rem 0 3rem;
+    padding: 3rem 1rem 2rem;
   }
 
   .header h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .subtitle {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    padding: 0 1rem;
   }
 
-  .model,
-  .value,
-  .sectors,
-  .forOwners {
-    padding: 4rem 0;
+  .sectionHeader {
+    padding: 0 1rem;
   }
 
   .sectionHeader h2 {
@@ -392,19 +391,86 @@
   .sectionHeader p {
     font-size: 1.05rem;
   }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .model,
+  .value,
+  .sectors,
+  .forOwners {
+    padding: 3rem 0;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+
+  .sectionHeader p {
+    font-size: 1rem;
+  }
 
   .modelGrid,
   .valueGrid,
   .sectorsGrid,
   .ownersGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .modelCard,
+  .valueCard,
+  .sectorCard,
+  .ownerCard {
+    padding: 2rem 1.5rem;
   }
 
   .cta {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .cta h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .modelCard,
+  .valueCard,
+  .sectorCard,
+  .ownerCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
   }
 }
