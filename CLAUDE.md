@@ -2,11 +2,13 @@
 
 ## Company Overview
 
-Force Multiply is an enterprise technology consulting firm specializing in AI adoption, cloud platforms, and Salesforce optimization for financial services organizations. We deliver high-impact, hands-on solutions that unlock value from existing technology investments.
+Partnering with financial services firms to turn technology into operating leverage through data, automation, and AI. Force Multiply helps financial services firms get more value from their technology investments. With deep expertise across private equity and PE-backed operating companies, investment banking, wealth management, banking, and payments, we help clients generate more output from and with their teams and technology.
+
+We work at the intersection of platforms like Salesforce and Microsoft, unlocking value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.
 
 ### Mission Statement
 
-In this AI revolution and highly competitive landscape, Force Multiply helps organizations innovate and succeed through business and technical consulting services centered on the adoption of artificial intelligence and modern cloud technologies. We're practitioners who deliver results, not theorists who write reports.
+We're practitioners who deliver results, not theorists who write reports. Force Multiply helps organizations innovate and succeed through hands-on consulting services centered on the adoption of artificial intelligence, automation, and modern cloud technologies.
 
 ---
 
