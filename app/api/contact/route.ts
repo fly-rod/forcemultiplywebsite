@@ -43,7 +43,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         from: 'Force Multiply Contact <onboarding@resend.dev>', // You'll update this with your verified domain
-        to: 'ward@forcemultiply.com',
+        to: 'ward@forcemultiplyconsulting.com', // Your verified Resend email
         reply_to: email,
         subject: `New Contact Form Submission from ${name}`,
         html: `
