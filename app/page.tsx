@@ -9,9 +9,9 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1>Move fast. Unlock value from AI and technology.</h1>
+            <h1>Turn technology into operating leverage</h1>
             <p className={styles.heroSubtitle}>
-              Practical AI implementations, cloud platform optimization, and technical leadership. No jargon. No endless decks. Just results.
+              We help financial services firms generate more output from their teams and technology through data, automation, and AI—without adding headcount or removing what already works.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
@@ -50,16 +50,16 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>What we do</h2>
-            <p>Enterprise technology consulting for financial services</p>
+            <p>Unlock value at the intersection of Salesforce and Microsoft platforms</p>
           </div>
           <div className={styles.servicesGrid}>
             <div className={`${styles.serviceCard} scroll-animate hover-lift`}>
               <div className={styles.serviceIcon}>
                 <Icon name="ai-brain" size={48} />
               </div>
-              <h3>AI Strategy & Implementation</h3>
+              <h3>Data, Automation & AI</h3>
               <p>
-                Production-ready AI solutions that deliver real business value. Strategy, implementation, and integration.
+                Eliminate friction and accelerate execution through intelligent automation and AI. Turn your data into operating leverage.
               </p>
               <Link href="/services" className={`${styles.serviceLink} transition-smooth`}>
                 Learn More →
@@ -69,9 +69,9 @@ export default function Home() {
               <div className={styles.serviceIcon}>
                 <Icon name="cloud" size={48} />
               </div>
-              <h3>Cloud & Platform</h3>
+              <h3>Salesforce & Microsoft</h3>
               <p>
-                Salesforce optimization, Azure, AWS, and GCP. We help you get more from your existing investments.
+                Platform optimization and integration. Get more value from your existing technology investments without adding headcount.
               </p>
               <Link href="/services" className={`${styles.serviceLink} transition-smooth`}>
                 Explore Services →
@@ -98,7 +98,7 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Financial services expertise</h2>
-            <p>Deep domain knowledge where technology and compliance intersect</p>
+            <p>Deep expertise across private equity, PE-backed operating companies, and financial services firms</p>
           </div>
           <div className={styles.industriesGrid}>
             <div className={`${styles.industryCard} scroll-animate hover-lift`}>
@@ -176,9 +176,9 @@ export default function Home() {
       <section className={styles.cta}>
         <div className="container">
           <div className={`${styles.ctaContent} scroll-animate-scale`}>
-            <h2>Ready to move faster?</h2>
+            <h2>Ready to unlock operating leverage?</h2>
             <p>
-              Whether you're an enterprise client or a business owner, let's talk about unlocking value.
+              Let's talk about getting more value from your technology investments.
             </p>
             <Link href="/contact" className={`${styles.ctaButton} hover-lift btn-press`}>
               Get in Touch

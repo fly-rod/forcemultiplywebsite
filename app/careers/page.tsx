@@ -28,7 +28,7 @@ export default function Careers() {
             <div className={`${styles.pathCard} scroll-animate-scale`}>
               <div className={styles.pathNumber}>01</div>
               <h3>Consulting</h3>
-              <p>AI, Salesforce, and cloud platform projects for financial services clients.</p>
+              <p>Data, automation, and AI projects on Salesforce and Microsoft platforms for financial services clients.</p>
             </div>
             <div className={`${styles.pathCard} scroll-animate-scale animate-delay-1`}>
               <div className={styles.pathNumber}>02</div>
@@ -69,7 +69,7 @@ export default function Careers() {
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>03</div>
               <h3>Diverse Projects</h3>
-              <p>Work across AI, cloud, and platform technologies.</p>
+              <p>Work across data, automation, AI, Salesforce, and Microsoft platforms.</p>
             </div>
             <div className={styles.whyCard}>
               <div className={styles.cardNumber}>04</div>

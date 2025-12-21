@@ -9,9 +9,9 @@ export default function Services() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>Enterprise Services</div>
-            <h1>Technology that moves as fast as you do</h1>
+            <h1>Turn systems into operating leverage</h1>
             <p className={styles.subtitle}>
-              AI implementations, cloud platforms, and technical leadership for financial services firms.
+              Data, automation, and AI solutions at the intersection of Salesforce and Microsoft platforms—eliminating friction without adding headcount.
             </p>
           </div>
         </div>
@@ -22,24 +22,24 @@ export default function Services() {
         <div className="container">
           <div className={styles.serviceCards}>
             <div className={`${styles.bigCard} scroll-animate hover-lift`}>
-              <h2>AI Strategy & Implementation</h2>
-              <p className={styles.cardLead}>Production-ready AI that delivers value</p>
+              <h2>Data, Automation & AI</h2>
+              <p className={styles.cardLead}>Intelligent automation that creates operating leverage</p>
               <ul className={styles.features}>
-                <li>AI adoption strategy & roadmap</li>
-                <li>Applied AI solutions</li>
-                <li>Process automation</li>
-                <li>Integration & monitoring</li>
+                <li>AI adoption strategy & implementation</li>
+                <li>Process automation & workflow optimization</li>
+                <li>Data integration & analytics</li>
+                <li>Production-ready AI solutions</li>
               </ul>
             </div>
 
             <div className={`${styles.bigCard} scroll-animate hover-lift animate-delay-2`}>
-              <h2>Cloud & Platform</h2>
-              <p className={styles.cardLead}>Salesforce, Azure, AWS, GCP</p>
+              <h2>Salesforce & Microsoft Platforms</h2>
+              <p className={styles.cardLead}>Unlock value from your existing platform investments</p>
               <ul className={styles.features}>
                 <li>Salesforce optimization & architecture</li>
-                <li>Cloud migration & setup</li>
-                <li>Multi-cloud strategy</li>
-                <li>Platform engineering</li>
+                <li>Microsoft platform integration (Azure, Dynamics, Power Platform)</li>
+                <li>Cross-platform data & automation</li>
+                <li>Platform engineering & governance</li>
               </ul>
             </div>
 
@@ -62,26 +62,26 @@ export default function Services() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Financial services specialists</h2>
-            <p>Deep expertise in complex, regulated environments</p>
+            <p>Deep expertise across private equity and complex, regulated environments</p>
           </div>
           <div className={`${styles.industryGrid} stagger-children`}>
             <div className={`${styles.indCard} hover-lift`}>
-              <h3>Banking</h3>
+              <h3>Private Equity</h3>
+            </div>
+            <div className={`${styles.indCard} hover-lift`}>
+              <h3>Investment Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <h3>Wealth Management</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
-              <h3>Investment Banking</h3>
+              <h3>Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <h3>Payments & Fintech</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <h3>Capital Markets</h3>
-            </div>
-            <div className={`${styles.indCard} hover-lift`}>
-              <h3>RegTech</h3>
             </div>
           </div>
         </div>

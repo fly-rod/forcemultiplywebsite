@@ -140,7 +140,7 @@ To add new icons to the system:
 
 **Cloud & Platform**
 - Salesforce optimization & architecture
-- Azure, AWS, and GCP implementation
+- Microsoft Power Platform & Azure
 - Cloud migration & setup
 - Multi-cloud strategy
 - Platform engineering
@@ -155,12 +155,12 @@ To add new icons to the system:
 ### Target Industries
 
 **Financial Services Focus:**
-- Banking & Financial Institutions
+- Private Equity & PE-backed Operating Companies
+- Investment Banking
 - Wealth & Asset Management
-- Investment Banking & Private Equity
+- Conventional Banking & Financial Institutions
 - Payments & Fintech
 - Trading & Capital Markets
-- Compliance & RegTech
 
 Deep domain knowledge where technology and compliance intersect. We understand the complexity of regulated environments.
 

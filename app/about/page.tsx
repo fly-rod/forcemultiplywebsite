@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function About() {
@@ -9,9 +10,9 @@ export default function About() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>About Us</div>
-            <h1>Technology consulting that delivers</h1>
+            <h1>Turn technology into operating leverage</h1>
             <p className={styles.subtitle}>
-              We're practitioners who build and operate, not theorists who write reports.
+              We help financial services firms get more value from their technology investments through data, automation, and AI.
             </p>
           </div>
         </div>
@@ -22,7 +23,7 @@ export default function About() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Our mission</h2>
-            <p>Help organizations succeed with AI and cloud technology in complex, regulated environments</p>
+            <p>We work at the intersection of platforms like Salesforce and Microsoft, unlocking value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.</p>
           </div>
         </div>
       </section>
@@ -63,14 +64,23 @@ export default function About() {
       <section className={styles.leader}>
         <div className="container">
           <div className={`${styles.leaderContent} scroll-animate`}>
+            <div className={styles.leaderPhoto}>
+              <Image
+                src="/resources/images/ward headshot.png"
+                alt="Ward Wood"
+                width={300}
+                height={300}
+                className={styles.photoImage}
+              />
+            </div>
             <div className={styles.leaderInfo}>
               <h2>Ward Wood</h2>
               <p className={styles.leaderTitle}>Founder & CEO</p>
-            </div>
-            <div className={styles.leaderText}>
-              <p>
-                Ward leads strategy, client work, and Force Multiply's vision for delivering practical technology solutions. Deep technical expertise meets business operations—building systems that work in the real world.
-              </p>
+              <div className={styles.leaderText}>
+                <p>
+                  Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Deep technical expertise meets business operations—building systems that work in the real world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -111,16 +121,16 @@ export default function About() {
           </div>
           <div className={styles.approachGrid}>
             <div className={`${styles.approachCard} scroll-animate hover-lift`}>
-              <h3>Financial Services</h3>
-              <p>Banks, wealth managers, fintechs, and trading firms in complex, regulated environments.</p>
+              <h3>Private Equity</h3>
+              <p>PE firms and PE-backed operating companies looking to scale technology and drive operational efficiency.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-2`}>
-              <h3>Technology Leaders</h3>
-              <p>CTOs, VPs of Engineering, and technology teams driving innovation.</p>
+              <h3>Financial Services</h3>
+              <p>Investment banks, wealth managers, payments firms, and trading platforms in complex, regulated environments.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-3`}>
-              <h3>Business Executives</h3>
-              <p>CEOs and business leaders looking to unlock value from technology investments.</p>
+              <h3>Business & Technology Leaders</h3>
+              <p>CEOs, CTOs, and executives looking to unlock operating leverage from technology investments.</p>
             </div>
           </div>
         </div>
