@@ -14,6 +14,18 @@ export default function ScrollAnimations() {
       return;
     }
 
+    // Reset all animations on navigation - remove visible classes
+    const animatedElements = document.querySelectorAll(
+      '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale'
+    );
+
+    animatedElements.forEach((el) => {
+      el.classList.remove('visible');
+    });
+
+    // Force a reflow to ensure the initial state is applied
+    void document.body.offsetHeight;
+
     // Intersection Observer for scroll animations
     const observerOptions = {
       root: null,
@@ -31,12 +43,15 @@ export default function ScrollAnimations() {
       });
     }, observerOptions);
 
-    // Observe all elements with scroll-animate classes
-    const animatedElements = document.querySelectorAll(
-      '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale'
-    );
-
+    // Observe all elements with scroll-animate classes (use the same query)
     animatedElements.forEach((el) => observer.observe(el));
+
+    // Reset parallax elements on navigation
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach((el) => {
+      const element = el as HTMLElement;
+      element.style.transform = 'translate3d(0, 0, 0)';
+    });
 
     // Parallax effect on scroll (subtle)
     let ticking = false;
