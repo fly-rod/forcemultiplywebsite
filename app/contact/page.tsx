@@ -20,8 +20,21 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate form submission (in production, connect to your API)
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
       setLoading(false);
       setSubmitted(true);
       setFormData({
@@ -32,7 +45,10 @@ export default function Contact() {
         service: '',
         message: '',
       });
-    }, 1000);
+    } catch (error) {
+      setLoading(false);
+      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again or email directly at ward@forcemultiply.com');
+    }
   };
 
   const handleChange = (
