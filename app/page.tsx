@@ -23,13 +23,15 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1>Turn technology into operating leverage</h1>
-            <p className={styles.heroSubtitle}>
-              We help financial services firms generate more output from their teams and technology through{' '}
+            <h1>
+              Turn{' '}
               <span className={styles.rotatingWord} key={currentWord}>
                 {words[currentWord]}
               </span>
-              —without adding headcount or removing what already works.
+              {' '}into operating leverage
+            </h1>
+            <p className={styles.heroSubtitle}>
+              We help financial services firms generate more output from their teams and technology—without adding headcount or removing what already works.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
