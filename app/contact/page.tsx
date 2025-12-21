@@ -45,6 +45,9 @@ export default function Contact() {
         service: '',
         message: '',
       });
+
+      // Scroll to top to show success message
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       setLoading(false);
       alert(error instanceof Error ? error.message : 'Failed to send message. Please try again or email directly at ward@forcemultiply.com');
