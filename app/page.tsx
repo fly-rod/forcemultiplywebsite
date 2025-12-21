@@ -1,8 +1,22 @@
+'use client';
+
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [currentWord, setCurrentWord] = useState(0);
+  const words = ['AI', 'Automation', 'Salesforce', 'Microsoft', 'Assessments', 'Data Strategy'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWord((prev) => (prev + 1) % words.length);
+    }, 2500); // Change word every 2.5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.homePage}>
       {/* Hero Section */}
@@ -11,7 +25,11 @@ export default function Home() {
           <div className={styles.heroContent}>
             <h1>Turn technology into operating leverage</h1>
             <p className={styles.heroSubtitle}>
-              We help financial services firms generate more output from their teams and technology through data, automation, and AI—without adding headcount or removing what already works.
+              We help financial services firms generate more output from their teams and technology through{' '}
+              <span className={styles.rotatingWord} key={currentWord}>
+                {words[currentWord]}
+              </span>
+              —without adding headcount or removing what already works.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
@@ -59,7 +77,7 @@ export default function Home() {
               </div>
               <h3>Data, Automation & AI</h3>
               <p>
-                Eliminate friction and accelerate execution through intelligent automation and AI. Turn your data into operating leverage.
+                Intelligent automation and AI solutions that create operating leverage.
               </p>
               <Link href="/services" className={`${styles.serviceLink} transition-smooth`}>
                 Learn More →
@@ -71,7 +89,7 @@ export default function Home() {
               </div>
               <h3>Salesforce & Microsoft</h3>
               <p>
-                Platform optimization and integration. Get more value from your existing technology investments without adding headcount.
+                Platform optimization and integration expertise.
               </p>
               <Link href="/services" className={`${styles.serviceLink} transition-smooth`}>
                 Explore Services →
@@ -83,7 +101,7 @@ export default function Home() {
               </div>
               <h3>Technical Advisory</h3>
               <p>
-                Architecture, program management, and strategic guidance for complex technology initiatives.
+                Strategic guidance for complex technology initiatives.
               </p>
               <Link href="/services" className={`${styles.serviceLink} transition-smooth`}>
                 Get Started →
