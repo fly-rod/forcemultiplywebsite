@@ -7,7 +7,7 @@ import styles from './page.module.css';
 
 export default function Home() {
   const [currentWord, setCurrentWord] = useState(0);
-  const words = ['AI & Automation', 'Data & Strategy', 'Salesforce & Microsoft'];
+  const words = ['AI & Automation', 'Data & Strategy', 'Salesforce & Azure'];
 
   useEffect(() => {
     const interval = setInterval(() => {
