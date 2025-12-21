@@ -44,17 +44,13 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            {logoSrc ? (
-              <Image
-                src={logoSrc}
-                alt="Force Multiply"
-                width={160}
-                height={35}
-                className={styles.footerLogo}
-              />
-            ) : (
-              <h3>Force Multiply</h3>
-            )}
+            <Image
+              src="/resources/assets/force_multiply_logo_3.svg"
+              alt="Force Multiply"
+              width={200}
+              height={75}
+              className={styles.footerLogo}
+            />
             <p>Multiply the impact of the teams you already have.</p>
           </div>
           <div className={styles.footerSection}>
