@@ -24,11 +24,12 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1>
-              Turn{' '}
-              <span className={styles.rotatingWord} key={currentWord}>
-                {words[currentWord]}
+              <span className={styles.heroLine1}>
+                Turn <span className={styles.rotatingWord} key={currentWord}>
+                  {words[currentWord]}
+                </span>
               </span>
-              {' '}into operating leverage
+              <span className={styles.heroLine2}>into operating leverage</span>
             </h1>
             <p className={styles.heroSubtitle}>
               We help financial services firms generate more output from their teams and technology—without adding headcount or removing what already works.
