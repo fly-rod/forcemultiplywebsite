@@ -55,7 +55,7 @@ export default function Home() {
               <div className={styles.statLabel}>Years Experience</div>
             </div>
             <div className={`${styles.statCard} scroll-animate-scale`}>
-              <div className={styles.statNumber}>3</div>
+              <div className={styles.statNumber}>2</div>
               <div className={styles.statLabel}>Core Platforms</div>
             </div>
             <div className={`${styles.statCard} scroll-animate-scale`}>
