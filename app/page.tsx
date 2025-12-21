@@ -102,26 +102,44 @@ export default function Home() {
           </div>
           <div className={styles.industriesGrid}>
             <div className={`${styles.industryCard} scroll-animate hover-lift`}>
+              <div className={styles.industryIcon}>
+                <Icon name="shield" size={32} />
+              </div>
               <h3>Banking & Financial Institutions</h3>
               <p>Commercial banks, credit unions, regional banks</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-1`}>
+              <div className={styles.industryIcon}>
+                <Icon name="target" size={32} />
+              </div>
               <h3>Wealth & Asset Management</h3>
               <p>RIAs, family offices, asset managers, wealth advisors</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-2`}>
+              <div className={styles.industryIcon}>
+                <Icon name="briefcase" size={32} />
+              </div>
               <h3>Investment Banking & PE</h3>
               <p>Investment banks, private equity firms, venture capital</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-3`}>
+              <div className={styles.industryIcon}>
+                <Icon name="lightning" size={32} />
+              </div>
               <h3>Payments & Fintech</h3>
               <p>Payment processors, digital banking, financial technology</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-4`}>
+              <div className={styles.industryIcon}>
+                <Icon name="rocket" size={32} />
+              </div>
               <h3>Trading & Capital Markets</h3>
               <p>Broker-dealers, trading firms, market makers</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-5`}>
+              <div className={styles.industryIcon}>
+                <Icon name="check-circle" size={32} />
+              </div>
               <h3>Compliance & RegTech</h3>
               <p>Regulatory technology, compliance platforms, risk management</p>
             </div>

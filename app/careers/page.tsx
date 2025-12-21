@@ -80,65 +80,6 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* Roles */}
-      <section className={styles.roles}>
-        <div className="container">
-          <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Current opportunities</h2>
-          </div>
-          <div className={styles.rolesGrid}>
-            <div className={`${styles.roleCard} scroll-animate hover-lift`}>
-              <div className={styles.roleHeader}>
-                <h3>Salesforce Consultant</h3>
-                <span className={styles.roleTrack}>Consulting</span>
-              </div>
-              <p>Optimize Salesforce for enterprise clients. 3-5 years experience.</p>
-              <div className={styles.roleSkills}>
-                <span>Salesforce</span>
-                <span>Integration</span>
-                <span>Architecture</span>
-              </div>
-            </div>
-            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-1`}>
-              <div className={styles.roleHeader}>
-                <h3>AI Solutions Architect</h3>
-                <span className={styles.roleTrack}>Consulting</span>
-              </div>
-              <p>Design and implement AI for enterprises. 5+ years experience.</p>
-              <div className={styles.roleSkills}>
-                <span>AI/ML</span>
-                <span>Cloud</span>
-                <span>Architecture</span>
-              </div>
-            </div>
-            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-2`}>
-              <div className={styles.roleHeader}>
-                <h3>Cloud Platform Engineer</h3>
-                <span className={styles.roleTrack}>Consulting</span>
-              </div>
-              <p>Build and optimize cloud infrastructure. 3+ years experience.</p>
-              <div className={styles.roleSkills}>
-                <span>Azure/AWS/GCP</span>
-                <span>IaC</span>
-                <span>DevOps</span>
-              </div>
-            </div>
-            <div className={`${styles.roleCard} scroll-animate hover-lift animate-delay-3`}>
-              <div className={styles.roleHeader}>
-                <h3>Business Analyst</h3>
-                <span className={styles.roleTrack}>Consulting</span>
-              </div>
-              <p>Analyze business processes and design solutions. 2-4 years experience.</p>
-              <div className={styles.roleSkills}>
-                <span>Requirements</span>
-                <span>Process Design</span>
-                <span>Documentation</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* What We Look For */}
       <section className={styles.team}>
         <div className="container">

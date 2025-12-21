@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 import styles from './page.module.css';
 
 export default function Services() {
@@ -22,35 +23,47 @@ export default function Services() {
         <div className="container">
           <div className={styles.serviceCards}>
             <div className={`${styles.bigCard} scroll-animate hover-lift`}>
+              <div className={styles.cardIcon}>
+                <Icon name="ai-brain" size={48} />
+              </div>
               <h2>Data, Automation & AI</h2>
               <p className={styles.cardLead}>Intelligent automation that creates operating leverage</p>
               <ul className={styles.features}>
-                <li>AI adoption strategy & implementation</li>
-                <li>Process automation & workflow optimization</li>
-                <li>Data integration & analytics</li>
-                <li>Production-ready AI solutions</li>
+                <li>Build AI agents to automate repetitive workflows and decision-making</li>
+                <li>Design and implement custom data pipelines and integrations</li>
+                <li>Create automated reporting and analytics dashboards</li>
+                <li>Deploy production AI solutions (LLMs, classification, forecasting)</li>
+                <li>Streamline approval workflows and reduce manual touchpoints</li>
               </ul>
             </div>
 
             <div className={`${styles.bigCard} scroll-animate hover-lift animate-delay-2`}>
+              <div className={styles.cardIcon}>
+                <Icon name="cloud" size={48} />
+              </div>
               <h2>Salesforce & Microsoft Platforms</h2>
               <p className={styles.cardLead}>Unlock value from your existing platform investments</p>
               <ul className={styles.features}>
-                <li>Salesforce optimization & architecture</li>
-                <li>Microsoft platform integration (Azure, Dynamics, Power Platform)</li>
-                <li>Cross-platform data & automation</li>
-                <li>Platform engineering & governance</li>
+                <li>Optimize Salesforce orgs (data model, automation, integrations)</li>
+                <li>Build custom Lightning components and Flow automations</li>
+                <li>Integrate Salesforce with Microsoft (Teams, Power Platform, Azure)</li>
+                <li>Design scalable platform architecture and governance frameworks</li>
+                <li>Implement DevOps pipelines and release management (CI/CD)</li>
               </ul>
             </div>
 
             <div className={`${styles.bigCard} scroll-animate hover-lift animate-delay-3`}>
+              <div className={styles.cardIcon}>
+                <Icon name="briefcase" size={48} />
+              </div>
               <h2>Technical Advisory</h2>
               <p className={styles.cardLead}>Strategic guidance for complex initiatives</p>
               <ul className={styles.features}>
-                <li>Architecture & design</li>
-                <li>Technical program management</li>
-                <li>Process optimization</li>
-                <li>Governance frameworks</li>
+                <li>Design system architecture and integration strategies</li>
+                <li>Lead technical program management and delivery</li>
+                <li>Map and optimize business processes for technology adoption</li>
+                <li>Build governance frameworks (data, security, compliance)</li>
+                <li>Provide fractional engineering leadership and team enablement</li>
               </ul>
             </div>
           </div>
@@ -66,21 +79,27 @@ export default function Services() {
           </div>
           <div className={`${styles.industryGrid} stagger-children`}>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="briefcase" size={32} />
               <h3>Private Equity</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="chart" size={32} />
               <h3>Investment Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="target" size={32} />
               <h3>Wealth Management</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="shield" size={32} />
               <h3>Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="lightning" size={32} />
               <h3>Payments & Fintech</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="rocket" size={32} />
               <h3>Capital Markets</h3>
             </div>
           </div>
