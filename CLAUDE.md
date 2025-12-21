@@ -4,7 +4,7 @@
 
 Partnering with financial services firms to turn technology into operating leverage through data, automation, and AI. Force Multiply helps financial services firms get more value from their technology investments. With deep expertise across private equity and PE-backed operating companies, investment banking, wealth management, banking, and payments, we help clients generate more output from and with their teams and technology.
 
-We work at the intersection of platforms like Salesforce and Microsoft, unlocking value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.
+We have deep expertise with platforms such as Salesforce and Microsoft, helping clients unlock value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.
 
 ### Mission Statement
 

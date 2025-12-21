@@ -11,7 +11,7 @@ export default function Services() {
             <div className={styles.tag}>Enterprise Services</div>
             <h1>Turn systems into operating leverage</h1>
             <p className={styles.subtitle}>
-              Data, automation, and AI solutions at the intersection of Salesforce and Microsoft platforms—eliminating friction without adding headcount.
+              Data, automation, and AI solutions on platforms such as Salesforce and Microsoft—eliminating friction without adding headcount.
             </p>
           </div>
         </div>

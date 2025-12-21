@@ -23,7 +23,7 @@ export default function About() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Our mission</h2>
-            <p>We work at the intersection of platforms like Salesforce and Microsoft, unlocking value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.</p>
+            <p>We have deep expertise with platforms such as Salesforce and Microsoft, helping clients unlock value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.</p>
           </div>
         </div>
       </section>

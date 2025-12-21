@@ -7,7 +7,7 @@ import './animations.css';
 
 export const metadata: Metadata = {
   title: 'Force Multiply',
-  description: 'Enterprise technology consulting for financial services. AI, Cloud, and Salesforce solutions that deliver value.',
+  description: 'Turn technology into operating leverage. We help financial services firms unlock value through data, automation, and AI on platforms like Salesforce and Microsoft.',
   icons: {
     icon: '/favicon.png',
     apple: '/resources/assets/fm_icon_1.png',
