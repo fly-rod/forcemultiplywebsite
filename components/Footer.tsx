@@ -47,8 +47,8 @@ export default function Footer() {
             <Image
               src="/resources/assets/force_multiply_logo_3.svg"
               alt="Force Multiply"
-              width={200}
-              height={75}
+              width={250}
+              height={94}
               className={styles.footerLogo}
             />
             <p>Multiply the impact of the teams you already have.</p>
