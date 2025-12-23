@@ -71,7 +71,7 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>What we do</h2>
-            <p>Deep expertise with platforms such as Salesforce and Microsoft</p>
+            <p>Expert consulting on Salesforce and Microsoft platforms</p>
           </div>
           <div className={styles.servicesGrid}>
             <div className={`${styles.serviceCard} scroll-animate hover-lift`}>
