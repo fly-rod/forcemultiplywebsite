@@ -42,7 +42,7 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: 'Force Multiply Contact <onboarding@resend.dev>', // You'll update this with your verified domain
+        from: 'Force Multiply <contact@forcemultiplyconsulting.com>',
         to: 'ward@forcemultiplyconsulting.com', // Your verified Resend email
         reply_to: email,
         subject: `New Contact Form Submission from ${name}`,
