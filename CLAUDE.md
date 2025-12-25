@@ -2,13 +2,13 @@
 
 ## Company Overview
 
-Partnering with financial services firms to turn technology into operating leverage through data, automation, and AI. Force Multiply helps financial services firms get more value from their technology investments. With deep expertise across private equity and PE-backed operating companies, investment banking, wealth management, banking, and payments, we help clients generate more output from and with their teams and technology.
+Force Multiply provides fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. We deliver executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.
 
-We have deep expertise with platforms such as Salesforce and Microsoft, helping clients unlock value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.
+Whether you need an executive to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring C-suite experience at a fraction of the cost.
 
 ### Mission Statement
 
-We're practitioners who deliver results, not theorists who write reports. Force Multiply helps organizations innovate and succeed through hands-on consulting services centered on the adoption of artificial intelligence, automation, and modern cloud technologies.
+We're practitioners who deliver results, not theorists who write reports. Force Multiply helps organizations navigate AI transformation and drive innovation through fractional executive leadership and hands-on consulting.
 
 ---
 
@@ -129,47 +129,53 @@ To add new icons to the system:
 
 ## Services
 
-### Enterprise Consulting Services
+### Fractional Executive Leadership
 
-**AI Strategy & Implementation**
-- AI adoption strategy & roadmap
-- Applied AI solutions
-- Process automation
-- Integration & monitoring
-- Production-ready implementations that deliver value
+**Fractional Chief AI Officer (CAIO)**
+- Lead AI strategy and adoption
+- Build AI roadmaps and governance frameworks
+- Guide organizational AI readiness
 
-**Cloud & Platform**
-- Salesforce optimization & architecture
-- Microsoft Power Platform & Azure
-- Cloud migration & setup
-- Multi-cloud strategy
-- Platform engineering
-
-**Technical Advisory**
-- Architecture & design
+**Fractional CTO**
+- Technology vision, architecture, and team leadership
 - Technical program management
-- Process optimization
-- Governance frameworks
-- Strategic guidance for complex initiatives
+- Engineering team mentoring and hiring support
+
+**Fractional Chief Innovation Officer**
+- Drive innovation and digital transformation
+- Identify and evaluate emerging technologies
+- Build innovation culture and processes
+
+### AI Strategy & Implementation
+- AI adoption strategy and organizational readiness
+- Build AI agents and automation workflows
+- Deploy production AI solutions (LLMs, classification, forecasting)
+- AI governance, ethics, and risk management
+
+### Technology & Platform Consulting
+- Salesforce optimization, architecture, and development
+- Microsoft Azure, Power Platform, and Teams
+- Cloud architecture and migration
+- DevOps, CI/CD, and engineering best practices
 
 ### Target Industries
 
-**Financial Services Focus:**
-- Private Equity & PE-backed Operating Companies
-- Investment Banking
-- Wealth & Asset Management
-- Conventional Banking & Financial Institutions
-- Payments & Fintech
-- Trading & Capital Markets
+**Broad Industry Focus:**
+- Technology & SaaS
+- Financial Services
+- Professional Services
+- Healthcare & Life Sciences
+- Manufacturing & Industrial
+- Private Equity Portfolio Companies
 
-Deep domain knowledge where technology and compliance intersect. We understand the complexity of regulated environments.
+We work with companies at inflection points who need AI and technology leadership to drive transformation.
 
 ---
 
 ## Leadership
 
 ### Ward Wood – Founder & CEO
-Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Deep technical expertise meets business operations—building systems that work in the real world.
+Ward brings 15+ years of technology leadership experience, serving as a fractional Chief AI Officer, CTO, and technology advisor to companies navigating AI transformation. He works directly with executives and boards to shape AI strategy, build technology roadmaps, and lead implementation. Deep technical expertise meets executive leadership—driving real business outcomes, not just technology for its own sake.
 
 ---
 
@@ -177,21 +183,23 @@ Ward leads Force Multiply's vision and works directly with clients to shape stra
 
 ### Value Proposition
 Force Multiply is fundamentally different from traditional consulting firms because:
-1. **Practitioners** – We build and operate, not just advise
-2. **Fast delivery** – Tiger teams that move quickly and deliver results
-3. **Real impact** – Practical solutions that unlock value from existing investments
-4. **Long-term partners** – Building relationships, invested in outcomes
+1. **Executive experience** – Real C-suite leadership, not just consulting
+2. **Practitioners** – We build and implement, not just advise
+3. **Flexible commitment** – Part-time leadership, full-time impact
+4. **Outcome-focused** – Invested in your success, not hours billed
 
 ### Key Messages
 
-**For Enterprise Clients:**
-- "Move fast. Unlock value from AI and technology."
-- "Technology that moves as fast as you do"
-- "We help you get more out of your technology investment"
-- "Hands-on delivery, not endless decks"
+**Hero Headline:**
+"Fractional Chief AI, Technology & Innovation Officers"
+
+**For Companies:**
+- "Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment"
+- "Part-time executive guidance, full-time impact"
+- "C-suite experience at a fraction of the cost"
 
 **For Potential Team Members:**
-- "Work on projects that move the needle for clients"
+- "Work at the executive level on AI and technology transformation"
 - "Build and operate, not just advise"
 - "Real impact and career growth"
 - "Learn, lead, and advance"
@@ -305,9 +313,10 @@ Email: ward@forcemultiplyconsulting.com
 ## Recent Updates
 
 **December 2025:**
-- Shifted focus to consulting-only model
-- Removed venture/acquisition messaging
+- Rebranded to focus on Fractional Chief AI, Technology & Innovation Officers
+- Broadened target market beyond financial services to all industries
+- Updated hero, services, and messaging across all pages
+- Replaced "operating leverage" language with fractional leadership positioning
 - Enhanced visual design with modern animations
 - Improved user experience with scroll effects and micro-interactions
-- Streamlined brand identity around enterprise consulting services
 - Please git add commit and push whenever you finish working on something

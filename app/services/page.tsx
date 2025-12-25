@@ -9,10 +9,10 @@ export default function Services() {
       <section className={styles.header}>
         <div className="container">
           <div className={styles.headerContent}>
-            <div className={styles.tag}>Enterprise Services</div>
-            <h1>Turn systems into operating leverage</h1>
+            <div className={styles.tag}>Services</div>
+            <h1>Fractional Leadership & Consulting</h1>
             <p className={styles.subtitle}>
-              Data, automation, and AI solutions on platforms such as Salesforce and Microsoft—eliminating friction without adding headcount.
+              Executive-level AI and technology leadership, plus hands-on consulting—without the full-time commitment.
             </p>
           </div>
         </div>
@@ -24,83 +24,83 @@ export default function Services() {
           <div className={styles.serviceCards}>
             <div className={`${styles.bigCard} scroll-animate hover-lift`}>
               <div className={styles.cardIcon}>
-                <Icon name="ai-brain" size={48} />
+                <Icon name="users" size={48} />
               </div>
-              <h2>Data, Automation & AI</h2>
-              <p className={styles.cardLead}>Intelligent automation that creates operating leverage</p>
+              <h2>Fractional Executive Leadership</h2>
+              <p className={styles.cardLead}>Part-time executive guidance, full-time impact</p>
               <ul className={styles.features}>
-                <li>Build AI agents to automate repetitive workflows and decision-making</li>
-                <li>Design and implement custom data pipelines and integrations</li>
-                <li>Create automated reporting and analytics dashboards</li>
-                <li>Deploy production AI solutions (LLMs, classification, forecasting)</li>
-                <li>Streamline approval workflows and reduce manual touchpoints</li>
+                <li>Fractional Chief AI Officer (CAIO) – lead AI strategy and adoption</li>
+                <li>Fractional CTO – technology vision, architecture, and team leadership</li>
+                <li>Fractional Chief Innovation Officer – drive innovation and transformation</li>
+                <li>Board and executive advisory on AI and technology strategy</li>
+                <li>Team mentoring, hiring support, and capability building</li>
               </ul>
             </div>
 
             <div className={`${styles.bigCard} scroll-animate hover-lift animate-delay-2`}>
               <div className={styles.cardIcon}>
-                <Icon name="cloud" size={48} />
+                <Icon name="ai-brain" size={48} />
               </div>
-              <h2>Salesforce & Microsoft Platforms</h2>
-              <p className={styles.cardLead}>Unlock value from your existing platform investments</p>
+              <h2>AI Strategy & Implementation</h2>
+              <p className={styles.cardLead}>From AI roadmap to production systems</p>
               <ul className={styles.features}>
-                <li>Optimize Salesforce orgs (data model, automation, integrations)</li>
-                <li>Build custom Lightning components and Flow automations</li>
-                <li>Integrate Salesforce with Microsoft (Teams, Power Platform, Azure)</li>
-                <li>Design scalable platform architecture and governance frameworks</li>
-                <li>Implement DevOps pipelines and release management (CI/CD)</li>
+                <li>AI adoption strategy and organizational readiness assessment</li>
+                <li>Build AI agents to automate workflows and decision-making</li>
+                <li>Deploy production AI solutions (LLMs, classification, forecasting)</li>
+                <li>Design data pipelines and integrations for AI-ready infrastructure</li>
+                <li>AI governance, ethics, and risk management frameworks</li>
               </ul>
             </div>
 
             <div className={`${styles.bigCard} scroll-animate hover-lift animate-delay-3`}>
               <div className={styles.cardIcon}>
-                <Icon name="briefcase" size={48} />
+                <Icon name="cloud" size={48} />
               </div>
-              <h2>Technical Advisory</h2>
-              <p className={styles.cardLead}>Strategic guidance for complex initiatives</p>
+              <h2>Technology & Platform Consulting</h2>
+              <p className={styles.cardLead}>Hands-on expertise across leading platforms</p>
               <ul className={styles.features}>
-                <li>Design system architecture and integration strategies</li>
-                <li>Lead technical program management and delivery</li>
-                <li>Map and optimize business processes for technology adoption</li>
-                <li>Build governance frameworks (data, security, compliance)</li>
-                <li>Provide fractional engineering leadership and team enablement</li>
+                <li>Salesforce optimization, architecture, and custom development</li>
+                <li>Microsoft Azure, Power Platform, and Teams integrations</li>
+                <li>Cloud architecture, migration, and infrastructure design</li>
+                <li>Technical program management and delivery leadership</li>
+                <li>DevOps, CI/CD, and engineering best practices</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Financial Services Focus */}
+      {/* Industries */}
       <section className={styles.industries}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Financial services specialists</h2>
-            <p>Deep expertise across private equity and complex, regulated environments</p>
+            <h2>Industries we serve</h2>
+            <p>AI and technology leadership across sectors</p>
           </div>
           <div className={`${styles.industryGrid} stagger-children`}>
             <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="briefcase" size={32} />
-              <h3>Private Equity</h3>
-            </div>
-            <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="chart" size={32} />
-              <h3>Investment Banking</h3>
-            </div>
-            <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="target" size={32} />
-              <h3>Wealth Management</h3>
+              <Icon name="rocket" size={32} />
+              <h3>Technology & SaaS</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <Icon name="shield" size={32} />
-              <h3>Banking</h3>
+              <h3>Financial Services</h3>
+            </div>
+            <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="briefcase" size={32} />
+              <h3>Professional Services</h3>
+            </div>
+            <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="check-circle" size={32} />
+              <h3>Healthcare</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <Icon name="lightning" size={32} />
-              <h3>Payments & Fintech</h3>
+              <h3>Manufacturing</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="rocket" size={32} />
-              <h3>Capital Markets</h3>
+              <Icon name="target" size={32} />
+              <h3>Private Equity</h3>
             </div>
           </div>
         </div>
@@ -110,22 +110,22 @@ export default function Services() {
       <section className={styles.approach}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Our approach</h2>
+            <h2>How we engage</h2>
           </div>
           <div className={styles.approachGrid}>
             <div className={`${styles.approachCard} scroll-animate-scale`}>
               <div className={styles.stepNumber}>01</div>
-              <h3>Practitioners</h3>
-              <p>We operate real businesses. We know what works.</p>
+              <h3>Flexible commitment</h3>
+              <p>Part-time or full-time. Scale up or down as needed.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate-scale animate-delay-2`}>
               <div className={styles.stepNumber}>02</div>
-              <h3>Tiger Teams</h3>
-              <p>Focused engagements. Fast delivery. Real value.</p>
+              <h3>Hands-on delivery</h3>
+              <p>We do the work, not just advise. Real results.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate-scale animate-delay-3`}>
               <div className={styles.stepNumber}>03</div>
-              <h3>Knowledge Transfer</h3>
+              <h3>Capability transfer</h3>
               <p>Your team gets stronger. Lasting impact.</p>
             </div>
           </div>
@@ -136,10 +136,10 @@ export default function Services() {
       <section className={styles.cta}>
         <div className="container">
           <div className={`${styles.ctaContent} scroll-animate-scale`}>
-            <h2>Let's work together</h2>
-            <p>Ready to unlock value from your technology investments?</p>
+            <h2>Ready to talk?</h2>
+            <p>Let's discuss how fractional leadership can accelerate your AI and technology initiatives.</p>
             <Link href="/contact" className={`${styles.ctaButton} hover-lift btn-press`}>
-              Get in Touch
+              Schedule a Call
             </Link>
           </div>
         </div>

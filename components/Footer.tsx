@@ -51,7 +51,7 @@ export default function Footer() {
               height={225}
               className={styles.footerLogo}
             />
-            <p>Multiply the impact of the teams you already have.</p>
+            <p>Fractional AI & Technology Leadership</p>
           </div>
           <div className={styles.footerSection}>
             <h4>Navigate</h4>
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
           <div className={styles.footerSection}>
             <h4>Get Started</h4>
-            <p>Ready to move faster?</p>
+            <p>Ready for AI leadership?</p>
             <p><a href="mailto:ward@forcemultiplyconsulting.com" className={styles.email}>ward@forcemultiplyconsulting.com</a></p>
             <p><a href="/contact" className={styles.cta}>Schedule a Call</a></p>
           </div>

@@ -10,9 +10,9 @@ export default function About() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>About Us</div>
-            <h1>Turn technology into operating leverage</h1>
+            <h1>AI & Technology Leadership</h1>
             <p className={styles.subtitle}>
-              We help financial services firms get more value from their technology investments through data, automation, and AI.
+              Fractional executive leadership and hands-on consulting to help companies navigate AI transformation and drive innovation.
             </p>
           </div>
         </div>
@@ -23,7 +23,7 @@ export default function About() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Our mission</h2>
-            <p>We have deep expertise with platforms such as Salesforce and Microsoft, helping clients unlock value through data, automation, and AI to eliminate friction, accelerate execution, and turn systems into real operating leverage—without adding headcount or removing what already works.</p>
+            <p>We provide fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring C-suite experience without the full-time commitment.</p>
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function About() {
               <p className={styles.leaderTitle}>Founder & CEO</p>
               <div className={styles.leaderText}>
                 <p>
-                  Ward leads Force Multiply's vision and works directly with clients to shape strategy, improve their technology landscape, and apply practical AI. He focuses on connecting the business outcomes clients want with the systems, processes, and teams needed to achieve them. Deep technical expertise meets business operations—building systems that work in the real world.
+                  Ward brings 15+ years of technology leadership experience, serving as a fractional Chief AI Officer, CTO, and technology advisor to companies navigating AI transformation. He works directly with executives and boards to shape AI strategy, build technology roadmaps, and lead implementation. Deep technical expertise meets executive leadership—driving real business outcomes, not just technology for its own sake.
                 </p>
               </div>
             </div>
@@ -94,20 +94,20 @@ export default function About() {
           </div>
           <div className={`${styles.valuesGrid} stagger-children`}>
             <div className={`${styles.valueCard} hover-lift`}>
+              <h3>Executive experience</h3>
+              <p>Real C-suite leadership, not just consulting.</p>
+            </div>
+            <div className={`${styles.valueCard} hover-lift`}>
               <h3>Practitioners</h3>
-              <p>We operate real businesses, not just advise.</p>
+              <p>We build and implement, not just advise.</p>
             </div>
             <div className={`${styles.valueCard} hover-lift`}>
-              <h3>Results-driven</h3>
-              <p>Practical solutions, not theoretical frameworks.</p>
+              <h3>Flexible commitment</h3>
+              <p>Part-time leadership, full-time impact.</p>
             </div>
             <div className={`${styles.valueCard} hover-lift`}>
-              <h3>Long-term Partners</h3>
-              <p>Building lasting relationships, invested in outcomes.</p>
-            </div>
-            <div className={`${styles.valueCard} hover-lift`}>
-              <h3>Fast Delivery</h3>
-              <p>Move quickly and deliver value.</p>
+              <h3>Outcome-focused</h3>
+              <p>Invested in your success, not hours billed.</p>
             </div>
           </div>
         </div>
@@ -121,16 +121,16 @@ export default function About() {
           </div>
           <div className={styles.approachGrid}>
             <div className={`${styles.approachCard} scroll-animate hover-lift`}>
-              <h3>Private Equity</h3>
-              <p>PE firms and PE-backed operating companies looking to scale technology and drive operational efficiency.</p>
+              <h3>Growth Companies</h3>
+              <p>Startups and scale-ups ready to professionalize AI and technology leadership.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-2`}>
-              <h3>Financial Services</h3>
-              <p>Investment banks, wealth managers, payments firms, and trading platforms in complex, regulated environments.</p>
+              <h3>Mid-Market & Enterprise</h3>
+              <p>Established companies seeking AI transformation and technology modernization.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-3`}>
-              <h3>Business & Technology Leaders</h3>
-              <p>CEOs, CTOs, and executives looking to unlock operating leverage from technology investments.</p>
+              <h3>Private Equity Portfolio</h3>
+              <p>PE-backed companies needing technology leadership to drive value creation.</p>
             </div>
           </div>
         </div>
@@ -151,12 +151,12 @@ export default function About() {
       <section className={styles.cta}>
         <div className="container">
           <div className={`${styles.ctaContent} scroll-animate-scale`}>
-            <h2>Work with us</h2>
+            <h2>Ready for AI leadership?</h2>
             <p>
-              Enterprise client, team member, or business owner—let's talk.
+              Let's discuss how fractional executive leadership can accelerate your transformation.
             </p>
             <Link href="/contact" className={`${styles.ctaButton} hover-lift btn-press`}>
-              Get in Touch
+              Schedule a Call
             </Link>
           </div>
         </div>

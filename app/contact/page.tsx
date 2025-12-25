@@ -184,13 +184,12 @@ export default function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select an option</option>
-                      <option value="salesforce">Salesforce Modernization & Architecture</option>
-                      <option value="ai">AI / Automation (Agentic & Workflow)</option>
-                      <option value="data">Data Cloud & Integration Strategy</option>
-                      <option value="devops">Governance, DevOps, & Team Enablement</option>
-                      <option value="leadership">Fractional Engineering Leadership</option>
-                      <option value="assessment">Start with an Assessment</option>
-                      <option value="other">Not sure / Other</option>
+                      <option value="caio">Fractional Chief AI Officer (CAIO)</option>
+                      <option value="cto">Fractional CTO / Technology Leadership</option>
+                      <option value="cino">Fractional Chief Innovation Officer</option>
+                      <option value="ai">AI Strategy & Implementation</option>
+                      <option value="consulting">Technology & Platform Consulting</option>
+                      <option value="other">Not sure / Let's talk</option>
                     </select>
                   </div>
 

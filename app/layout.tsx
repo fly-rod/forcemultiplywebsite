@@ -6,8 +6,8 @@ import './globals.css';
 import './animations.css';
 
 export const metadata: Metadata = {
-  title: 'Force Multiply',
-  description: 'Turn technology into operating leverage. We help financial services firms unlock value through data, automation, and AI on platforms like Salesforce and Microsoft.',
+  title: 'Force Multiply | Fractional AI & Technology Leadership',
+  description: 'Fractional Chief AI Officers, CTOs, and Chief Innovation Officers. Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.',
   icons: {
     icon: '/favicon.png',
     apple: '/resources/assets/fm_favicon_192.png',
