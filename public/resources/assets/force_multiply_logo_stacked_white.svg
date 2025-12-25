@@ -1,25 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 85">
   <!-- Icon: Combined F+M Braille pattern (dots 1, 2, 3, 4) -->
-  <circle cx="80" cy="128" r="10" fill="#ffffff"/>   <!-- dot 1 - top left -->
-  <circle cx="110" cy="128" r="10" fill="#ffffff"/>  <!-- dot 4 - top right -->
-  <circle cx="80" cy="159" r="10" fill="#ffffff"/>   <!-- dot 2 - middle left -->
-  <circle cx="80" cy="190" r="10" fill="#ffffff"/>   <!-- dot 3 - bottom left -->
+  <circle cx="10" cy="10" r="10" fill="#ffffff"/>
+  <circle cx="40" cy="10" r="10" fill="#ffffff"/>
+  <circle cx="10" cy="41" r="10" fill="#ffffff"/>
+  <circle cx="10" cy="72" r="10" fill="#ffffff"/>
 
   <!-- FORCE - light weight -->
-  <text x="135" y="155"
+  <text x="65" y="37"
         font-family="Arial, Helvetica, sans-serif"
         font-size="52"
         font-weight="400"
-        fill="#ffffff">
-    FORCE
-  </text>
+        fill="#ffffff">FORCE</text>
 
   <!-- MULTIPLY - bold -->
-  <text x="135" y="200"
+  <text x="65" y="82"
         font-family="Arial, Helvetica, sans-serif"
         font-size="52"
         font-weight="700"
-        fill="#ffffff">
-    MULTIPLY
-  </text>
+        fill="#ffffff">MULTIPLY</text>
 </svg>
