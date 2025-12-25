@@ -28,13 +28,12 @@ export default function Navigation() {
       <div className="container">
         <div className={styles.navContent}>
           <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
-            <Image
+            <img
               src="/resources/assets/force_multiply_logo_stacked.svg"
               alt="Force Multiply"
               width={165}
               height={48}
               className={styles.logoImage}
-              priority
             />
           </Link>
 
