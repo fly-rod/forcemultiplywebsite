@@ -31,9 +31,8 @@ export default function Navigation() {
             <img
               src="/resources/assets/force_multiply_logo_stacked.svg"
               alt="Force Multiply"
-              width={165}
-              height={48}
               className={styles.logoImage}
+              style={{ height: '60px', width: 'auto', maxHeight: '60px' }}
             />
           </Link>
 
