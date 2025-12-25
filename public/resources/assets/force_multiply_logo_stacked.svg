@@ -1,35 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
-  <defs>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 95">
   <!-- Icon: Combined F+M Braille pattern (dots 1, 2, 3, 4) -->
-  <!-- Top edge of dot 1 aligns with FORCE cap-height, bottom edge of dot 3 aligns with MULTIPLY baseline -->
-  <!-- FORCE cap-height ~118, + radius 10 = center at 128 -->
-  <!-- MULTIPLY baseline 200, - radius 10 = center at 190 -->
-  <circle cx="80" cy="128" r="10" fill="#1e3a8a"/>   <!-- dot 1 - top left -->
-  <circle cx="110" cy="128" r="10" fill="#3b82f6"/>  <!-- dot 4 - top right -->
-  <circle cx="80" cy="159" r="10" fill="#1e3a8a"/>   <!-- dot 2 - middle left -->
-  <circle cx="80" cy="190" r="10" fill="#1e3a8a"/>   <!-- dot 3 - bottom left -->
-  
+  <circle cx="10" cy="20" r="10" fill="#1e3a8a"/>
+  <circle cx="40" cy="20" r="10" fill="#3b82f6"/>
+  <circle cx="10" cy="51" r="10" fill="#1e3a8a"/>
+  <circle cx="10" cy="82" r="10" fill="#1e3a8a"/>
+
   <!-- FORCE - light weight -->
-  <text x="135" y="155"
+  <text x="65" y="47"
         font-family="Arial, Helvetica, sans-serif"
         font-size="52"
         font-weight="400"
-        fill="#1e293b">
-    FORCE
-  </text>
+        fill="#1e293b">FORCE</text>
 
   <!-- MULTIPLY - bold -->
-  <text x="135" y="200" 
-        font-family="Arial, Helvetica, sans-serif" 
-        font-size="52" 
-        font-weight="700" 
-        fill="#1e293b">
-    MULTIPLY
-  </text>
+  <text x="65" y="92"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="52"
+        font-weight="700"
+        fill="#1e293b">MULTIPLY</text>
 </svg>
