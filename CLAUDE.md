@@ -298,7 +298,7 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 
 ## Contact
 
-Email: ward@forcemultiply.com
+Email: ward@forcemultiplyconsulting.com
 
 ---
 

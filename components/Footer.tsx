@@ -45,10 +45,10 @@ export default function Footer() {
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
             <Image
-              src="/resources/assets/force_multiply_logo_3.svg"
+              src="/resources/assets/force_multiply_logo_stacked_white.svg"
               alt="Force Multiply"
-              width={250}
-              height={94}
+              width={600}
+              height={225}
               className={styles.footerLogo}
             />
             <p>Multiply the impact of the teams you already have.</p>
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className={styles.footerSection}>
             <h4>Get Started</h4>
             <p>Ready to move faster?</p>
-            <p><a href="mailto:ward@forcemultiply.com" className={styles.email}>ward@forcemultiply.com</a></p>
+            <p><a href="mailto:ward@forcemultiplyconsulting.com" className={styles.email}>ward@forcemultiplyconsulting.com</a></p>
             <p><a href="/contact" className={styles.cta}>Schedule a Call</a></p>
           </div>
         </div>

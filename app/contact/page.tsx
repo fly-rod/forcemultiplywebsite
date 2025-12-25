@@ -50,7 +50,7 @@ export default function Contact() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       setLoading(false);
-      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again or email directly at ward@forcemultiply.com');
+      alert(error instanceof Error ? error.message : 'Failed to send message. Please try again or email directly at ward@forcemultiplyconsulting.com');
     }
   };
 
@@ -81,8 +81,8 @@ export default function Contact() {
               <h2>What happens next</h2>
               <p>
                 Fill out the form or email directly at{' '}
-                <a href="mailto:ward@forcemultiply.com" className={styles.emailLink}>
-                  ward@forcemultiply.com
+                <a href="mailto:ward@forcemultiplyconsulting.com" className={styles.emailLink}>
+                  ward@forcemultiplyconsulting.com
                 </a>
               </p>
 
