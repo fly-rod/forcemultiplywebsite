@@ -4,7 +4,7 @@
 
 Force Multiply provides fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. We deliver executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.
 
-Whether you need an executive to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring C-suite experience at a fraction of the cost.
+Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring senior leadership experience at a fraction of the cost.
 
 ### Mission Statement
 
@@ -175,7 +175,7 @@ We work with companies at inflection points who need AI and technology leadershi
 ## Leadership
 
 ### Ward Wood – Founder & CEO
-Ward brings 15+ years of technology leadership experience, serving as a fractional Chief AI Officer, CTO, and technology advisor to companies navigating AI transformation. He works directly with executives and boards to shape AI strategy, build technology roadmaps, and lead implementation. Deep technical expertise meets executive leadership—driving real business outcomes, not just technology for its own sake.
+Ward brings over a decade of technology leadership experience, advising executives and boards on AI transformation and technology strategy. He works directly with senior leadership to shape AI roadmaps, build technology strategies, and lead implementation. Deep technical expertise meets business acumen—driving real outcomes, not just technology for its own sake.
 
 ---
 
@@ -183,7 +183,7 @@ Ward brings 15+ years of technology leadership experience, serving as a fraction
 
 ### Value Proposition
 Force Multiply is fundamentally different from traditional consulting firms because:
-1. **Executive experience** – Real C-suite leadership, not just consulting
+1. **Executive experience** – Senior leadership experience, not just consulting
 2. **Practitioners** – We build and implement, not just advise
 3. **Flexible commitment** – Part-time leadership, full-time impact
 4. **Outcome-focused** – Invested in your success, not hours billed
@@ -196,7 +196,7 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 **For Companies:**
 - "Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment"
 - "Part-time executive guidance, full-time impact"
-- "C-suite experience at a fraction of the cost"
+- "Senior leadership experience at a fraction of the cost"
 
 **For Potential Team Members:**
 - "Work at the executive level on AI and technology transformation"

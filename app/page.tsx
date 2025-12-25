@@ -35,8 +35,8 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.statsGrid} stagger-children`}>
             <div className={`${styles.statCard} scroll-animate-scale`}>
-              <div className={styles.statNumber}>15+</div>
-              <div className={styles.statLabel}>Years C-Suite Experience</div>
+              <div className={styles.statNumber}>10+</div>
+              <div className={styles.statLabel}>Years Senior Leadership</div>
             </div>
             <div className={`${styles.statCard} scroll-animate-scale`}>
               <div className={styles.statNumber}>3</div>
@@ -161,7 +161,7 @@ export default function Home() {
               </div>
               <div className={styles.diffNumber}>01</div>
               <h3>Executive experience</h3>
-              <p>Real C-suite experience. We've led teams, built products, and driven transformation.</p>
+              <p>Senior leadership experience working with executives and boards to drive transformation.</p>
             </div>
             <div className={`${styles.diffCard} scroll-animate-scale animate-delay-1`}>
               <div className={styles.diffIcon}>

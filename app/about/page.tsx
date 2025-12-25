@@ -23,7 +23,7 @@ export default function About() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Our mission</h2>
-            <p>We provide fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring C-suite experience without the full-time commitment.</p>
+            <p>We provide fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring senior leadership experience without the full-time commitment.</p>
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function About() {
               <p className={styles.leaderTitle}>Founder & CEO</p>
               <div className={styles.leaderText}>
                 <p>
-                  Ward brings 15+ years of technology leadership experience, serving as a fractional Chief AI Officer, CTO, and technology advisor to companies navigating AI transformation. He works directly with executives and boards to shape AI strategy, build technology roadmaps, and lead implementation. Deep technical expertise meets executive leadership—driving real business outcomes, not just technology for its own sake.
+                  Ward brings over a decade of technology leadership experience, advising executives and boards on AI transformation and technology strategy. He works directly with senior leadership to shape AI roadmaps, build technology strategies, and lead implementation. Deep technical expertise meets business acumen—driving real outcomes, not just technology for its own sake.
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function About() {
           <div className={`${styles.valuesGrid} stagger-children`}>
             <div className={`${styles.valueCard} hover-lift`}>
               <h3>Executive experience</h3>
-              <p>Real C-suite leadership, not just consulting.</p>
+              <p>Senior leadership experience, not just consulting.</p>
             </div>
             <div className={`${styles.valueCard} hover-lift`}>
               <h3>Practitioners</h3>
