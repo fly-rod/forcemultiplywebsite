@@ -31,8 +31,8 @@ export default function Navigation() {
             <Image
               src="/resources/assets/fm_logo_force_multiply_4.png"
               alt="Force Multiply"
-              width={238}
-              height={53}
+              width={262}
+              height={58}
               className={styles.logoImage}
               priority
             />
