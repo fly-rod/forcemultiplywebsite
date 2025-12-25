@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 85">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 95">
   <!-- Icon: Combined F+M Braille pattern (dots 1, 2, 3, 4) -->
-  <circle cx="10" cy="10" r="10" fill="#ffffff"/>
-  <circle cx="40" cy="10" r="10" fill="#ffffff"/>
-  <circle cx="10" cy="41" r="10" fill="#ffffff"/>
-  <circle cx="10" cy="72" r="10" fill="#ffffff"/>
+  <circle cx="10" cy="20" r="10" fill="#ffffff"/>
+  <circle cx="40" cy="20" r="10" fill="#ffffff"/>
+  <circle cx="10" cy="51" r="10" fill="#ffffff"/>
+  <circle cx="10" cy="82" r="10" fill="#ffffff"/>
 
   <!-- FORCE - light weight -->
-  <text x="65" y="37"
+  <text x="65" y="47"
         font-family="Arial, Helvetica, sans-serif"
         font-size="52"
         font-weight="400"
         fill="#ffffff">FORCE</text>
 
   <!-- MULTIPLY - bold -->
-  <text x="65" y="82"
+  <text x="65" y="92"
         font-family="Arial, Helvetica, sans-serif"
         font-size="52"
         font-weight="700"
