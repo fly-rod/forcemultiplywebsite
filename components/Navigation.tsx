@@ -29,10 +29,10 @@ export default function Navigation() {
         <div className={styles.navContent}>
           <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
             <Image
-              src="/resources/assets/fm_logo_force_multiply_4.png"
+              src="/resources/assets/force_multiply_logo_stacked.svg"
               alt="Force Multiply"
-              width={262}
-              height={58}
+              width={165}
+              height={48}
               className={styles.logoImage}
               priority
             />
