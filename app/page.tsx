@@ -19,9 +19,10 @@ export default function Home() {
         </div>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1>AI & Technology Consulting</h1>
+            <div className={styles.heroTag}>AI & Technology Consulting</div>
+            <h1>Multiply What's Possible</h1>
             <p className={styles.heroSubtitle}>
-              We help companies navigate AI transformation, modernize technology, and drive innovation through fractional leadership and hands-on consulting.
+              Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
