@@ -47,7 +47,7 @@
   background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
   top: -150px;
   right: -50px;
-  transition: transform 0.3s ease-out;
+  animation: floatOrb1 25s ease-in-out infinite;
 }
 
 .heroOrb2 {
@@ -58,7 +58,7 @@
   background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
   bottom: -100px;
   left: -80px;
-  transition: transform 0.3s ease-out;
+  animation: floatOrb2 30s ease-in-out infinite;
 }
 
 .heroOrb3 {
@@ -69,7 +69,25 @@
   background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
   top: 40%;
   left: 15%;
-  transition: transform 0.3s ease-out;
+  animation: floatOrb3 20s ease-in-out infinite;
+}
+
+@keyframes floatOrb1 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-30px, 20px); }
+  50% { transform: translate(-15px, 35px); }
+  75% { transform: translate(20px, 15px); }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(25px, -20px); }
+  66% { transform: translate(40px, 15px); }
+}
+
+@keyframes floatOrb3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(25px, -30px); }
 }
 
 /* Mathematical symbols */
@@ -79,8 +97,7 @@
   height: 200px;
   top: 15%;
   right: 20%;
-  transition: transform 0.3s ease-out;
-  animation: rotateSymbol 30s linear infinite;
+  animation: rotateSymbol 60s linear infinite;
 }
 
 .heroSymbol2 {
@@ -89,8 +106,7 @@
   height: 120px;
   bottom: 25%;
   left: 10%;
-  transition: transform 0.3s ease-out;
-  animation: rotateSymbol 25s linear infinite reverse;
+  animation: rotateSymbol 45s linear infinite reverse;
 }
 
 @keyframes rotateSymbol {
@@ -107,8 +123,8 @@
   gap: 8px;
   top: 20%;
   left: 8%;
-  transition: transform 0.3s ease-out;
   opacity: 0.15;
+  animation: brailleGlow 8s ease-in-out infinite;
 }
 
 .brailleDot {
@@ -118,10 +134,20 @@
   background: white;
 }
 
-.brailleDot:nth-child(1) { grid-column: 1; grid-row: 1; }
-.brailleDot:nth-child(2) { grid-column: 2; grid-row: 1; }
-.brailleDot:nth-child(3) { grid-column: 1; grid-row: 2; }
-.brailleDot:nth-child(4) { grid-column: 1; grid-row: 3; }
+.brailleDot:nth-child(1) { grid-column: 1; grid-row: 1; animation: dotPulse 6s ease-in-out infinite; }
+.brailleDot:nth-child(2) { grid-column: 2; grid-row: 1; animation: dotPulse 6s ease-in-out infinite 1.5s; }
+.brailleDot:nth-child(3) { grid-column: 1; grid-row: 2; animation: dotPulse 6s ease-in-out infinite 3s; }
+.brailleDot:nth-child(4) { grid-column: 1; grid-row: 3; animation: dotPulse 6s ease-in-out infinite 4.5s; }
+
+@keyframes brailleGlow {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes dotPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
 
 /* X-Y Axes graph */
 .heroAxes {
@@ -130,7 +156,38 @@
   height: 180px;
   bottom: 15%;
   right: 8%;
-  transition: transform 0.3s ease-out;
+  animation: axesFloat 18s ease-in-out infinite;
+}
+
+/* Growth curve snake animation */
+.heroGrowthCurve {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  animation: snakeCurve 12s ease-in-out infinite;
+}
+
+@keyframes axesFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(8px, -8px); }
+}
+
+@keyframes snakeCurve {
+  0%, 100% {
+    stroke-dashoffset: 0;
+    d: path("M 25 175 Q 80 170 100 120 T 170 30");
+  }
+  25% {
+    stroke-dashoffset: 20;
+    d: path("M 25 175 Q 90 165 100 110 T 170 35");
+  }
+  50% {
+    stroke-dashoffset: 0;
+    d: path("M 25 175 Q 70 175 100 130 T 170 25");
+  }
+  75% {
+    stroke-dashoffset: -20;
+    d: path("M 25 175 Q 85 168 100 115 T 170 32");
+  }
 }
 
 /* Geometric shapes */
@@ -143,8 +200,7 @@
   border-bottom: 70px solid rgba(255,255,255,0.06);
   top: 60%;
   right: 25%;
-  transition: transform 0.3s ease-out;
-  animation: float 15s ease-in-out infinite;
+  animation: floatTriangle 22s ease-in-out infinite;
 }
 
 .heroSquare {
@@ -154,8 +210,7 @@
   border: 2px solid rgba(255,255,255,0.1);
   top: 30%;
   left: 25%;
-  transition: transform 0.3s ease-out;
-  animation: rotateSymbol 40s linear infinite;
+  animation: rotateSquare 50s linear infinite;
 }
 
 .heroHexagon {
@@ -165,8 +220,24 @@
   background: rgba(255,255,255,0.05);
   top: 70%;
   left: 20%;
-  transition: transform 0.3s ease-out;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  animation: floatHexagon 28s ease-in-out infinite;
+}
+
+@keyframes floatTriangle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(15px) rotate(3deg); }
+}
+
+@keyframes rotateSquare {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes floatHexagon {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(10px, -8px) rotate(5deg); }
+  66% { transform: translate(-5px, 5px) rotate(-3deg); }
 }
 
 /* Connecting lines */
@@ -176,7 +247,12 @@
   height: 100%;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-out;
+  animation: linesShift 35s ease-in-out infinite;
+}
+
+@keyframes linesShift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(5px, 3px); }
 }
 
 /* Pulsing rings */
@@ -189,8 +265,7 @@
   top: 50%;
   left: 65%;
   transform: translate(-50%, -50%);
-  transition: transform 0.3s ease-out;
-  animation: pulse 8s ease-in-out infinite;
+  animation: ringPulse1 10s ease-in-out infinite;
 }
 
 .heroRing2 {
@@ -202,18 +277,17 @@
   top: 50%;
   left: 65%;
   transform: translate(-50%, -50%);
-  transition: transform 0.3s ease-out;
-  animation: pulse 12s ease-in-out infinite 2s;
+  animation: ringPulse2 14s ease-in-out infinite 3s;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(20px); }
+@keyframes ringPulse1 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.7; }
 }
 
-@keyframes pulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-  50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.8; }
+@keyframes ringPulse2 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+  50% { transform: translate(-50%, -50%) scale(1.06); opacity: 0.5; }
 }
 
 .heroContent {
