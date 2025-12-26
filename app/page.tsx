@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export default function Home() {
   const [currentHeadline, setCurrentHeadline] = useState(0);
   const headlines = [
-    { line1: 'Fractional CAIO,', line2: 'CTO & Innovation Officers' },
+    { line1: 'Fractional Chief AI,', line2: 'Technology & Innovation Officers' },
     { line1: 'AI Roadmaps &', line2: 'Production Systems' },
     { line1: 'Salesforce, Azure &', line2: 'Cloud Architecture' },
   ];
@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHeadline((prev) => (prev + 1) % headlines.length);
-    }, 3500);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
