@@ -2,9 +2,24 @@
 
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [currentHeadline, setCurrentHeadline] = useState(0);
+  const headlines = [
+    { line1: 'Fractional AI &', line2: 'Tech Leadership' },
+    { line1: 'Part-Time Executives.', line2: 'Full-Time Impact.' },
+    { line1: 'Your Fractional', line2: 'CAIO & CTO' },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeadline((prev) => (prev + 1) % headlines.length);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.homePage}>
       {/* Hero Section */}
@@ -12,8 +27,12 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1>
-              <span className={styles.heroLine1}>Fractional AI &</span>
-              <span className={styles.heroLine2}>Tech Leadership</span>
+              <span className={styles.heroLine1} key={`line1-${currentHeadline}`}>
+                {headlines[currentHeadline].line1}
+              </span>
+              <span className={styles.heroLine2} key={`line2-${currentHeadline}`}>
+                {headlines[currentHeadline].line2}
+              </span>
             </h1>
             <p className={styles.heroSubtitle}>
               Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.
