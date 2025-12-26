@@ -2,20 +2,88 @@
 
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
 
 export default function Home() {
+  const heroRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const hero = heroRef.current;
+    if (!hero) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = hero.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+      const elements = hero.querySelectorAll('[data-parallax]');
+      elements.forEach((el) => {
+        const speed = parseFloat((el as HTMLElement).dataset.parallax || '1');
+        const xMove = x * speed * 50;
+        const yMove = y * speed * 50;
+        (el as HTMLElement).style.transform = `translate(${xMove}px, ${yMove}px)`;
+      });
+    };
+
+    hero.addEventListener('mousemove', handleMouseMove);
+    return () => hero.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <div className={styles.homePage}>
       {/* Hero Section */}
-      <section className={styles.hero}>
+      <section className={styles.hero} ref={heroRef}>
         <div className={styles.heroBackground}>
-          {/* Large decorative circles */}
-          <div className={styles.heroCircle1}></div>
-          <div className={styles.heroCircle2}></div>
-          <div className={styles.heroCircle3}></div>
-          {/* Grid pattern overlay */}
+          {/* Grid pattern */}
           <div className={styles.heroGrid}></div>
+
+          {/* Floating gradient orbs */}
+          <div className={styles.heroOrb1} data-parallax="2"></div>
+          <div className={styles.heroOrb2} data-parallax="1.5"></div>
+          <div className={styles.heroOrb3} data-parallax="3"></div>
+
+          {/* Mathematical symbols - multiplication theme */}
+          <svg className={styles.heroSymbol1} data-parallax="1" viewBox="0 0 100 100">
+            <text x="50" y="70" textAnchor="middle" fontSize="80" fill="rgba(255,255,255,0.08)">×</text>
+          </svg>
+          <svg className={styles.heroSymbol2} data-parallax="2.5" viewBox="0 0 100 100">
+            <text x="50" y="70" textAnchor="middle" fontSize="60" fill="rgba(255,255,255,0.06)">+</text>
+          </svg>
+
+          {/* F+M Braille pattern - hidden logo reference */}
+          <div className={styles.heroBraille} data-parallax="1.8">
+            <div className={styles.brailleDot}></div>
+            <div className={styles.brailleDot}></div>
+            <div className={styles.brailleDot}></div>
+            <div className={styles.brailleDot}></div>
+          </div>
+
+          {/* X-Y Axes - expand X, multiply Y */}
+          <svg className={styles.heroAxes} data-parallax="0.8" viewBox="0 0 200 200">
+            <line x1="20" y1="180" x2="180" y2="180" stroke="rgba(255,255,255,0.1)" strokeWidth="2"/>
+            <line x1="20" y1="180" x2="20" y2="20" stroke="rgba(255,255,255,0.1)" strokeWidth="2"/>
+            <text x="185" y="185" fontSize="14" fill="rgba(255,255,255,0.15)">x</text>
+            <text x="15" y="15" fontSize="14" fill="rgba(255,255,255,0.15)">y</text>
+            {/* Growth curve */}
+            <path d="M 25 175 Q 80 170 100 120 T 170 30" stroke="rgba(255,255,255,0.12)" strokeWidth="2" fill="none"/>
+          </svg>
+
+          {/* Geometric shapes */}
+          <div className={styles.heroTriangle} data-parallax="2.2"></div>
+          <div className={styles.heroSquare} data-parallax="1.2"></div>
+          <div className={styles.heroHexagon} data-parallax="1.6"></div>
+
+          {/* Connecting lines */}
+          <svg className={styles.heroLines} data-parallax="0.5" viewBox="0 0 400 400">
+            <line x1="50" y1="100" x2="350" y2="300" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
+            <line x1="100" y1="350" x2="300" y2="50" stroke="rgba(255,255,255,0.04)" strokeWidth="1"/>
+            <line x1="200" y1="20" x2="200" y2="380" stroke="rgba(255,255,255,0.03)" strokeWidth="1" strokeDasharray="5,5"/>
+          </svg>
+
+          {/* Pulsing rings */}
+          <div className={styles.heroRing1} data-parallax="1.4"></div>
+          <div className={styles.heroRing2} data-parallax="0.9"></div>
         </div>
         <div className="container">
           <div className={styles.heroContent}>
