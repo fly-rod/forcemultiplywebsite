@@ -10,19 +10,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBackground}>
-          <svg className={styles.heroPattern} viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#1e3a8a" stopOpacity="0.1" />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.15" />
-              </linearGradient>
-            </defs>
-            <rect fill="url(#heroGrad)" width="100%" height="100%" />
-            <circle cx="1200" cy="150" r="300" fill="#3b82f6" opacity="0.08" />
-            <circle cx="100" cy="600" r="250" fill="#1e3a8a" opacity="0.06" />
-            <circle cx="800" cy="700" r="200" fill="#3b82f6" opacity="0.05" />
-            <circle cx="1400" cy="500" r="150" fill="#1e3a8a" opacity="0.07" />
-          </svg>
+          {/* Large decorative circles */}
+          <div className={styles.heroCircle1}></div>
+          <div className={styles.heroCircle2}></div>
+          <div className={styles.heroCircle3}></div>
+          {/* Grid pattern overlay */}
+          <div className={styles.heroGrid}></div>
         </div>
         <div className="container">
           <div className={styles.heroContent}>
