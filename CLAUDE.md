@@ -6,6 +6,12 @@ Force Multiply provides fractional Chief AI Officers, CTOs, and Chief Innovation
 
 Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring senior leadership experience at a fraction of the cost.
 
+Header/Slogan
+Expand What's Possible
+
+Subheader
+Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
+
 ### Mission Statement
 
 We're practitioners who deliver results, not theorists who write reports. Force Multiply helps organizations navigate AI transformation and drive innovation through fractional executive leadership and hands-on consulting.
@@ -191,7 +197,7 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 ### Key Messages
 
 **Hero Headline/Slogan:**
-"Expand Possibility"
+"Expand What's Possible"
 
 *Plays on the mathematical concept of force multiplication and expanding X/Y possibilities*
 
