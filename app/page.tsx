@@ -90,7 +90,7 @@ export default function Home() {
             <div className={styles.heroTag}>AI & Technology Consulting</div>
             <h1>Expand Possibility</h1>
             <p className={styles.heroSubtitle}>
-              Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
+              Fractional executive leadership and hands-on AI, data, and technology implementation. We lead and we build—multiplying the impact of your teams and investments.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
@@ -125,7 +125,7 @@ export default function Home() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>What we do</h2>
-            <p>Fractional executive leadership and hands-on consulting</p>
+            <p>Fractional executive leadership and hands-on AI, data, and technology implementation—multiplying the impact of your teams and investments.</p>
           </div>
           <div className={styles.servicesGrid}>
             <div className={`${styles.serviceCard} scroll-animate hover-lift`}>
