@@ -6,21 +6,28 @@
 .hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: white;
-  padding: 4rem 0 3rem;
+  padding: 6rem 0 5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
 }
 
-.hero::before {
-  content: '';
+.heroBackground {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
   pointer-events: none;
+}
+
+.heroPattern {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .heroContent {
@@ -44,15 +51,11 @@
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   font-weight: var(--font-weight-bold);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   line-height: 1.1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
 }
 
 .heroLine1 {

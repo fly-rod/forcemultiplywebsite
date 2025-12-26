@@ -2,40 +2,33 @@
 
 import Link from 'next/link';
 import Icon from '@/components/Icon';
-import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 export default function Home() {
-  const [currentHeadline, setCurrentHeadline] = useState(0);
-  const headlines = [
-    { line1: 'Fractional Chief AI,', line2: 'Technology & Innovation Officers' },
-    { line1: 'AI Roadmaps &', line2: 'Production Systems' },
-    { line1: 'Salesforce, Azure &', line2: 'Cloud Architecture' },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentHeadline((prev) => (prev + 1) % headlines.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className={styles.homePage}>
       {/* Hero Section */}
       <section className={styles.hero}>
+        <div className={styles.heroBackground}>
+          <svg className={styles.heroPattern} viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#1e3a8a" stopOpacity="0.1" />
+                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.15" />
+              </linearGradient>
+            </defs>
+            <rect fill="url(#heroGrad)" width="100%" height="100%" />
+            <circle cx="1200" cy="150" r="300" fill="#3b82f6" opacity="0.08" />
+            <circle cx="100" cy="600" r="250" fill="#1e3a8a" opacity="0.06" />
+            <circle cx="800" cy="700" r="200" fill="#3b82f6" opacity="0.05" />
+            <circle cx="1400" cy="500" r="150" fill="#1e3a8a" opacity="0.07" />
+          </svg>
+        </div>
         <div className="container">
           <div className={styles.heroContent}>
-            <h1>
-              <span className={styles.heroLine1} key={`line1-${currentHeadline}`}>
-                {headlines[currentHeadline].line1}
-              </span>
-              <span className={styles.heroLine2} key={`line2-${currentHeadline}`}>
-                {headlines[currentHeadline].line2}
-              </span>
-            </h1>
+            <h1>AI & Technology Consulting</h1>
             <p className={styles.heroSubtitle}>
-              Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.
+              We help companies navigate AI transformation, modernize technology, and drive innovation through fractional leadership and hands-on consulting.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
