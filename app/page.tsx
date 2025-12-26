@@ -12,8 +12,8 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1>
-              <span className={styles.heroLine1}>Fractional Chief AI,</span>
-              <span className={styles.heroLine2}>Technology & Innovation Officers</span>
+              <span className={styles.heroLine1}>Fractional AI &</span>
+              <span className={styles.heroLine2}>Tech Leadership</span>
             </h1>
             <p className={styles.heroSubtitle}>
               Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.

@@ -191,7 +191,7 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 ### Key Messages
 
 **Hero Headline:**
-"Fractional Chief AI, Technology & Innovation Officers"
+"Fractional AI & Tech Leadership"
 
 **For Companies:**
 - "Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment"
