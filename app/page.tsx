@@ -8,9 +8,9 @@ import styles from './page.module.css';
 export default function Home() {
   const [currentHeadline, setCurrentHeadline] = useState(0);
   const headlines = [
-    { line1: 'Fractional AI &', line2: 'Tech Leadership' },
-    { line1: 'Part-Time Executives.', line2: 'Full-Time Impact.' },
-    { line1: 'Your Fractional', line2: 'CAIO & CTO' },
+    { line1: 'Fractional Executive', line2: 'Leadership' },
+    { line1: 'AI Strategy &', line2: 'Implementation' },
+    { line1: 'Technology &', line2: 'Platform Consulting' },
   ];
 
   useEffect(() => {
