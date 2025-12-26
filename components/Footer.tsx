@@ -51,7 +51,7 @@ export default function Footer() {
               height={225}
               className={styles.footerLogo}
             />
-            <p>Fractional AI & Technology Leadership</p>
+            <p>Expand Possibility</p>
           </div>
           <div className={styles.footerSection}>
             <h4>Navigate</h4>

@@ -190,8 +190,10 @@ Force Multiply is fundamentally different from traditional consulting firms beca
 
 ### Key Messages
 
-**Hero Headline:**
-"Fractional AI & Tech Leadership"
+**Hero Headline/Slogan:**
+"Expand Possibility"
+
+*Plays on the mathematical concept of force multiplication and expanding X/Y possibilities*
 
 **For Companies:**
 - "Executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment"

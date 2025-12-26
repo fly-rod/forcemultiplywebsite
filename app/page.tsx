@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <div className={styles.heroTag}>AI & Technology Consulting</div>
-            <h1>Multiply What's Possible</h1>
+            <h1>Expand Possibility</h1>
             <p className={styles.heroSubtitle}>
               Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
             </p>
