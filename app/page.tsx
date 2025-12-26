@@ -1,8 +1,31 @@
+'use client';
+
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
+const heroTags = [
+  'AI & Technology Consulting',
+  'Fractional Chief AI & Technology Officers',
+  'Salesforce',
+  'Microsoft & Azure',
+  'MuleSoft',
+  'Databricks',
+  'Custom Implementations',
+  '3rd Party AI Tools',
+];
+
 export default function Home() {
+  const [currentTagIndex, setCurrentTagIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTagIndex((prev) => (prev + 1) % heroTags.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.homePage}>
       {/* Hero Section */}
@@ -60,10 +83,12 @@ export default function Home() {
         </div>
         <div className="container">
           <div className={styles.heroContent}>
-            <div className={styles.heroTag}>AI & Technology Consulting</div>
+            <div className={styles.heroTag} key={currentTagIndex}>
+              {heroTags[currentTagIndex]}
+            </div>
             <h1>Expand Possibility</h1>
             <p className={styles.heroSubtitle}>
-              Fractional executive leadership and hands-on AI, data, and technology implementation. We lead and we build—multiplying the impact of your teams and investments.
+              Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
