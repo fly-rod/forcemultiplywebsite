@@ -67,37 +67,7 @@ export default function Home() {
           <div className={styles.heroHexagon}></div>
           <div className={styles.heroDiamond}></div>
           <div className={styles.heroCircle}></div>
-          <div className={styles.heroPentagon}></div>
           <div className={styles.heroCross}></div>
-
-          {/* Rotating gears */}
-          <svg className={styles.heroGear} viewBox="0 0 64 64">
-            <g fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth="1.5">
-              <circle cx="32" cy="32" r="8"/>
-              <path d="M32 4v8M32 52v8M4 32h8M52 32h8M11.5 11.5l5.7 5.7M46.8 46.8l5.7 5.7M11.5 52.5l5.7-5.7M46.8 17.2l5.7-5.7"/>
-              <circle cx="32" cy="32" r="20"/>
-              <rect x="28" y="2" width="8" height="6" rx="1"/>
-              <rect x="28" y="56" width="8" height="6" rx="1"/>
-              <rect x="2" y="28" width="6" height="8" rx="1"/>
-              <rect x="56" y="28" width="6" height="8" rx="1"/>
-              <rect x="7.3" y="7.3" width="6" height="8" rx="1" transform="rotate(45 10.3 11.3)"/>
-              <rect x="50.7" y="50.7" width="6" height="8" rx="1" transform="rotate(45 53.7 54.7)"/>
-              <rect x="7.3" y="48.7" width="6" height="8" rx="1" transform="rotate(-45 10.3 52.7)"/>
-              <rect x="50.7" y="5.3" width="6" height="8" rx="1" transform="rotate(-45 53.7 9.3)"/>
-            </g>
-          </svg>
-
-          <svg className={styles.heroGear2} viewBox="0 0 64 64">
-            <g fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1.5">
-              <circle cx="32" cy="32" r="6"/>
-              <circle cx="32" cy="32" r="16"/>
-              <path d="M32 8v6M32 50v6M8 32h6M50 32h6M15 15l4 4M45 45l4 4M15 49l4-4M45 19l4-4"/>
-              <rect x="29" y="4" width="6" height="5" rx="1"/>
-              <rect x="29" y="55" width="6" height="5" rx="1"/>
-              <rect x="4" y="29" width="5" height="6" rx="1"/>
-              <rect x="55" y="29" width="5" height="6" rx="1"/>
-            </g>
-          </svg>
 
           {/* Connecting lines */}
           <svg className={styles.heroLines} viewBox="0 0 400 400">
