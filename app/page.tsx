@@ -6,10 +6,9 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
 const heroTags = [
-  'AI & Technology Consulting',
-  'Fractional AI & Technology Leadership',
-  'Salesforce | Microsoft | AWS',
-  'AI & Automation',
+  'Fractional AI & Technology Officers',
+  'AI, Data and Technology Strategy and Implementation',
+  'Salesforce | Microsoft | AWS | Custom',
 ];
 
 export default function Home() {
