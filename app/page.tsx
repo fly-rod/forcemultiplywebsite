@@ -105,15 +105,15 @@ export default function Home() {
         <div className="container">
           <div className={styles.valuePropsGrid}>
             <div className={styles.valueProp}>
-              <h3>Leading</h3>
+              <h3>We Lead</h3>
               <p>Executive guidance for AI and technology</p>
             </div>
             <div className={styles.valueProp}>
-              <h3>Building</h3>
+              <h3>We Build</h3>
               <p>Hands-on implementation, not just advice</p>
             </div>
             <div className={styles.valueProp}>
-              <h3>Multiplying</h3>
+              <h3>We Multiply</h3>
               <p>Your team's impact and capabilities</p>
             </div>
           </div>
