@@ -100,6 +100,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Value Props */}
+      <section className={styles.valueProps}>
+        <div className="container">
+          <div className={styles.valuePropsGrid}>
+            <div className={styles.valueProp}>
+              <h3>We Lead</h3>
+              <p>Executive guidance for AI and technology</p>
+            </div>
+            <div className={styles.valueProp}>
+              <h3>We Build</h3>
+              <p>Hands-on implementation, not just advice</p>
+            </div>
+            <div className={styles.valueProp}>
+              <h3>We Multiply</h3>
+              <p>Your team's impact and capabilities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Do */}
       <section className={styles.services}>
         <div className="container">
