@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 import type { Metadata } from 'next';
 
@@ -19,6 +20,7 @@ export default function BlogPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
+        <HeroBackground />
         <h1>Blog</h1>
         <p>Insights, strategies, and expertise to help your business grow</p>
       </div>

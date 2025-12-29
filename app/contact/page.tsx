@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
 export default function Contact() {
@@ -66,6 +67,7 @@ export default function Contact() {
   return (
     <div className={styles.contactPage}>
       <section className={styles.header}>
+        <HeroBackground />
         <div className="container">
           <h1>Let's Talk</h1>
           <p className={styles.subtitle}>

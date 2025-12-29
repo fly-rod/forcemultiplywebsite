@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
 export default function Careers() {
@@ -6,6 +7,7 @@ export default function Careers() {
     <div className={styles.careersPage}>
       {/* Hero */}
       <section className={styles.header}>
+        <HeroBackground />
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>Careers</div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
 export default function Services() {
@@ -7,6 +8,7 @@ export default function Services() {
     <div className={styles.servicesPage}>
       {/* Hero */}
       <section className={styles.header}>
+        <HeroBackground />
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>Services</div>

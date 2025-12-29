@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
 export default function About() {
@@ -7,6 +8,7 @@ export default function About() {
     <div className={styles.aboutPage}>
       {/* Hero */}
       <section className={styles.header}>
+        <HeroBackground />
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>About Us</div>

@@ -1,0 +1,256 @@
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Grid pattern */
+.heroGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Floating gradient orbs - enhanced movement */
+.heroOrb1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  top: -100px;
+  right: -50px;
+  animation: floatOrb1 18s ease-in-out infinite;
+}
+
+.heroOrb2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  bottom: -80px;
+  left: -60px;
+  animation: floatOrb2 22s ease-in-out infinite;
+}
+
+.heroOrb3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+  top: 30%;
+  left: 20%;
+  animation: floatOrb3 15s ease-in-out infinite;
+}
+
+@keyframes floatOrb1 {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-40px, 30px); }
+  40% { transform: translate(-20px, 50px); }
+  60% { transform: translate(30px, 40px); }
+  80% { transform: translate(40px, 10px); }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(50px, -30px); }
+  50% { transform: translate(70px, 20px); }
+  75% { transform: translate(30px, -10px); }
+}
+
+@keyframes floatOrb3 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(40px, -40px); }
+  66% { transform: translate(-30px, 30px); }
+}
+
+/* Mathematical symbols */
+.heroSymbol1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 15%;
+  right: 15%;
+  animation: rotateSymbol 60s linear infinite;
+}
+
+.heroSymbol2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: 8%;
+  animation: rotateSymbol 45s linear infinite reverse;
+}
+
+@keyframes rotateSymbol {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Geometric shapes */
+.heroTriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 52px solid rgba(255,255,255,0.06);
+  top: 60%;
+  right: 20%;
+  animation: floatTriangle 22s ease-in-out infinite;
+}
+
+@keyframes floatTriangle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(15px) rotate(3deg); }
+}
+
+.heroSquare {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,0.1);
+  top: 25%;
+  left: 30%;
+  animation: rotateSquare 50s linear infinite;
+}
+
+@keyframes rotateSquare {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.heroHexagon {
+  position: absolute;
+  width: 50px;
+  height: 29px;
+  background: rgba(255,255,255,0.05);
+  top: 70%;
+  left: 15%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  animation: floatHexagon 28s ease-in-out infinite;
+}
+
+@keyframes floatHexagon {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(10px, -8px) rotate(5deg); }
+  66% { transform: translate(-5px, 5px) rotate(-3deg); }
+}
+
+.heroDiamond {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(255,255,255,0.06);
+  top: 20%;
+  right: 25%;
+  transform: rotate(45deg);
+  animation: floatDiamond 18s ease-in-out infinite;
+}
+
+@keyframes floatDiamond {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); }
+  50% { transform: rotate(45deg) translate(12px, -8px); }
+}
+
+.heroCircle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  bottom: 30%;
+  left: 35%;
+  animation: floatCircle 16s ease-in-out infinite;
+}
+
+@keyframes floatCircle {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-8px, 12px); }
+}
+
+.heroCross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 25%;
+  right: 30%;
+  animation: rotateCross 30s linear infinite;
+}
+
+.heroCross::before,
+.heroCross::after {
+  content: '';
+  position: absolute;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+}
+
+.heroCross::before {
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.heroCross::after {
+  width: 5px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+@keyframes rotateCross {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Pulsing rings */
+.heroRing1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  animation: ringPulse1 10s ease-in-out infinite;
+}
+
+.heroRing2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.06);
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  animation: ringPulse2 14s ease-in-out infinite 3s;
+}
+
+@keyframes ringPulse1 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.7; }
+}
+
+@keyframes ringPulse2 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+  50% { transform: translate(-50%, -50%) scale(1.06); opacity: 0.5; }
+}

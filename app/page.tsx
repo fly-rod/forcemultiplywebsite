@@ -100,22 +100,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className={styles.stats}>
-        <div className="container">
-          <div className={`${styles.statsGrid} stagger-children`}>
-            <div className={`${styles.statCard} scroll-animate-scale`}>
-              <div className={styles.statNumber}>10+</div>
-              <div className={styles.statLabel}>Years Senior Leadership</div>
-            </div>
-            <div className={`${styles.statCard} scroll-animate-scale`}>
-              <div className={styles.statNumber}>3</div>
-              <div className={styles.statLabel}>Fractional Roles</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* What We Do */}
       <section className={styles.services}>
         <div className="container">

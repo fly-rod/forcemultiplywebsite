@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
 export default function HowWeWork() {
   return (
     <div className={styles.howWeWorkPage}>
       <section className={styles.header}>
+        <HeroBackground />
         <div className="container">
           <h1>How We Work</h1>
           <p className={styles.subtitle}>
