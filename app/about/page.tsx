@@ -68,7 +68,7 @@ export default function About() {
           <div className={`${styles.leaderContent} scroll-animate`}>
             <div className={styles.leaderPhoto}>
               <Image
-                src="/resources/images/ward headshot.png"
+                src="/resources/images/ward headshot 2023.jpeg"
                 alt="Ward Wood"
                 width={300}
                 height={300}
