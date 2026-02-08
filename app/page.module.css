@@ -1037,6 +1037,12 @@
     font-size: 1.5rem;
   }
 
+  .valuePropIcon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.75rem;
+  }
+
   .sectionHeader h2 {
     font-size: 1.75rem;
   }
