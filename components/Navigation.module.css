@@ -7,6 +7,7 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: var(--shadow-sm);
+  overflow: visible;
 }
 
 .navContent {
@@ -14,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 0;
+  overflow: visible;
 }
 
 .logo {
@@ -103,6 +105,7 @@
 /* Mobile Menu */
 .mobileMenu {
   display: none;
+  visibility: hidden;
   position: fixed;
   top: 80px;
   right: 0;
@@ -111,13 +114,14 @@
   background: var(--bg-white);
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), visibility 0.3s;
   z-index: 105;
   overflow-y: auto;
 }
 
 .mobileMenuOpen {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .mobileNavLinks {
@@ -186,6 +190,11 @@
 
   .mobileMenu {
     display: block;
+    visibility: hidden;
+  }
+
+  .mobileMenu.mobileMenuOpen {
+    visibility: visible;
   }
 
   .mobileOverlay {
