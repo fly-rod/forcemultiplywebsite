@@ -12,9 +12,9 @@ export default function About() {
         <div className="container">
           <div className={styles.headerContent}>
             <div className={styles.tag}>About Us</div>
-            <h1>AI & Technology Leadership</h1>
+            <h1>Financial Services Technology Experts</h1>
             <p className={styles.subtitle}>
-              Fractional executive leadership and hands-on consulting to help companies navigate AI transformation and drive innovation.
+              Fractional technical leaders and hands-on developers helping financial services firms sell smarter and deliver better customer experiences.
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function About() {
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
             <h2>Our mission</h2>
-            <p>We provide fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring senior leadership experience without the full-time commitment.</p>
+            <p>We operate as fractional technical leaders and hands-on developers with deep expertise across private equity, PE-backed portfolio companies, investment banking, wealth management, banking, and payments. We move with the same urgency you do—unlocking value from Salesforce, Microsoft, MuleSoft, Databricks and more without adding headcount or removing what already works.</p>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* How We Work */}
+      {/* Who We Work With */}
       <section className={styles.approach}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
@@ -123,16 +123,16 @@ export default function About() {
           </div>
           <div className={styles.approachGrid}>
             <div className={`${styles.approachCard} scroll-animate hover-lift`}>
-              <h3>Growth Companies</h3>
-              <p>Startups and scale-ups ready to professionalize AI and technology leadership.</p>
+              <h3>Private Equity & Portfolio Companies</h3>
+              <p>PE funds and their portfolio companies seeking technology leadership to drive value creation.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-2`}>
-              <h3>Mid-Market & Enterprise</h3>
-              <p>Established companies seeking AI transformation and technology modernization.</p>
+              <h3>Investment Banking & Wealth Management</h3>
+              <p>Firms modernizing client engagement, deal execution, and advisor productivity.</p>
             </div>
             <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-3`}>
-              <h3>Private Equity Portfolio</h3>
-              <p>PE-backed companies needing technology leadership to drive value creation.</p>
+              <h3>Banking & Payments</h3>
+              <p>Institutions transforming customer experience, compliance, and transaction processing.</p>
             </div>
           </div>
         </div>

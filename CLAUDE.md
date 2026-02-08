@@ -2,19 +2,21 @@
 
 ## Company Overview
 
-Force Multiply provides fractional Chief AI Officers, CTOs, and Chief Innovation Officers to companies ready to transform. We deliver executive-level leadership for AI transformation, technology strategy, and innovation—without the full-time commitment.
+Force Multiply provides fractional technical leaders and hands-on developers for financial services firms. We help teams sell smarter, reach the right clients, and deliver better customer experiences.
 
-Whether you need executive leadership to guide AI adoption, hands-on consulting to implement new technologies, or both—we bring senior leadership experience at a fraction of the cost.
+With deep expertise across private equity, PE-backed portfolio companies, investment banking, wealth management, banking, and payments, we operate with the same urgency you do.
+
+We unlock value from platforms like Salesforce, Microsoft, MuleSoft, Databricks and more—eliminating friction, accelerating execution, and turning systems into competitive advantage without adding headcount or removing what already works.
 
 Header/Slogan
-Expand Possibility
+Expand Possibility.
 
 Subheader
-Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
+Fractional technical leaders and hands-on developers for financial services. We help teams sell smarter, reach the right clients, and deliver better customer experiences.
 
 ### Mission Statement
 
-We're practitioners who deliver results, not theorists who write reports. Force Multiply helps organizations navigate AI transformation and drive innovation through fractional executive leadership and hands-on consulting.
+We're practitioners who deliver results, not theorists who write reports. Force Multiply helps financial services firms modernize technology and drive better outcomes through fractional technical leadership and hands-on development.
 
 ---
 
@@ -166,15 +168,15 @@ To add new icons to the system:
 
 ### Target Industries
 
-**Broad Industry Focus:**
-- Technology & SaaS
-- Financial Services
-- Professional Services
-- Healthcare & Life Sciences
-- Manufacturing & Industrial
-- Private Equity Portfolio Companies
+**Financial Services Focus:**
+- Private Equity
+- PE-Backed Portfolio Companies
+- Investment Banking
+- Wealth Management
+- Banking
+- Payments
 
-We work with companies at inflection points who need AI and technology leadership to drive transformation.
+We work with financial services firms ready to modernize technology, improve client engagement, and drive better outcomes.
 
 ---
 
@@ -320,11 +322,13 @@ Email: ward@forcemultiplyconsulting.com
 
 ## Recent Updates
 
+**February 2026:**
+- Refocused positioning on Financial Services industry expertise
+- Updated target industries: PE, PE Portfolio Companies, Investment Banking, Wealth Management, Banking, Payments
+- Enhanced "Leading, Building, Multiplying" value props with icons and detailed content
+- Updated messaging to emphasize selling smarter, reaching the right clients, and better customer experiences
+
 **December 2025:**
-- Rebranded to focus on Fractional Chief AI, Technology & Innovation Officers
-- Broadened target market beyond financial services to all industries
-- Updated hero, services, and messaging across all pages
-- Replaced "operating leverage" language with fractional leadership positioning
 - Enhanced visual design with modern animations
 - Improved user experience with scroll effects and micro-interactions
 - Please git add commit and push whenever you finish working on something

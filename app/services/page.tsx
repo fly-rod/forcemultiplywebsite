@@ -14,7 +14,7 @@ export default function Services() {
             <div className={styles.tag}>Services</div>
             <h1>Fractional Leadership & Consulting</h1>
             <p className={styles.subtitle}>
-              Executive-level AI and technology leadership, plus hands-on consulting—without the full-time commitment.
+              Technical leadership and hands-on development for financial services—helping teams sell smarter and deliver better customer experiences.
             </p>
           </div>
         </div>
@@ -76,33 +76,33 @@ export default function Services() {
       <section className={styles.industries}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Industries we serve</h2>
-            <p>AI and technology leadership across sectors</p>
+            <h2>Financial services expertise</h2>
+            <p>Deep expertise across the financial services landscape</p>
           </div>
           <div className={`${styles.industryGrid} stagger-children`}>
             <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="rocket" size={32} />
-              <h3>Technology & SaaS</h3>
+              <Icon name="target" size={32} />
+              <h3>Private Equity</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="shield" size={32} />
-              <h3>Financial Services</h3>
+              <Icon name="chart" size={32} />
+              <h3>PE Portfolio Companies</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <Icon name="briefcase" size={32} />
-              <h3>Professional Services</h3>
+              <h3>Investment Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="check-circle" size={32} />
-              <h3>Healthcare</h3>
+              <Icon name="users" size={32} />
+              <h3>Wealth Management</h3>
+            </div>
+            <div className={`${styles.indCard} hover-lift`}>
+              <Icon name="shield" size={32} />
+              <h3>Banking</h3>
             </div>
             <div className={`${styles.indCard} hover-lift`}>
               <Icon name="lightning" size={32} />
-              <h3>Manufacturing</h3>
-            </div>
-            <div className={`${styles.indCard} hover-lift`}>
-              <Icon name="target" size={32} />
-              <h3>Private Equity</h3>
+              <h3>Payments</h3>
             </div>
           </div>
         </div>

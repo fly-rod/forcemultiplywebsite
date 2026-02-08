@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
 const heroTags = [
-  'Fractional AI & Technology Leadership',
-  'Hands-On Development Expertise',
-  'Salesforce, Microsoft, AWS and More',
+  'Financial Services Technology Experts',
+  'Fractional Technical Leadership',
+  'Salesforce, Microsoft, MuleSoft & More',
 ];
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
             <h1>Expand Possibility.</h1>
             <p className={styles.heroSubtitle}>
-              Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
+              Fractional technical leaders and hands-on developers for financial services. We help teams sell smarter, reach the right clients, and deliver better customer experiences.
             </p>
             <div className={styles.heroButtons}>
               <Link href="/contact" className={styles.buttonPrimary}>
@@ -105,16 +105,25 @@ export default function Home() {
         <div className="container">
           <div className={styles.valuePropsGrid}>
             <div className={styles.valueProp}>
+              <div className={styles.valuePropIcon}>
+                <Icon name="target" size={32} />
+              </div>
               <h3>Leading</h3>
-              <p>Executive guidance for AI and technology</p>
+              <p>Fractional technical leaders who move with the same urgency you do. We help teams sell smarter, reach the right clients, and deliver better customer experiences.</p>
             </div>
             <div className={styles.valueProp}>
+              <div className={styles.valuePropIcon}>
+                <Icon name="code" size={32} />
+              </div>
               <h3>Building</h3>
-              <p>Hands-on implementation, not just advice</p>
+              <p>Hands-on developers with deep expertise across private equity, investment banking, wealth management, banking, and payments. We build, not just advise.</p>
             </div>
             <div className={styles.valueProp}>
+              <div className={styles.valuePropIcon}>
+                <Icon name="lightning" size={32} />
+              </div>
               <h3>Multiplying</h3>
-              <p>Your team's impact and capabilities</p>
+              <p>We unlock value from Salesforce, Microsoft, MuleSoft, Databricks and more—eliminating friction and turning systems into competitive advantage without adding headcount.</p>
             </div>
           </div>
         </div>
@@ -172,51 +181,51 @@ export default function Home() {
       <section className={styles.industries}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Industries we serve</h2>
-            <p>AI and technology leadership for companies ready to transform</p>
+            <h2>Financial services expertise</h2>
+            <p>Deep expertise across the financial services landscape</p>
           </div>
           <div className={styles.industriesGrid}>
             <div className={`${styles.industryCard} scroll-animate hover-lift`}>
               <div className={styles.industryIcon}>
-                <Icon name="rocket" size={32} />
+                <Icon name="target" size={32} />
               </div>
-              <h3>Technology & SaaS</h3>
-              <p>Software companies, platforms, startups scaling up</p>
+              <h3>Private Equity</h3>
+              <p>Fund operations, portfolio reporting, deal flow management</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-1`}>
               <div className={styles.industryIcon}>
-                <Icon name="shield" size={32} />
+                <Icon name="chart" size={32} />
               </div>
-              <h3>Financial Services</h3>
-              <p>Banks, wealth management, fintech, private equity</p>
+              <h3>PE Portfolio Companies</h3>
+              <p>Technology modernization and value creation for PE-backed firms</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-2`}>
               <div className={styles.industryIcon}>
                 <Icon name="briefcase" size={32} />
               </div>
-              <h3>Professional Services</h3>
-              <p>Consulting, legal, accounting, advisory firms</p>
+              <h3>Investment Banking</h3>
+              <p>Deal execution, client relationship management, pitch automation</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-3`}>
               <div className={styles.industryIcon}>
-                <Icon name="check-circle" size={32} />
+                <Icon name="users" size={32} />
               </div>
-              <h3>Healthcare & Life Sciences</h3>
-              <p>Health tech, biotech, medical devices, providers</p>
+              <h3>Wealth Management</h3>
+              <p>Advisor productivity, client experience, portfolio insights</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-4`}>
               <div className={styles.industryIcon}>
-                <Icon name="lightning" size={32} />
+                <Icon name="shield" size={32} />
               </div>
-              <h3>Manufacturing & Industrial</h3>
-              <p>Manufacturing, logistics, supply chain, industrial tech</p>
+              <h3>Banking</h3>
+              <p>Digital transformation, compliance automation, customer experience</p>
             </div>
             <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-5`}>
               <div className={styles.industryIcon}>
-                <Icon name="target" size={32} />
+                <Icon name="lightning" size={32} />
               </div>
-              <h3>Private Equity Portfolio</h3>
-              <p>PE-backed operating companies seeking technology leadership</p>
+              <h3>Payments</h3>
+              <p>Payment processing, fintech integration, transaction optimization</p>
             </div>
           </div>
         </div>
