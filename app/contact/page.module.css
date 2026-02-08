@@ -143,6 +143,8 @@
   color: var(--color-text);
   transition: border-color 0.2s;
   background: var(--color-bg);
+  min-height: 48px;
+  -webkit-appearance: none;
 }
 
 .formGroup input:focus,
@@ -167,6 +169,8 @@
   transition: all 0.2s ease;
   margin-top: 0.5rem;
   animation: gradientShift 6s ease infinite;
+  min-height: 48px;
+  width: 100%;
 }
 
 .submitButton:hover:not(:disabled) {
@@ -283,5 +287,18 @@
 
   .contactInfo h2 {
     font-size: 1.5rem;
+  }
+
+  .infoItem {
+    padding: 1.25rem;
+  }
+
+  .infoItem h3 {
+    font-size: 1rem;
+  }
+
+  .resetButton {
+    width: 100%;
+    min-height: 48px;
   }
 }

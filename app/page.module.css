@@ -479,6 +479,7 @@
   animation: wordFadeIn 0.6s ease-in-out;
   min-width: 200px;
   text-align: center;
+  white-space: nowrap;
 }
 
 @keyframes wordFadeIn {
@@ -892,6 +893,7 @@
 @media (max-width: 768px) {
   .hero {
     padding: 2.5rem 0 2rem;
+    min-height: auto;
   }
 
   .hero h1 {
@@ -899,14 +901,26 @@
     line-height: 1.2;
   }
 
+  .heroLine1 {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .rotatingWord {
+    min-width: auto;
+    font-size: 0.9em;
+  }
+
   .heroSubtitle {
     font-size: 1rem;
     margin: 0 auto 1.5rem;
+    padding: 0 1rem;
   }
 
   .heroButtons {
     flex-direction: column;
     width: 100%;
+    padding: 0 1rem;
   }
 
   .buttonPrimary,
@@ -914,6 +928,83 @@
     width: 100%;
     padding: 1rem 2rem;
     font-size: 1rem;
+    min-height: 48px;
+  }
+
+  /* Reduce hero background visual clutter on mobile */
+  .heroOrb1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -30px;
+  }
+
+  .heroOrb2 {
+    width: 200px;
+    height: 200px;
+    bottom: -60px;
+    left: -50px;
+  }
+
+  .heroOrb3 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .heroSymbol1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 10%;
+  }
+
+  .heroSymbol2 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .heroTriangle,
+  .heroHexagon,
+  .heroDiamond,
+  .heroCross,
+  .heroPentagon {
+    display: none;
+  }
+
+  .heroSquare {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heroCircle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .heroRing1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .heroRing2 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .heroGear,
+  .heroGear2 {
+    display: none;
+  }
+
+  .heroAxes {
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .heroBraille {
+    display: none;
   }
 
   .valueProps {
@@ -923,6 +1014,7 @@
   .valuePropsGrid {
     gap: 1rem;
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   .valueProp h3 {
@@ -942,6 +1034,7 @@
   .diffGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .serviceCard,
@@ -960,13 +1053,22 @@
     padding: 3rem 0;
   }
 
+  .ctaContent {
+    padding: 0 1.5rem;
+  }
+
   .cta h2 {
     font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
   }
 
   .ctaButton {
     width: 100%;
     padding: 1rem 2rem;
+    min-height: 48px;
   }
 }
 
@@ -975,8 +1077,18 @@
     font-size: 1.5rem;
   }
 
+  .rotatingWord {
+    font-size: 0.85em;
+    padding: 0.1rem 0.6rem;
+  }
+
   .heroSubtitle {
     font-size: 0.95rem;
+  }
+
+  .heroTag {
+    font-size: 0.75rem;
+    padding: 0.3rem 1rem;
   }
 
   .sectionHeader h2 {
@@ -993,11 +1105,46 @@
     padding: 1.5rem 1rem;
   }
 
+  .serviceCard h3 {
+    font-size: 1.5rem;
+  }
+
   .cta h2 {
     font-size: 1.5rem;
   }
 
   .cta p {
-    font-size: 1.05rem;
+    font-size: 1rem;
+  }
+
+  .valueProp h3 {
+    font-size: 1.35rem;
+  }
+
+  .valueProp p {
+    font-size: 0.9rem;
+  }
+
+  /* Further reduce hero background on very small screens */
+  .heroOrb1,
+  .heroOrb2,
+  .heroOrb3 {
+    opacity: 0.7;
+  }
+
+  .heroSymbol1,
+  .heroSymbol2,
+  .heroAxes {
+    display: none;
+  }
+
+  .heroRing1,
+  .heroRing2 {
+    display: none;
+  }
+
+  .heroSquare,
+  .heroCircle {
+    display: none;
   }
 }

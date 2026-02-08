@@ -398,6 +398,7 @@
   .leaderContent {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .modelGrid,
@@ -405,6 +406,7 @@
   .approachGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .modelCard,
@@ -417,13 +419,22 @@
     padding: 3rem 0;
   }
 
+  .ctaContent {
+    padding: 0 1.5rem;
+  }
+
   .cta h2 {
     font-size: 1.75rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
   }
 
   .ctaButton {
     width: 100%;
     padding: 1rem 2rem;
+    min-height: 48px;
   }
 }
 
@@ -446,7 +457,29 @@
     padding: 1.5rem 1rem;
   }
 
+  .modelCard h3,
+  .valueCard h3,
+  .approachCard h3 {
+    font-size: 1.15rem;
+  }
+
+  .leaderInfo h2 {
+    font-size: 1.5rem;
+  }
+
+  .leaderTitle {
+    font-size: 1rem;
+  }
+
+  .leaderText p {
+    font-size: 1rem;
+  }
+
   .cta h2 {
     font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
   }
 }

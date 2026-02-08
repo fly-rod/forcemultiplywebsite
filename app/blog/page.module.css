@@ -39,7 +39,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
   gap: 2rem;
 }
 
@@ -152,6 +152,10 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 2.5rem 1rem 2rem;
+  }
+
   .header h1 {
     font-size: 1.75rem;
   }
@@ -162,5 +166,13 @@
 
   .container {
     padding: 1.5rem 1rem;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    padding: 1.25rem;
   }
 }

@@ -254,3 +254,91 @@
   0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
   50% { transform: translate(-50%, -50%) scale(1.06); opacity: 0.5; }
 }
+
+/* Mobile responsive - reduce visual clutter */
+@media (max-width: 768px) {
+  .heroOrb1 {
+    width: 250px;
+    height: 250px;
+    top: -80px;
+    right: -30px;
+  }
+
+  .heroOrb2 {
+    width: 180px;
+    height: 180px;
+    bottom: -50px;
+    left: -40px;
+  }
+
+  .heroOrb3 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .heroSymbol1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    right: 10%;
+  }
+
+  .heroSymbol2 {
+    width: 60px;
+    height: 60px;
+    bottom: 15%;
+    left: 5%;
+  }
+
+  .heroTriangle,
+  .heroHexagon,
+  .heroDiamond,
+  .heroCross {
+    display: none;
+  }
+
+  .heroSquare {
+    width: 25px;
+    height: 25px;
+  }
+
+  .heroCircle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heroRing1 {
+    width: 120px;
+    height: 120px;
+    left: 80%;
+  }
+
+  .heroRing2 {
+    width: 180px;
+    height: 180px;
+    left: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroOrb1,
+  .heroOrb2,
+  .heroOrb3 {
+    opacity: 0.7;
+  }
+
+  .heroSymbol1,
+  .heroSymbol2 {
+    display: none;
+  }
+
+  .heroRing1,
+  .heroRing2 {
+    display: none;
+  }
+
+  .heroSquare,
+  .heroCircle {
+    display: none;
+  }
+}

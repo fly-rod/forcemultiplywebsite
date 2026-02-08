@@ -84,7 +84,7 @@ export default function Home() {
             <div className={styles.heroTag} key={currentTagIndex}>
               {heroTags[currentTagIndex]}
             </div>
-            <h1>Expand Possibility</h1>
+            <h1>Expand Possibility.</h1>
             <p className={styles.heroSubtitle}>
               Fractional executive leadership and hands-on consulting to navigate AI transformation, modernize technology, and drive innovation.
             </p>

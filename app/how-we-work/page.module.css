@@ -303,6 +303,19 @@
     padding: 3rem 0;
   }
 
+  .methodIntro {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .methodIntro p {
+    font-size: 1.05rem;
+  }
+
+  .phases {
+    padding: 0 1rem;
+  }
+
   .phase {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
@@ -312,9 +325,27 @@
     font-size: 2rem;
   }
 
+  .phaseContent h3 {
+    font-size: 1.5rem;
+  }
+
   .differentiators,
   .expectationsList {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .approach h2,
+  .expectations h2 {
+    padding: 0 1rem;
+  }
+
+  .cta p {
+    padding: 0 1rem;
+  }
+
+  .ctaButton {
+    min-height: 48px;
   }
 }
 
@@ -327,12 +358,45 @@
     font-size: 0.95rem;
   }
 
+  .methodIntro h2 {
+    font-size: 1.5rem;
+  }
+
+  .methodIntro p {
+    font-size: 1rem;
+  }
+
   .phase {
     padding: 1.5rem 1rem;
+  }
+
+  .phaseContent h3 {
+    font-size: 1.25rem;
+  }
+
+  .phaseDetails {
+    font-size: 0.9rem;
+    padding: 0.875rem 1.25rem;
   }
 
   .differentiator,
   .expectationItem {
     padding: 1.5rem;
+  }
+
+  .differentiator h3 {
+    font-size: 1.2rem;
+  }
+
+  .expectationItem h4 {
+    font-size: 1.1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
   }
 }

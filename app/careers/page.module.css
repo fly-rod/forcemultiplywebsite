@@ -456,6 +456,7 @@
   .teamGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .pathCard,
@@ -479,14 +480,23 @@
     padding: 3rem 0;
   }
 
+  .ctaContent {
+    padding: 0 1.5rem;
+  }
+
   .cta h2 {
     font-size: 1.75rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
   }
 
   .ctaButton {
     width: 100%;
     padding: 1rem 2rem;
     font-size: 1rem;
+    min-height: 48px;
   }
 }
 
@@ -508,5 +518,25 @@
   .roleCard,
   .teamCard {
     padding: 1.5rem 1rem;
+  }
+
+  .pathCard h3,
+  .whyCard h3,
+  .roleHeader h3,
+  .teamCard h3 {
+    font-size: 1.15rem;
+  }
+
+  .roleSkills span {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
   }
 }

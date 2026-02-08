@@ -67,7 +67,7 @@
 
 .serviceCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
   gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -361,6 +361,7 @@
   .approachGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .bigCard,
@@ -381,13 +382,22 @@
     padding: 3rem 0;
   }
 
+  .ctaContent {
+    padding: 0 1.5rem;
+  }
+
   .cta h2 {
     font-size: 1.75rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
   }
 
   .ctaButton {
     width: 100%;
     padding: 1rem 2rem;
+    min-height: 48px;
   }
 }
 
@@ -410,7 +420,27 @@
     padding: 1.5rem 1rem;
   }
 
+  .bigCard h2 {
+    font-size: 1.5rem;
+  }
+
+  .cardLead {
+    font-size: 1rem;
+  }
+
+  .features li {
+    font-size: 0.95rem;
+  }
+
   .cta h2 {
     font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    min-height: 48px;
   }
 }

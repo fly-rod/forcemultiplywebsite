@@ -136,6 +136,9 @@
   font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.2s;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .mobileNavLinks a:hover,
@@ -197,5 +200,17 @@
 
   .navContent {
     padding: 1rem 0;
+  }
+
+  .mobileMenu {
+    width: 100%;
+  }
+
+  .hamburger {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
