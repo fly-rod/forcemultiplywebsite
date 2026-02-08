@@ -912,9 +912,7 @@
   }
 
   .heroSubtitle {
-    font-size: 1rem;
-    margin: 0 auto 1.5rem;
-    padding: 0 1rem;
+    display: none;
   }
 
   .heroButtons {
