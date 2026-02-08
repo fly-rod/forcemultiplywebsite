@@ -908,7 +908,9 @@
 
   .rotatingWord {
     min-width: auto;
-    font-size: 0.9em;
+    max-width: 140px;
+    font-size: 0.75em;
+    padding: 0.1rem 0.5rem;
   }
 
   .heroSubtitle {
@@ -917,15 +919,16 @@
 
   .heroButtons {
     flex-direction: column;
-    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
     padding: 0 1rem;
   }
 
   .buttonPrimary,
   .buttonSecondary {
     width: 100%;
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
     min-height: 48px;
   }
 
