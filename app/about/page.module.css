@@ -259,6 +259,72 @@
   font-size: 1rem;
 }
 
+/* Industries Section */
+.industries {
+  padding: 7rem 0;
+  background: var(--color-bg);
+}
+
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.industryCard {
+  background: var(--color-bg-alt);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.industryCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 30px rgba(30, 58, 138, 0.08);
+}
+
+.industryIcon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.industryCard h3 {
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.industryCard p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+  .industriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .industriesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Legal Section */
 .legal {
   padding: 2.5rem 0;

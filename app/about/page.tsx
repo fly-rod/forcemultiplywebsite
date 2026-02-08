@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Icon from '@/components/Icon';
 import HeroBackground from '@/components/HeroBackground';
 import styles from './page.module.css';
 
@@ -116,23 +117,54 @@ export default function About() {
       </section>
 
       {/* Who We Work With */}
-      <section className={styles.approach}>
+      <section className={styles.industries}>
         <div className="container">
           <div className={`${styles.sectionHeader} scroll-animate`}>
-            <h2>Who we work with</h2>
+            <h2>Financial services expertise</h2>
+            <p>Deep expertise across the financial services landscape</p>
           </div>
-          <div className={styles.approachGrid}>
-            <div className={`${styles.approachCard} scroll-animate hover-lift`}>
-              <h3>Private Equity & Portfolio Companies</h3>
-              <p>PE funds and their portfolio companies seeking technology leadership to drive value creation.</p>
+          <div className={styles.industriesGrid}>
+            <div className={`${styles.industryCard} scroll-animate hover-lift`}>
+              <div className={styles.industryIcon}>
+                <Icon name="target" size={32} />
+              </div>
+              <h3>Private Equity</h3>
+              <p>Fund operations, portfolio reporting, deal flow management</p>
             </div>
-            <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-2`}>
-              <h3>Investment Banking & Wealth Management</h3>
-              <p>Firms modernizing client engagement, deal execution, and advisor productivity.</p>
+            <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-1`}>
+              <div className={styles.industryIcon}>
+                <Icon name="chart" size={32} />
+              </div>
+              <h3>PE Portfolio Companies</h3>
+              <p>Technology modernization and value creation for PE-backed firms</p>
             </div>
-            <div className={`${styles.approachCard} scroll-animate hover-lift animate-delay-3`}>
-              <h3>Banking & Payments</h3>
-              <p>Institutions transforming customer experience, compliance, and transaction processing.</p>
+            <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-2`}>
+              <div className={styles.industryIcon}>
+                <Icon name="briefcase" size={32} />
+              </div>
+              <h3>Investment Banking</h3>
+              <p>Deal execution, client relationship management, pitch automation</p>
+            </div>
+            <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-3`}>
+              <div className={styles.industryIcon}>
+                <Icon name="users" size={32} />
+              </div>
+              <h3>Wealth Management</h3>
+              <p>Advisor productivity, client experience, portfolio insights</p>
+            </div>
+            <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-4`}>
+              <div className={styles.industryIcon}>
+                <Icon name="shield" size={32} />
+              </div>
+              <h3>Banking</h3>
+              <p>Digital transformation, compliance automation, customer experience</p>
+            </div>
+            <div className={`${styles.industryCard} scroll-animate hover-lift animate-delay-5`}>
+              <div className={styles.industryIcon}>
+                <Icon name="lightning" size={32} />
+              </div>
+              <h3>Payments</h3>
+              <p>Payment processing, fintech integration, transaction optimization</p>
             </div>
           </div>
         </div>
