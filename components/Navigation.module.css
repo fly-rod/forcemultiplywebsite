@@ -203,23 +203,8 @@
 }
 
 @media (max-width: 768px) {
-  .logoImage {
-    max-height: 32px;
-  }
-
-  .navContent {
-    padding: 1rem 0;
-  }
-
   .mobileMenu {
     width: 100%;
-  }
-
-  .hamburger {
-    min-width: 44px;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
   }
 }
 
