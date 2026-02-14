@@ -84,7 +84,7 @@ export default function Home() {
             <div className={styles.heroTag} key={currentTagIndex}>
               {heroTags[currentTagIndex]}
             </div>
-            <h1>Expand Possibility.</h1>
+            <h1>Expand Possibility</h1>
             <p className={styles.heroSubtitle}>
               Fractional technical leaders and hands-on developers for financial services. We help teams sell smarter, reach the right clients, and deliver better customer experiences.
             </p>
